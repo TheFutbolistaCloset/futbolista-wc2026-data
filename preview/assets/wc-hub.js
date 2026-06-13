@@ -497,6 +497,8 @@
   // SEO: SportsEvent ItemList so Google can index the fixtures. (The theme also
   // server-renders the schedule HTML in Liquid — this is the structured layer.)
   function buildJsonLd(feed) {
+    // Skip when the theme already server-rendered the JSON-LD (the SEO source layer).
+    if (document.querySelector('script[type="application/ld+json"][data-wc-ssr]')) return;
     try {
       var items = feed.matches.filter(function (m) { return m.kickoff_utc && feed.teams[m.t1] && feed.teams[m.t2]; }).map(function (m, i) {
         return { '@type': 'ListItem', position: i + 1, item: {
