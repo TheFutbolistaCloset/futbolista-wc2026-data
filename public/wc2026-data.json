@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T21:06:07.388Z",
+  "updated": "2026-06-13T22:01:27.179Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -866,8 +866,11 @@
       "t2_iso": "ch",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "venue_he": "סן פרנסיסקו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4349,6 +4352,26 @@
           "status": "advancing"
         },
         {
+          "code": "QAT",
+          "team": "Qatar",
+          "he": "קטאר",
+          "flag": [
+            "#8A1538",
+            "#6e102c"
+          ],
+          "iso": "qa",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "CAN",
           "team": "Canada",
           "he": "קנדה",
@@ -4365,26 +4388,6 @@
           "ga": 1,
           "pts": 1,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "QAT",
-          "team": "Qatar",
-          "he": "קטאר",
-          "flag": [
-            "#8A1538",
-            "#6e102c"
-          ],
-          "iso": "qa",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 3,
           "status": "third-watch"
         },
@@ -4397,13 +4400,13 @@
             "#b71c12"
           ],
           "iso": "ch",
-          "p": 0,
+          "p": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
           "gd": 0,
           "pos": 4,
           "status": "trailing"
