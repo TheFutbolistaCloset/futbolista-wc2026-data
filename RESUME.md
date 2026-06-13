@@ -8,7 +8,9 @@
 - **URL חי:** **https://thefutbolistacloset.com/pages/world-cup-2026-hub**
 - **ארכיטקטורה:** *progressive enhancement* — הלוח+הטבלאות+ה-JSON-LD **מרונדרים בשרת (Liquid)** כדי שגוגל יסרוק אותם כטקסט; ה-JS (`wc-hub.js`) מוסיף מעליהם פילטרים/מועדפים/**תוצאות חי**.
 - **SEO אומת:** Lighthouse SEO **100/100**; 104 משחקים + SportsEvent(72)+FAQPage+BreadcrumbList בקוד הגולמי; H1 יחיד; canonical/meta תקינים.
-- **תוצאות מתעדכנות חי למשתמשים:** ✅ פעיל. מנוע רענון (launchd, כל 10 דק') דוחף feed מעודכן ל-GitHub; ה-JS מושך משם. מפתח API-Football מחובר (נקרא רק בחלון משחק כדי לשמור על מכסת 100/יום).
+- **תוצאות למשתמשים:** המקור הוא **openfootball בלבד** (חינם), בעיכוב פרסום של דקות־שעות אחרי שריקת הסיום — **לא** חי דקה־אחר־דקה. מנוע רענון (launchd, יורה כל 5 דק' עם self-throttle אדפטיבי) דוחף feed מעודכן ל-GitHub; ה-JS מושך משם.
+  - ⚠️ **API-Football לא עובד ל-2026:** התוכנית החינמית חוסמת את העונה (`"Free plans do not have access to this season"`). ה-overlay החי דורמנטי מאחורי דגל `LIVE_API=on` (כבוי) — להדליק רק עם תוכנית בתשלום. (החלטה 2026-06-13: נשארים חינמי/openfootball.)
+  - תדירות אדפטיבית: ACTIVE≈5 דק' בחלון משחק (פתיחה −15 עד +160 דק') · IDLE 30 דק' ביום · 60 דק' בלילה עמוק (01:00–08:00 שעון ישראל ללא משחק). מצב ב-`logs/last-build.txt`.
 
 ---
 
@@ -33,7 +35,7 @@
 | **ה-feed הציבורי שהאתר מושך** | `https://raw.githubusercontent.com/TheFutbolistaCloset/futbolista-wc2026-data/main/public/wc2026-data.json` |
 | קוד ה-theme שנפרס | worktree `~/wc-hub-port` (ענף `feat/wc2026-hub`, merged ל-origin/main) |
 | מפתח API-Football | `~/futbolista-wc2026-data/.env` → `APIFOOTBALL_KEY` (gitignored, Free 100/יום) |
-| job רענון feed (משתמשים) | `~/Library/LaunchAgents/com.futbolista.wc2026-data.plist` — **טעון**, כל 10 דק' |
+| job רענון feed (משתמשים) | `~/Library/LaunchAgents/com.futbolista.wc2026-data.plist` — **טעון**, יורה כל 5 דק' (self-throttle אדפטיבי) |
 | job רענון SSR (גוגל) | `~/futbolista-wc2026-data/launchd/com.futbolista.wc2026-ssr-deploy.plist` — **לא טעון** (מחכה ל-token) |
 | תג גלגול לאחור (פרודקשן) | `pre-wc2026-hub-2026-06-13` → `48b01a32` |
 
@@ -66,7 +68,7 @@ launchctl list | grep futbolista   # אילו jobs טעונים
 - theme (ב-`~/wc-hub-port`): `sections/wc2026-hub.liquid` · `snippets/wc2026-{data,jsonld,schedule-ssr,standings-ssr}.liquid` · `assets/wc-hub.{css,js}` · `templates/page.world-cup-2026-hub.json`.
 
 ## גוצ'ות / לקחים
-- **מפתח API-Football = 100 בקשות/יום** → ה-build קורא ל-API **רק בחלון משחק** (kickoff-5דק' עד +150דק'). אחרת מדלג. אל תוריד את ה-gate.
+- **מפתח API-Football = 100 בקשות/יום, אבל התוכנית החינמית חוסמת עונת 2026 לגמרי** (מאומת 2026-06-13: `"Free plans do not have access to this season, try from 2022 to 2024"`). לכן ה-overlay החי דורמנטי (`LIVE_API=on` להדלקה). אם תשדרג לתוכנית בתשלום — הקריאה כבר מוגבלת לחלון משחק כדי לא לבזבז מכסה.
 - **דף Shopify נשמר כ-Hidden = 404 לציבור.** היה צריך `pageUpdate(isPublished:true)`. אם הדף נעלם — בדוק Visibility.
 - **handle בעברית יוצא מקושקש** → תמיד להגדיר URL handle ידנית באנגלית.
 - **store-execute עובד עם `--store 143f82.myshopify.com`** (לא thefutbolistacloset.com). יש לו scope ל-`pageUpdate`. **לא** להריץ `shopify store auth` (ישבור tracker/backup).

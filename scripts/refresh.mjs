@@ -1,20 +1,32 @@
 #!/usr/bin/env node
 // Unattended feed refresh for launchd: rebuild public/wc2026-data.json from the
 // live sources, and ONLY commit+push when the feed actually changed (so idle
-// runs outside match windows are no-ops, not history noise). The storefront
-// fetches the pushed raw file — so the live theme is NEVER touched on a refresh.
+// runs are no-ops, not history noise). The storefront fetches the pushed raw
+// file — so the live theme is NEVER touched on a refresh.
 //
-// Loads APIFOOTBALL_KEY from .env (gitignored) for live scores when present;
-// without it the feed is schedule+results only (still correct). Every network
-// call already has timeout+retry+cache-fallback (lib/sources.mjs), so a stalled
-// endpoint degrades instead of hanging the job.
+// ── Adaptive cadence ──────────────────────────────────────────────────────
+// launchd fires this every 5 min (static StartInterval). The real cost lever is
+// how often we hit openfootball, so the *script* decides whether to act:
+//   • ACTIVE  (a match is within −15min .. +160min of kickoff) → rebuild every
+//             tick (≈5 min) for fresh in-play / just-finished results.
+//   • IDLE_DAY  (no active match)                → rebuild at most every 30 min.
+//   • IDLE_NIGHT (01:00–08:00 Israel, no match within 60 min) → every 60 min.
+// State = epoch of the last actual build in logs/last-build.txt (gitignored).
+// Data source is openfootball only (free, unlimited GitHub raw). The paid
+// API-Football overlay is dormant (LIVE_API!='on') — the free plan blocks the
+// 2026 season, so it would only burn quota on failed calls.
+//
+// Every network call already has timeout+retry+cache-fallback (lib/sources.mjs),
+// so a stalled endpoint degrades instead of hanging the job.
 import { execFileSync } from 'child_process';
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const FEED = join(ROOT, 'public', 'wc2026-data.json');
+const STATE = join(ROOT, 'logs', 'last-build.txt');
+const MIN = 60000;
 
 // Load .env (KEY=VALUE lines) into process.env without a dependency.
 const ENV = join(ROOT, '.env');
@@ -32,13 +44,43 @@ const ts = () => new Date().toISOString();
 // (schedule/scores unchanged) is a true no-op instead of a timestamp-only commit.
 const meaningful = (json) => { try { const o = JSON.parse(json); delete o.updated; return JSON.stringify(o); } catch { return json; } };
 
+// ── adaptive gate helpers ──
+const israelHour = () => {
+  try { return +new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Jerusalem', hour: '2-digit', hour12: false }).format(new Date()); }
+  catch { return (new Date().getUTCHours() + 3) % 24; }
+};
+const matchTimestamps = () => {
+  try { return (JSON.parse(readFileSync(FEED, 'utf8')).matches || []).map((m) => m.ts).filter(Boolean); }
+  catch { return []; } // first run / no feed yet → treat as ACTIVE so we build
+};
+const decide = (now) => {
+  const tss = matchTimestamps();
+  if (!tss.length) return { state: 'ACTIVE', gap: 0 };
+  const PRE = 15 * MIN, POST = 160 * MIN;
+  if (tss.some((t) => now >= t - PRE && now <= t + POST)) return { state: 'ACTIVE', gap: 0 };
+  const matchWithinHour = tss.some((t) => t > now && t - now <= 60 * MIN);
+  const h = israelHour();
+  const night = h >= 1 && h < 8 && !matchWithinHour;
+  return { state: night ? 'IDLE_NIGHT' : 'IDLE_DAY', gap: (night ? 60 : 30) * MIN };
+};
+const lastBuild = () => { try { return +readFileSync(STATE, 'utf8').trim() || 0; } catch { return 0; } };
+
+const now = Date.now();
+const { state, gap } = decide(now);
+if (state !== 'ACTIVE' && now - lastBuild() < gap) {
+  const wait = Math.ceil((gap - (now - lastBuild())) / MIN);
+  console.log(`${ts()} ${state} — throttled (next build in ~${wait}m), skip`);
+  process.exit(0);
+}
+
 try {
   let prev = null;
   try { prev = run('/usr/bin/git', ['show', 'HEAD:public/wc2026-data.json']); } catch { /* first run */ }
   run('/usr/local/bin/node', ['build.mjs', '--pretty']);   // writes feed + SSR partials
+  try { writeFileSync(STATE, String(now)); } catch { /* state is best-effort */ }
   const next = readFileSync(FEED, 'utf8');
   if (prev != null && meaningful(prev) === meaningful(next)) {
-    console.log(`${ts()} no meaningful change — skip push`);
+    console.log(`${ts()} ${state} — no meaningful change, skip push`);
     process.exit(0);
   }
   // Stage the whole public/ (feed + regenerated SSR snippets). The storefront
@@ -47,7 +89,7 @@ try {
   run('/usr/bin/git', ['add', `${ROOT}/public`]);
   run('/usr/bin/git', ['commit', '-m', `feed: refresh ${ts()}`]);
   run('/usr/bin/git', ['push', 'origin', 'main:main']);     // explicit refspec, never HEAD
-  console.log(`${ts()} pushed feed update`);
+  console.log(`${ts()} ${state} — pushed feed update`);
 } catch (e) {
   console.error(`${ts()} refresh FAILED: ${e.message}`);
   process.exit(1);

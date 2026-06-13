@@ -45,13 +45,16 @@ async function main() {
     ? JSON.parse(readFileSync(CACHE, 'utf8'))
     : await getOpenfootball({ cacheFile: CACHE });
 
-  // Live overlay (API-Football) — only call WITHIN an actual match window, so the
-  // free-plan quota (100 req/day) isn't burned by a 10-min cron. Outside any window
-  // nothing is live anyway. getLive() degrades to [] on error → the feed always builds.
+  // Live overlay (API-Football) — DORMANT by default (LIVE_API='on' to enable).
+  // The free plan blocks the 2026 season ("Free plans do not have access to this
+  // season"), so every call just errors and would burn quota for nothing. The
+  // feed runs on openfootball alone (free). Re-enable with a paid plan: set
+  // LIVE_API=on in .env. When on, it still only calls WITHIN a match window so a
+  // paid quota isn't wasted by the cron. getLive() degrades to [] on error.
   let live = [];
   let feed = transform(raw, { now: NOW, live });
   const KEY = process.env.APIFOOTBALL_KEY;
-  if (!OFFLINE && KEY) {
+  if (!OFFLINE && KEY && process.env.LIVE_API === 'on') {
     const WIN = 150 * 60000; // ~90 min + half-time + stoppage
     const inWindow = feed.matches.some(
       (m) => m.ts && m.status !== 'finished' && NOW >= m.ts - 5 * 60000 && NOW <= m.ts + WIN

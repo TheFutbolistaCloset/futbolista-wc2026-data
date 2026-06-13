@@ -13,9 +13,11 @@
     <string>/Users/galvaknin/futbolista-wc2026-data/scripts/refresh.mjs</string>
   </array>
 
-  <!-- Every 10 minutes. Cheap build; cache-fallback if openfootball stalls. -->
+  <!-- Fires every 5 minutes; refresh.mjs self-throttles (ACTIVE≈5m during a
+       match, IDLE 30m day / 60m deep-night) so quiet hours are near-zero work.
+       Cheap build; cache-fallback if openfootball stalls. -->
   <key>StartInterval</key>
-  <integer>600</integer>
+  <integer>300</integer>
 
   <key>EnvironmentVariables</key>
   <dict>
