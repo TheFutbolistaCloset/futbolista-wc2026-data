@@ -1,0 +1,5264 @@
+{
+  "updated": "2026-06-13T18:36:10.119Z",
+  "tz": "Asia/Jerusalem",
+  "source": "openfootball + api-football",
+  "tournament": {
+    "teams": 48,
+    "matches": 104,
+    "groups": 12,
+    "start": "2026-06-11",
+    "final": "2026-07-19"
+  },
+  "teams": {
+    "MEX": {
+      "key": "Mexico",
+      "he": "מקסיקו",
+      "heShort": "מקסיקו",
+      "flag": [
+        "#006847",
+        "#CE1126"
+      ],
+      "iso": "mx",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A7%D7%A1%D7%99%D7%A7%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "מקסיקו"
+      }
+    },
+    "RSA": {
+      "key": "South Africa",
+      "he": "דרום אפריקה",
+      "heShort": "דרום אפריקה",
+      "flag": [
+        "#007749",
+        "#E03C31"
+      ],
+      "iso": "za",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%93%D7%A8%D7%95%D7%9D%20%D7%90%D7%A4%D7%A8%D7%99%D7%A7%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "דרום אפריקה"
+      }
+    },
+    "KOR": {
+      "key": "South Korea",
+      "he": "דרום קוריאה",
+      "heShort": "דרום קוריאה",
+      "flag": [
+        "#CD2E3A",
+        "#0047A0"
+      ],
+      "iso": "kr",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%93%D7%A8%D7%95%D7%9D%20%D7%A7%D7%95%D7%A8%D7%99%D7%90%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "דרום קוריאה"
+      }
+    },
+    "CZE": {
+      "key": "Czech Republic",
+      "he": "צ׳כיה",
+      "heShort": "צ׳כיה",
+      "flag": [
+        "#D7141A",
+        "#11457E"
+      ],
+      "iso": "cz",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A6%D7%B3%D7%9B%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "צ׳כיה"
+      }
+    },
+    "CAN": {
+      "key": "Canada",
+      "he": "קנדה",
+      "heShort": "קנדה",
+      "flag": [
+        "#D80621",
+        "#a00318"
+      ],
+      "iso": "ca",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%A0%D7%93%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "קנדה"
+      }
+    },
+    "BIH": {
+      "key": "Bosnia & Herzegovina",
+      "he": "בוסניה והרצגובינה",
+      "heShort": "בוסניה",
+      "flag": [
+        "#002395",
+        "#FECB00"
+      ],
+      "iso": "ba",
+      "group": null
+    },
+    "QAT": {
+      "key": "Qatar",
+      "he": "קטאר",
+      "heShort": "קטאר",
+      "flag": [
+        "#8A1538",
+        "#6e102c"
+      ],
+      "iso": "qa",
+      "group": null
+    },
+    "SUI": {
+      "key": "Switzerland",
+      "he": "שווייץ",
+      "heShort": "שווייץ",
+      "flag": [
+        "#D52B1E",
+        "#b71c12"
+      ],
+      "iso": "ch",
+      "group": null
+    },
+    "BRA": {
+      "key": "Brazil",
+      "he": "ברזיל",
+      "heShort": "ברזיל",
+      "flag": [
+        "#009C3B",
+        "#FFDF00"
+      ],
+      "iso": "br",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%91%D7%A8%D7%96%D7%99%D7%9C%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "ברזיל"
+      }
+    },
+    "MAR": {
+      "key": "Morocco",
+      "he": "מרוקו",
+      "heShort": "מרוקו",
+      "flag": [
+        "#C1272D",
+        "#006233"
+      ],
+      "iso": "ma",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A8%D7%95%D7%A7%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "מרוקו"
+      }
+    },
+    "HAI": {
+      "key": "Haiti",
+      "he": "האיטי",
+      "heShort": "האיטי",
+      "flag": [
+        "#00209F",
+        "#D21034"
+      ],
+      "iso": "ht",
+      "group": null
+    },
+    "SCO": {
+      "key": "Scotland",
+      "he": "סקוטלנד",
+      "heShort": "סקוטלנד",
+      "flag": [
+        "#005EB8",
+        "#003a73"
+      ],
+      "iso": "gb-sct",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A1%D7%A7%D7%95%D7%98%D7%9C%D7%A0%D7%93%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "סקוטלנד"
+      }
+    },
+    "USA": {
+      "key": "USA",
+      "he": "ארצות הברית",
+      "heShort": "ארה״ב",
+      "flag": [
+        "#B22234",
+        "#3C3B6E"
+      ],
+      "iso": "us",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%A8%D7%A6%D7%95%D7%AA%20%D7%94%D7%91%D7%A8%D7%99%D7%AA%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "ארצות הברית"
+      }
+    },
+    "PAR": {
+      "key": "Paraguay",
+      "he": "פרגוואי",
+      "heShort": "פרגוואי",
+      "flag": [
+        "#D52B1E",
+        "#0038A8"
+      ],
+      "iso": "py",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A4%D7%A8%D7%92%D7%95%D7%95%D7%90%D7%99%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "פרגוואי"
+      }
+    },
+    "AUS": {
+      "key": "Australia",
+      "he": "אוסטרליה",
+      "heShort": "אוסטרליה",
+      "flag": [
+        "#012169",
+        "#E4002B"
+      ],
+      "iso": "au",
+      "group": null
+    },
+    "TUR": {
+      "key": "Turkey",
+      "he": "טורקיה",
+      "heShort": "טורקיה",
+      "flag": [
+        "#E30A17",
+        "#b00712"
+      ],
+      "iso": "tr",
+      "group": null
+    },
+    "GER": {
+      "key": "Germany",
+      "he": "גרמניה",
+      "heShort": "גרמניה",
+      "flag": [
+        "#DD0000",
+        "#FFCE00"
+      ],
+      "iso": "de",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%92%D7%A8%D7%9E%D7%A0%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "גרמניה"
+      }
+    },
+    "CUW": {
+      "key": "Curaçao",
+      "he": "קורסאו",
+      "heShort": "קורסאו",
+      "flag": [
+        "#002B7F",
+        "#F9E814"
+      ],
+      "iso": "cw",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%95%D7%A8%D7%A1%D7%90%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "קורסאו"
+      }
+    },
+    "CIV": {
+      "key": "Ivory Coast",
+      "he": "חוף השנהב",
+      "heShort": "חוף השנהב",
+      "flag": [
+        "#FF8200",
+        "#009E60"
+      ],
+      "iso": "ci",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%97%D7%95%D7%A3%20%D7%94%D7%A9%D7%A0%D7%94%D7%91%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "חוף השנהב"
+      }
+    },
+    "ECU": {
+      "key": "Ecuador",
+      "he": "אקוודור",
+      "heShort": "אקוודור",
+      "flag": [
+        "#FFD100",
+        "#034EA2"
+      ],
+      "iso": "ec",
+      "group": null
+    },
+    "NED": {
+      "key": "Netherlands",
+      "he": "הולנד",
+      "heShort": "הולנד",
+      "flag": [
+        "#AE1C28",
+        "#21468B"
+      ],
+      "iso": "nl",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%94%D7%95%D7%9C%D7%A0%D7%93%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "הולנד"
+      }
+    },
+    "JPN": {
+      "key": "Japan",
+      "he": "יפן",
+      "heShort": "יפן",
+      "flag": [
+        "#BC002D",
+        "#8a0021"
+      ],
+      "iso": "jp",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%99%D7%A4%D7%9F%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "יפן"
+      }
+    },
+    "SWE": {
+      "key": "Sweden",
+      "he": "שבדיה",
+      "heShort": "שבדיה",
+      "flag": [
+        "#006AA7",
+        "#FECC02"
+      ],
+      "iso": "se",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A9%D7%91%D7%93%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "שבדיה"
+      }
+    },
+    "TUN": {
+      "key": "Tunisia",
+      "he": "תוניסיה",
+      "heShort": "תוניסיה",
+      "flag": [
+        "#E70013",
+        "#b3000f"
+      ],
+      "iso": "tn",
+      "group": null
+    },
+    "BEL": {
+      "key": "Belgium",
+      "he": "בלגיה",
+      "heShort": "בלגיה",
+      "flag": [
+        "#FDDA24",
+        "#EF3340"
+      ],
+      "iso": "be",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%91%D7%9C%D7%92%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "בלגיה"
+      }
+    },
+    "EGY": {
+      "key": "Egypt",
+      "he": "מצרים",
+      "heShort": "מצרים",
+      "flag": [
+        "#CE1126",
+        "#1a1a1a"
+      ],
+      "iso": "eg",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A6%D7%A8%D7%99%D7%9D%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "מצרים"
+      }
+    },
+    "IRN": {
+      "key": "Iran",
+      "he": "איראן",
+      "heShort": "איראן",
+      "flag": [
+        "#239F40",
+        "#DA0000"
+      ],
+      "iso": "ir",
+      "group": null
+    },
+    "NZL": {
+      "key": "New Zealand",
+      "he": "ניו זילנד",
+      "heShort": "ניו זילנד",
+      "flag": [
+        "#00247D",
+        "#CC142B"
+      ],
+      "iso": "nz",
+      "group": null
+    },
+    "ESP": {
+      "key": "Spain",
+      "he": "ספרד",
+      "heShort": "ספרד",
+      "flag": [
+        "#AA151B",
+        "#F1BF00"
+      ],
+      "iso": "es",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A1%D7%A4%D7%A8%D7%93%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "ספרד"
+      }
+    },
+    "CPV": {
+      "key": "Cape Verde",
+      "he": "כף ורדה",
+      "heShort": "כף ורדה",
+      "flag": [
+        "#003893",
+        "#CF2027"
+      ],
+      "iso": "cv",
+      "group": null
+    },
+    "KSA": {
+      "key": "Saudi Arabia",
+      "he": "ערב הסעודית",
+      "heShort": "סעודיה",
+      "flag": [
+        "#165B33",
+        "#0d3d22"
+      ],
+      "iso": "sa",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A2%D7%A8%D7%91%20%D7%94%D7%A1%D7%A2%D7%95%D7%93%D7%99%D7%AA%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "ערב הסעודית"
+      }
+    },
+    "URU": {
+      "key": "Uruguay",
+      "he": "אורוגוואי",
+      "heShort": "אורוגוואי",
+      "flag": [
+        "#5B92E5",
+        "#FCD116"
+      ],
+      "iso": "uy",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%95%D7%A8%D7%95%D7%92%D7%95%D7%95%D7%90%D7%99%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "אורוגוואי"
+      }
+    },
+    "FRA": {
+      "key": "France",
+      "he": "צרפת",
+      "heShort": "צרפת",
+      "flag": [
+        "#0055A4",
+        "#EF4135"
+      ],
+      "iso": "fr",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A6%D7%A8%D7%A4%D7%AA%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "צרפת"
+      }
+    },
+    "SEN": {
+      "key": "Senegal",
+      "he": "סנגל",
+      "heShort": "סנגל",
+      "flag": [
+        "#00853F",
+        "#FDEF42"
+      ],
+      "iso": "sn",
+      "group": null
+    },
+    "IRQ": {
+      "key": "Iraq",
+      "he": "עיראק",
+      "heShort": "עיראק",
+      "flag": [
+        "#CE1126",
+        "#007A3D"
+      ],
+      "iso": "iq",
+      "group": null
+    },
+    "NOR": {
+      "key": "Norway",
+      "he": "נורווגיה",
+      "heShort": "נורווגיה",
+      "flag": [
+        "#BA0C2F",
+        "#00205B"
+      ],
+      "iso": "no",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A0%D7%95%D7%A8%D7%95%D7%95%D7%92%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "נורווגיה"
+      }
+    },
+    "ARG": {
+      "key": "Argentina",
+      "he": "ארגנטינה",
+      "heShort": "ארגנטינה",
+      "flag": [
+        "#74ACDF",
+        "#F6B40E"
+      ],
+      "iso": "ar",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%A8%D7%92%D7%A0%D7%98%D7%99%D7%A0%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "ארגנטינה"
+      }
+    },
+    "ALG": {
+      "key": "Algeria",
+      "he": "אלג׳יריה",
+      "heShort": "אלג׳יריה",
+      "flag": [
+        "#006233",
+        "#D21034"
+      ],
+      "iso": "dz",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%9C%D7%92%D7%B3%D7%99%D7%A8%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "אלג׳יריה"
+      }
+    },
+    "AUT": {
+      "key": "Austria",
+      "he": "אוסטריה",
+      "heShort": "אוסטריה",
+      "flag": [
+        "#ED2939",
+        "#a31523"
+      ],
+      "iso": "at",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%95%D7%A1%D7%98%D7%A8%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "אוסטריה"
+      }
+    },
+    "JOR": {
+      "key": "Jordan",
+      "he": "ירדן",
+      "heShort": "ירדן",
+      "flag": [
+        "#007A3D",
+        "#CE1126"
+      ],
+      "iso": "jo",
+      "group": null
+    },
+    "POR": {
+      "key": "Portugal",
+      "he": "פורטוגל",
+      "heShort": "פורטוגל",
+      "flag": [
+        "#046A38",
+        "#DA291C"
+      ],
+      "iso": "pt",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A4%D7%95%D7%A8%D7%98%D7%95%D7%92%D7%9C%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "פורטוגל"
+      }
+    },
+    "COD": {
+      "key": "DR Congo",
+      "he": "קונגו",
+      "heShort": "קונגו",
+      "flag": [
+        "#007FFF",
+        "#F7D618"
+      ],
+      "iso": "cd",
+      "group": null
+    },
+    "UZB": {
+      "key": "Uzbekistan",
+      "he": "אוזבקיסטן",
+      "heShort": "אוזבקיסטן",
+      "flag": [
+        "#0099B5",
+        "#1EB53A"
+      ],
+      "iso": "uz",
+      "group": null
+    },
+    "COL": {
+      "key": "Colombia",
+      "he": "קולומביה",
+      "heShort": "קולומביה",
+      "flag": [
+        "#FCD116",
+        "#003893"
+      ],
+      "iso": "co",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%95%D7%9C%D7%95%D7%9E%D7%91%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "קולומביה"
+      }
+    },
+    "ENG": {
+      "key": "England",
+      "he": "אנגליה",
+      "heShort": "אנגליה",
+      "flag": [
+        "#C8102E",
+        "#8d0b20"
+      ],
+      "iso": "gb-eng",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%A0%D7%92%D7%9C%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "אנגליה"
+      }
+    },
+    "CRO": {
+      "key": "Croatia",
+      "he": "קרואטיה",
+      "heShort": "קרואטיה",
+      "flag": [
+        "#C8102E",
+        "#171796"
+      ],
+      "iso": "hr",
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%95%D7%90%D7%98%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "he": "קרואטיה"
+      }
+    },
+    "GHA": {
+      "key": "Ghana",
+      "he": "גאנה",
+      "heShort": "גאנה",
+      "flag": [
+        "#CE1126",
+        "#FCD116"
+      ],
+      "iso": "gh",
+      "group": null
+    },
+    "PAN": {
+      "key": "Panama",
+      "he": "פנמה",
+      "heShort": "פנמה",
+      "flag": [
+        "#005293",
+        "#DA121A"
+      ],
+      "iso": "pa",
+      "group": null
+    }
+  },
+  "matches": [
+    {
+      "id": "m001",
+      "ts": 1781204400000,
+      "kickoff_utc": "2026-06-11T19:00:00.000Z",
+      "date_il": "11.06",
+      "date_key": "2026-06-11",
+      "dow_he": "יום חמישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "A",
+      "t1": "MEX",
+      "t2": "RSA",
+      "t1_he": "מקסיקו",
+      "t2_he": "דרום אפריקה",
+      "t1_short": "מקסיקו",
+      "t2_short": "דרום אפריקה",
+      "t1_flag": [
+        "#006847",
+        "#CE1126"
+      ],
+      "t2_flag": [
+        "#007749",
+        "#E03C31"
+      ],
+      "t1_iso": "mx",
+      "t2_iso": "za",
+      "venue": "Mexico City",
+      "venue_he": "מקסיקו סיטי",
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m002",
+      "ts": 1781229600000,
+      "kickoff_utc": "2026-06-12T02:00:00.000Z",
+      "date_il": "12.06",
+      "date_key": "2026-06-12",
+      "dow_he": "יום שישי",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "A",
+      "t1": "KOR",
+      "t2": "CZE",
+      "t1_he": "דרום קוריאה",
+      "t2_he": "צ׳כיה",
+      "t1_short": "דרום קוריאה",
+      "t2_short": "צ׳כיה",
+      "t1_flag": [
+        "#CD2E3A",
+        "#0047A0"
+      ],
+      "t2_flag": [
+        "#D7141A",
+        "#11457E"
+      ],
+      "t1_iso": "kr",
+      "t2_iso": "cz",
+      "venue": "Guadalajara (Zapopan)",
+      "venue_he": "גוודלחרה",
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m007",
+      "ts": 1781290800000,
+      "kickoff_utc": "2026-06-12T19:00:00.000Z",
+      "date_il": "12.06",
+      "date_key": "2026-06-12",
+      "dow_he": "יום שישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "B",
+      "t1": "CAN",
+      "t2": "BIH",
+      "t1_he": "קנדה",
+      "t2_he": "בוסניה והרצגובינה",
+      "t1_short": "קנדה",
+      "t2_short": "בוסניה",
+      "t1_flag": [
+        "#D80621",
+        "#a00318"
+      ],
+      "t2_flag": [
+        "#002395",
+        "#FECB00"
+      ],
+      "t1_iso": "ca",
+      "t2_iso": "ba",
+      "venue": "Toronto",
+      "venue_he": "טורונטו",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m019",
+      "ts": 1781312400000,
+      "kickoff_utc": "2026-06-13T01:00:00.000Z",
+      "date_il": "13.06",
+      "date_key": "2026-06-13",
+      "dow_he": "יום שבת",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "D",
+      "t1": "USA",
+      "t2": "PAR",
+      "t1_he": "ארצות הברית",
+      "t2_he": "פרגוואי",
+      "t1_short": "ארה״ב",
+      "t2_short": "פרגוואי",
+      "t1_flag": [
+        "#B22234",
+        "#3C3B6E"
+      ],
+      "t2_flag": [
+        "#D52B1E",
+        "#0038A8"
+      ],
+      "t1_iso": "us",
+      "t2_iso": "py",
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "finished",
+      "score": [
+        4,
+        1
+      ],
+      "minute": null,
+      "is_today": true,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m008",
+      "ts": 1781377200000,
+      "kickoff_utc": "2026-06-13T19:00:00.000Z",
+      "date_il": "13.06",
+      "date_key": "2026-06-13",
+      "dow_he": "יום שבת",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "B",
+      "t1": "QAT",
+      "t2": "SUI",
+      "t1_he": "קטאר",
+      "t2_he": "שווייץ",
+      "t1_short": "קטאר",
+      "t2_short": "שווייץ",
+      "t1_flag": [
+        "#8A1538",
+        "#6e102c"
+      ],
+      "t2_flag": [
+        "#D52B1E",
+        "#b71c12"
+      ],
+      "t1_iso": "qa",
+      "t2_iso": "ch",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "venue_he": "סן פרנסיסקו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": true,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m013",
+      "ts": 1781388000000,
+      "kickoff_utc": "2026-06-13T22:00:00.000Z",
+      "date_il": "14.06",
+      "date_key": "2026-06-14",
+      "dow_he": "יום ראשון",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "C",
+      "t1": "BRA",
+      "t2": "MAR",
+      "t1_he": "ברזיל",
+      "t2_he": "מרוקו",
+      "t1_short": "ברזיל",
+      "t2_short": "מרוקו",
+      "t1_flag": [
+        "#009C3B",
+        "#FFDF00"
+      ],
+      "t2_flag": [
+        "#C1272D",
+        "#006233"
+      ],
+      "t1_iso": "br",
+      "t2_iso": "ma",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": true
+    },
+    {
+      "id": "m014",
+      "ts": 1781398800000,
+      "kickoff_utc": "2026-06-14T01:00:00.000Z",
+      "date_il": "14.06",
+      "date_key": "2026-06-14",
+      "dow_he": "יום ראשון",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "C",
+      "t1": "HAI",
+      "t2": "SCO",
+      "t1_he": "האיטי",
+      "t2_he": "סקוטלנד",
+      "t1_short": "האיטי",
+      "t2_short": "סקוטלנד",
+      "t1_flag": [
+        "#00209F",
+        "#D21034"
+      ],
+      "t2_flag": [
+        "#005EB8",
+        "#003a73"
+      ],
+      "t1_iso": "ht",
+      "t2_iso": "gb-sct",
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": true
+    },
+    {
+      "id": "m020",
+      "ts": 1781409600000,
+      "kickoff_utc": "2026-06-14T04:00:00.000Z",
+      "date_il": "14.06",
+      "date_key": "2026-06-14",
+      "dow_he": "יום ראשון",
+      "time_il": "07:00",
+      "stage": "group",
+      "group": "D",
+      "t1": "AUS",
+      "t2": "TUR",
+      "t1_he": "אוסטרליה",
+      "t2_he": "טורקיה",
+      "t1_short": "אוסטרליה",
+      "t2_short": "טורקיה",
+      "t1_flag": [
+        "#012169",
+        "#E4002B"
+      ],
+      "t2_flag": [
+        "#E30A17",
+        "#b00712"
+      ],
+      "t1_iso": "au",
+      "t2_iso": "tr",
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": true
+    },
+    {
+      "id": "m025",
+      "ts": 1781456400000,
+      "kickoff_utc": "2026-06-14T17:00:00.000Z",
+      "date_il": "14.06",
+      "date_key": "2026-06-14",
+      "dow_he": "יום ראשון",
+      "time_il": "20:00",
+      "stage": "group",
+      "group": "E",
+      "t1": "GER",
+      "t2": "CUW",
+      "t1_he": "גרמניה",
+      "t2_he": "קורסאו",
+      "t1_short": "גרמניה",
+      "t2_short": "קורסאו",
+      "t1_flag": [
+        "#DD0000",
+        "#FFCE00"
+      ],
+      "t2_flag": [
+        "#002B7F",
+        "#F9E814"
+      ],
+      "t1_iso": "de",
+      "t2_iso": "cw",
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": true
+    },
+    {
+      "id": "m031",
+      "ts": 1781467200000,
+      "kickoff_utc": "2026-06-14T20:00:00.000Z",
+      "date_il": "14.06",
+      "date_key": "2026-06-14",
+      "dow_he": "יום ראשון",
+      "time_il": "23:00",
+      "stage": "group",
+      "group": "F",
+      "t1": "NED",
+      "t2": "JPN",
+      "t1_he": "הולנד",
+      "t2_he": "יפן",
+      "t1_short": "הולנד",
+      "t2_short": "יפן",
+      "t1_flag": [
+        "#AE1C28",
+        "#21468B"
+      ],
+      "t2_flag": [
+        "#BC002D",
+        "#8a0021"
+      ],
+      "t1_iso": "nl",
+      "t2_iso": "jp",
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": true
+    },
+    {
+      "id": "m026",
+      "ts": 1781478000000,
+      "kickoff_utc": "2026-06-14T23:00:00.000Z",
+      "date_il": "15.06",
+      "date_key": "2026-06-15",
+      "dow_he": "יום שני",
+      "time_il": "02:00",
+      "stage": "group",
+      "group": "E",
+      "t1": "CIV",
+      "t2": "ECU",
+      "t1_he": "חוף השנהב",
+      "t2_he": "אקוודור",
+      "t1_short": "חוף השנהב",
+      "t2_short": "אקוודור",
+      "t1_flag": [
+        "#FF8200",
+        "#009E60"
+      ],
+      "t2_flag": [
+        "#FFD100",
+        "#034EA2"
+      ],
+      "t1_iso": "ci",
+      "t2_iso": "ec",
+      "venue": "Philadelphia",
+      "venue_he": "פילדלפיה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m032",
+      "ts": 1781488800000,
+      "kickoff_utc": "2026-06-15T02:00:00.000Z",
+      "date_il": "15.06",
+      "date_key": "2026-06-15",
+      "dow_he": "יום שני",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "F",
+      "t1": "SWE",
+      "t2": "TUN",
+      "t1_he": "שבדיה",
+      "t2_he": "תוניסיה",
+      "t1_short": "שבדיה",
+      "t2_short": "תוניסיה",
+      "t1_flag": [
+        "#006AA7",
+        "#FECC02"
+      ],
+      "t2_flag": [
+        "#E70013",
+        "#b3000f"
+      ],
+      "t1_iso": "se",
+      "t2_iso": "tn",
+      "venue": "Monterrey (Guadalupe)",
+      "venue_he": "מונטריי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m043",
+      "ts": 1781539200000,
+      "kickoff_utc": "2026-06-15T16:00:00.000Z",
+      "date_il": "15.06",
+      "date_key": "2026-06-15",
+      "dow_he": "יום שני",
+      "time_il": "19:00",
+      "stage": "group",
+      "group": "H",
+      "t1": "ESP",
+      "t2": "CPV",
+      "t1_he": "ספרד",
+      "t2_he": "כף ורדה",
+      "t1_short": "ספרד",
+      "t2_short": "כף ורדה",
+      "t1_flag": [
+        "#AA151B",
+        "#F1BF00"
+      ],
+      "t2_flag": [
+        "#003893",
+        "#CF2027"
+      ],
+      "t1_iso": "es",
+      "t2_iso": "cv",
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m037",
+      "ts": 1781550000000,
+      "kickoff_utc": "2026-06-15T19:00:00.000Z",
+      "date_il": "15.06",
+      "date_key": "2026-06-15",
+      "dow_he": "יום שני",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "G",
+      "t1": "BEL",
+      "t2": "EGY",
+      "t1_he": "בלגיה",
+      "t2_he": "מצרים",
+      "t1_short": "בלגיה",
+      "t2_short": "מצרים",
+      "t1_flag": [
+        "#FDDA24",
+        "#EF3340"
+      ],
+      "t2_flag": [
+        "#CE1126",
+        "#1a1a1a"
+      ],
+      "t1_iso": "be",
+      "t2_iso": "eg",
+      "venue": "Seattle",
+      "venue_he": "סיאטל",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m044",
+      "ts": 1781560800000,
+      "kickoff_utc": "2026-06-15T22:00:00.000Z",
+      "date_il": "16.06",
+      "date_key": "2026-06-16",
+      "dow_he": "יום שלישי",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "H",
+      "t1": "KSA",
+      "t2": "URU",
+      "t1_he": "ערב הסעודית",
+      "t2_he": "אורוגוואי",
+      "t1_short": "סעודיה",
+      "t2_short": "אורוגוואי",
+      "t1_flag": [
+        "#165B33",
+        "#0d3d22"
+      ],
+      "t2_flag": [
+        "#5B92E5",
+        "#FCD116"
+      ],
+      "t1_iso": "sa",
+      "t2_iso": "uy",
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m038",
+      "ts": 1781571600000,
+      "kickoff_utc": "2026-06-16T01:00:00.000Z",
+      "date_il": "16.06",
+      "date_key": "2026-06-16",
+      "dow_he": "יום שלישי",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "G",
+      "t1": "IRN",
+      "t2": "NZL",
+      "t1_he": "איראן",
+      "t2_he": "ניו זילנד",
+      "t1_short": "איראן",
+      "t2_short": "ניו זילנד",
+      "t1_flag": [
+        "#239F40",
+        "#DA0000"
+      ],
+      "t2_flag": [
+        "#00247D",
+        "#CC142B"
+      ],
+      "t1_iso": "ir",
+      "t2_iso": "nz",
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m049",
+      "ts": 1781636400000,
+      "kickoff_utc": "2026-06-16T19:00:00.000Z",
+      "date_il": "16.06",
+      "date_key": "2026-06-16",
+      "dow_he": "יום שלישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "I",
+      "t1": "FRA",
+      "t2": "SEN",
+      "t1_he": "צרפת",
+      "t2_he": "סנגל",
+      "t1_short": "צרפת",
+      "t2_short": "סנגל",
+      "t1_flag": [
+        "#0055A4",
+        "#EF4135"
+      ],
+      "t2_flag": [
+        "#00853F",
+        "#FDEF42"
+      ],
+      "t1_iso": "fr",
+      "t2_iso": "sn",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m050",
+      "ts": 1781647200000,
+      "kickoff_utc": "2026-06-16T22:00:00.000Z",
+      "date_il": "17.06",
+      "date_key": "2026-06-17",
+      "dow_he": "יום רביעי",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "I",
+      "t1": "IRQ",
+      "t2": "NOR",
+      "t1_he": "עיראק",
+      "t2_he": "נורווגיה",
+      "t1_short": "עיראק",
+      "t2_short": "נורווגיה",
+      "t1_flag": [
+        "#CE1126",
+        "#007A3D"
+      ],
+      "t2_flag": [
+        "#BA0C2F",
+        "#00205B"
+      ],
+      "t1_iso": "iq",
+      "t2_iso": "no",
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m055",
+      "ts": 1781658000000,
+      "kickoff_utc": "2026-06-17T01:00:00.000Z",
+      "date_il": "17.06",
+      "date_key": "2026-06-17",
+      "dow_he": "יום רביעי",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "J",
+      "t1": "ARG",
+      "t2": "ALG",
+      "t1_he": "ארגנטינה",
+      "t2_he": "אלג׳יריה",
+      "t1_short": "ארגנטינה",
+      "t2_short": "אלג׳יריה",
+      "t1_flag": [
+        "#74ACDF",
+        "#F6B40E"
+      ],
+      "t2_flag": [
+        "#006233",
+        "#D21034"
+      ],
+      "t1_iso": "ar",
+      "t2_iso": "dz",
+      "venue": "Kansas City",
+      "venue_he": "קנזס סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m056",
+      "ts": 1781668800000,
+      "kickoff_utc": "2026-06-17T04:00:00.000Z",
+      "date_il": "17.06",
+      "date_key": "2026-06-17",
+      "dow_he": "יום רביעי",
+      "time_il": "07:00",
+      "stage": "group",
+      "group": "J",
+      "t1": "AUT",
+      "t2": "JOR",
+      "t1_he": "אוסטריה",
+      "t2_he": "ירדן",
+      "t1_short": "אוסטריה",
+      "t2_short": "ירדן",
+      "t1_flag": [
+        "#ED2939",
+        "#a31523"
+      ],
+      "t2_flag": [
+        "#007A3D",
+        "#CE1126"
+      ],
+      "t1_iso": "at",
+      "t2_iso": "jo",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "venue_he": "סן פרנסיסקו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m061",
+      "ts": 1781715600000,
+      "kickoff_utc": "2026-06-17T17:00:00.000Z",
+      "date_il": "17.06",
+      "date_key": "2026-06-17",
+      "dow_he": "יום רביעי",
+      "time_il": "20:00",
+      "stage": "group",
+      "group": "K",
+      "t1": "POR",
+      "t2": "COD",
+      "t1_he": "פורטוגל",
+      "t2_he": "קונגו",
+      "t1_short": "פורטוגל",
+      "t2_short": "קונגו",
+      "t1_flag": [
+        "#046A38",
+        "#DA291C"
+      ],
+      "t2_flag": [
+        "#007FFF",
+        "#F7D618"
+      ],
+      "t1_iso": "pt",
+      "t2_iso": "cd",
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m067",
+      "ts": 1781726400000,
+      "kickoff_utc": "2026-06-17T20:00:00.000Z",
+      "date_il": "17.06",
+      "date_key": "2026-06-17",
+      "dow_he": "יום רביעי",
+      "time_il": "23:00",
+      "stage": "group",
+      "group": "L",
+      "t1": "ENG",
+      "t2": "CRO",
+      "t1_he": "אנגליה",
+      "t2_he": "קרואטיה",
+      "t1_short": "אנגליה",
+      "t2_short": "קרואטיה",
+      "t1_flag": [
+        "#C8102E",
+        "#8d0b20"
+      ],
+      "t2_flag": [
+        "#C8102E",
+        "#171796"
+      ],
+      "t1_iso": "gb-eng",
+      "t2_iso": "hr",
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m068",
+      "ts": 1781737200000,
+      "kickoff_utc": "2026-06-17T23:00:00.000Z",
+      "date_il": "18.06",
+      "date_key": "2026-06-18",
+      "dow_he": "יום חמישי",
+      "time_il": "02:00",
+      "stage": "group",
+      "group": "L",
+      "t1": "GHA",
+      "t2": "PAN",
+      "t1_he": "גאנה",
+      "t2_he": "פנמה",
+      "t1_short": "גאנה",
+      "t2_short": "פנמה",
+      "t1_flag": [
+        "#CE1126",
+        "#FCD116"
+      ],
+      "t2_flag": [
+        "#005293",
+        "#DA121A"
+      ],
+      "t1_iso": "gh",
+      "t2_iso": "pa",
+      "venue": "Toronto",
+      "venue_he": "טורונטו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m062",
+      "ts": 1781748000000,
+      "kickoff_utc": "2026-06-18T02:00:00.000Z",
+      "date_il": "18.06",
+      "date_key": "2026-06-18",
+      "dow_he": "יום חמישי",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "K",
+      "t1": "UZB",
+      "t2": "COL",
+      "t1_he": "אוזבקיסטן",
+      "t2_he": "קולומביה",
+      "t1_short": "אוזבקיסטן",
+      "t2_short": "קולומביה",
+      "t1_flag": [
+        "#0099B5",
+        "#1EB53A"
+      ],
+      "t2_flag": [
+        "#FCD116",
+        "#003893"
+      ],
+      "t1_iso": "uz",
+      "t2_iso": "co",
+      "venue": "Mexico City",
+      "venue_he": "מקסיקו סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m003",
+      "ts": 1781798400000,
+      "kickoff_utc": "2026-06-18T16:00:00.000Z",
+      "date_il": "18.06",
+      "date_key": "2026-06-18",
+      "dow_he": "יום חמישי",
+      "time_il": "19:00",
+      "stage": "group",
+      "group": "A",
+      "t1": "CZE",
+      "t2": "RSA",
+      "t1_he": "צ׳כיה",
+      "t2_he": "דרום אפריקה",
+      "t1_short": "צ׳כיה",
+      "t2_short": "דרום אפריקה",
+      "t1_flag": [
+        "#D7141A",
+        "#11457E"
+      ],
+      "t2_flag": [
+        "#007749",
+        "#E03C31"
+      ],
+      "t1_iso": "cz",
+      "t2_iso": "za",
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m009",
+      "ts": 1781809200000,
+      "kickoff_utc": "2026-06-18T19:00:00.000Z",
+      "date_il": "18.06",
+      "date_key": "2026-06-18",
+      "dow_he": "יום חמישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "B",
+      "t1": "SUI",
+      "t2": "BIH",
+      "t1_he": "שווייץ",
+      "t2_he": "בוסניה והרצגובינה",
+      "t1_short": "שווייץ",
+      "t2_short": "בוסניה",
+      "t1_flag": [
+        "#D52B1E",
+        "#b71c12"
+      ],
+      "t2_flag": [
+        "#002395",
+        "#FECB00"
+      ],
+      "t1_iso": "ch",
+      "t2_iso": "ba",
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m010",
+      "ts": 1781820000000,
+      "kickoff_utc": "2026-06-18T22:00:00.000Z",
+      "date_il": "19.06",
+      "date_key": "2026-06-19",
+      "dow_he": "יום שישי",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "B",
+      "t1": "CAN",
+      "t2": "QAT",
+      "t1_he": "קנדה",
+      "t2_he": "קטאר",
+      "t1_short": "קנדה",
+      "t2_short": "קטאר",
+      "t1_flag": [
+        "#D80621",
+        "#a00318"
+      ],
+      "t2_flag": [
+        "#8A1538",
+        "#6e102c"
+      ],
+      "t1_iso": "ca",
+      "t2_iso": "qa",
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m004",
+      "ts": 1781830800000,
+      "kickoff_utc": "2026-06-19T01:00:00.000Z",
+      "date_il": "19.06",
+      "date_key": "2026-06-19",
+      "dow_he": "יום שישי",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "A",
+      "t1": "MEX",
+      "t2": "KOR",
+      "t1_he": "מקסיקו",
+      "t2_he": "דרום קוריאה",
+      "t1_short": "מקסיקו",
+      "t2_short": "דרום קוריאה",
+      "t1_flag": [
+        "#006847",
+        "#CE1126"
+      ],
+      "t2_flag": [
+        "#CD2E3A",
+        "#0047A0"
+      ],
+      "t1_iso": "mx",
+      "t2_iso": "kr",
+      "venue": "Guadalajara (Zapopan)",
+      "venue_he": "גוודלחרה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m021",
+      "ts": 1781895600000,
+      "kickoff_utc": "2026-06-19T19:00:00.000Z",
+      "date_il": "19.06",
+      "date_key": "2026-06-19",
+      "dow_he": "יום שישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "D",
+      "t1": "USA",
+      "t2": "AUS",
+      "t1_he": "ארצות הברית",
+      "t2_he": "אוסטרליה",
+      "t1_short": "ארה״ב",
+      "t2_short": "אוסטרליה",
+      "t1_flag": [
+        "#B22234",
+        "#3C3B6E"
+      ],
+      "t2_flag": [
+        "#012169",
+        "#E4002B"
+      ],
+      "t1_iso": "us",
+      "t2_iso": "au",
+      "venue": "Seattle",
+      "venue_he": "סיאטל",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m015",
+      "ts": 1781906400000,
+      "kickoff_utc": "2026-06-19T22:00:00.000Z",
+      "date_il": "20.06",
+      "date_key": "2026-06-20",
+      "dow_he": "יום שבת",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "C",
+      "t1": "SCO",
+      "t2": "MAR",
+      "t1_he": "סקוטלנד",
+      "t2_he": "מרוקו",
+      "t1_short": "סקוטלנד",
+      "t2_short": "מרוקו",
+      "t1_flag": [
+        "#005EB8",
+        "#003a73"
+      ],
+      "t2_flag": [
+        "#C1272D",
+        "#006233"
+      ],
+      "t1_iso": "gb-sct",
+      "t2_iso": "ma",
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m016",
+      "ts": 1781915400000,
+      "kickoff_utc": "2026-06-20T00:30:00.000Z",
+      "date_il": "20.06",
+      "date_key": "2026-06-20",
+      "dow_he": "יום שבת",
+      "time_il": "03:30",
+      "stage": "group",
+      "group": "C",
+      "t1": "BRA",
+      "t2": "HAI",
+      "t1_he": "ברזיל",
+      "t2_he": "האיטי",
+      "t1_short": "ברזיל",
+      "t2_short": "האיטי",
+      "t1_flag": [
+        "#009C3B",
+        "#FFDF00"
+      ],
+      "t2_flag": [
+        "#00209F",
+        "#D21034"
+      ],
+      "t1_iso": "br",
+      "t2_iso": "ht",
+      "venue": "Philadelphia",
+      "venue_he": "פילדלפיה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m022",
+      "ts": 1781924400000,
+      "kickoff_utc": "2026-06-20T03:00:00.000Z",
+      "date_il": "20.06",
+      "date_key": "2026-06-20",
+      "dow_he": "יום שבת",
+      "time_il": "06:00",
+      "stage": "group",
+      "group": "D",
+      "t1": "TUR",
+      "t2": "PAR",
+      "t1_he": "טורקיה",
+      "t2_he": "פרגוואי",
+      "t1_short": "טורקיה",
+      "t2_short": "פרגוואי",
+      "t1_flag": [
+        "#E30A17",
+        "#b00712"
+      ],
+      "t2_flag": [
+        "#D52B1E",
+        "#0038A8"
+      ],
+      "t1_iso": "tr",
+      "t2_iso": "py",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "venue_he": "סן פרנסיסקו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m033",
+      "ts": 1781974800000,
+      "kickoff_utc": "2026-06-20T17:00:00.000Z",
+      "date_il": "20.06",
+      "date_key": "2026-06-20",
+      "dow_he": "יום שבת",
+      "time_il": "20:00",
+      "stage": "group",
+      "group": "F",
+      "t1": "NED",
+      "t2": "SWE",
+      "t1_he": "הולנד",
+      "t2_he": "שבדיה",
+      "t1_short": "הולנד",
+      "t2_short": "שבדיה",
+      "t1_flag": [
+        "#AE1C28",
+        "#21468B"
+      ],
+      "t2_flag": [
+        "#006AA7",
+        "#FECC02"
+      ],
+      "t1_iso": "nl",
+      "t2_iso": "se",
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m027",
+      "ts": 1781985600000,
+      "kickoff_utc": "2026-06-20T20:00:00.000Z",
+      "date_il": "20.06",
+      "date_key": "2026-06-20",
+      "dow_he": "יום שבת",
+      "time_il": "23:00",
+      "stage": "group",
+      "group": "E",
+      "t1": "GER",
+      "t2": "CIV",
+      "t1_he": "גרמניה",
+      "t2_he": "חוף השנהב",
+      "t1_short": "גרמניה",
+      "t2_short": "חוף השנהב",
+      "t1_flag": [
+        "#DD0000",
+        "#FFCE00"
+      ],
+      "t2_flag": [
+        "#FF8200",
+        "#009E60"
+      ],
+      "t1_iso": "de",
+      "t2_iso": "ci",
+      "venue": "Toronto",
+      "venue_he": "טורונטו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m028",
+      "ts": 1782000000000,
+      "kickoff_utc": "2026-06-21T00:00:00.000Z",
+      "date_il": "21.06",
+      "date_key": "2026-06-21",
+      "dow_he": "יום ראשון",
+      "time_il": "03:00",
+      "stage": "group",
+      "group": "E",
+      "t1": "ECU",
+      "t2": "CUW",
+      "t1_he": "אקוודור",
+      "t2_he": "קורסאו",
+      "t1_short": "אקוודור",
+      "t2_short": "קורסאו",
+      "t1_flag": [
+        "#FFD100",
+        "#034EA2"
+      ],
+      "t2_flag": [
+        "#002B7F",
+        "#F9E814"
+      ],
+      "t1_iso": "ec",
+      "t2_iso": "cw",
+      "venue": "Kansas City",
+      "venue_he": "קנזס סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m034",
+      "ts": 1782014400000,
+      "kickoff_utc": "2026-06-21T04:00:00.000Z",
+      "date_il": "21.06",
+      "date_key": "2026-06-21",
+      "dow_he": "יום ראשון",
+      "time_il": "07:00",
+      "stage": "group",
+      "group": "F",
+      "t1": "TUN",
+      "t2": "JPN",
+      "t1_he": "תוניסיה",
+      "t2_he": "יפן",
+      "t1_short": "תוניסיה",
+      "t2_short": "יפן",
+      "t1_flag": [
+        "#E70013",
+        "#b3000f"
+      ],
+      "t2_flag": [
+        "#BC002D",
+        "#8a0021"
+      ],
+      "t1_iso": "tn",
+      "t2_iso": "jp",
+      "venue": "Monterrey (Guadalupe)",
+      "venue_he": "מונטריי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m045",
+      "ts": 1782057600000,
+      "kickoff_utc": "2026-06-21T16:00:00.000Z",
+      "date_il": "21.06",
+      "date_key": "2026-06-21",
+      "dow_he": "יום ראשון",
+      "time_il": "19:00",
+      "stage": "group",
+      "group": "H",
+      "t1": "ESP",
+      "t2": "KSA",
+      "t1_he": "ספרד",
+      "t2_he": "ערב הסעודית",
+      "t1_short": "ספרד",
+      "t2_short": "סעודיה",
+      "t1_flag": [
+        "#AA151B",
+        "#F1BF00"
+      ],
+      "t2_flag": [
+        "#165B33",
+        "#0d3d22"
+      ],
+      "t1_iso": "es",
+      "t2_iso": "sa",
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m039",
+      "ts": 1782068400000,
+      "kickoff_utc": "2026-06-21T19:00:00.000Z",
+      "date_il": "21.06",
+      "date_key": "2026-06-21",
+      "dow_he": "יום ראשון",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "G",
+      "t1": "BEL",
+      "t2": "IRN",
+      "t1_he": "בלגיה",
+      "t2_he": "איראן",
+      "t1_short": "בלגיה",
+      "t2_short": "איראן",
+      "t1_flag": [
+        "#FDDA24",
+        "#EF3340"
+      ],
+      "t2_flag": [
+        "#239F40",
+        "#DA0000"
+      ],
+      "t1_iso": "be",
+      "t2_iso": "ir",
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m046",
+      "ts": 1782079200000,
+      "kickoff_utc": "2026-06-21T22:00:00.000Z",
+      "date_il": "22.06",
+      "date_key": "2026-06-22",
+      "dow_he": "יום שני",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "H",
+      "t1": "URU",
+      "t2": "CPV",
+      "t1_he": "אורוגוואי",
+      "t2_he": "כף ורדה",
+      "t1_short": "אורוגוואי",
+      "t2_short": "כף ורדה",
+      "t1_flag": [
+        "#5B92E5",
+        "#FCD116"
+      ],
+      "t2_flag": [
+        "#003893",
+        "#CF2027"
+      ],
+      "t1_iso": "uy",
+      "t2_iso": "cv",
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m040",
+      "ts": 1782090000000,
+      "kickoff_utc": "2026-06-22T01:00:00.000Z",
+      "date_il": "22.06",
+      "date_key": "2026-06-22",
+      "dow_he": "יום שני",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "G",
+      "t1": "NZL",
+      "t2": "EGY",
+      "t1_he": "ניו זילנד",
+      "t2_he": "מצרים",
+      "t1_short": "ניו זילנד",
+      "t2_short": "מצרים",
+      "t1_flag": [
+        "#00247D",
+        "#CC142B"
+      ],
+      "t2_flag": [
+        "#CE1126",
+        "#1a1a1a"
+      ],
+      "t1_iso": "nz",
+      "t2_iso": "eg",
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m057",
+      "ts": 1782147600000,
+      "kickoff_utc": "2026-06-22T17:00:00.000Z",
+      "date_il": "22.06",
+      "date_key": "2026-06-22",
+      "dow_he": "יום שני",
+      "time_il": "20:00",
+      "stage": "group",
+      "group": "J",
+      "t1": "ARG",
+      "t2": "AUT",
+      "t1_he": "ארגנטינה",
+      "t2_he": "אוסטריה",
+      "t1_short": "ארגנטינה",
+      "t2_short": "אוסטריה",
+      "t1_flag": [
+        "#74ACDF",
+        "#F6B40E"
+      ],
+      "t2_flag": [
+        "#ED2939",
+        "#a31523"
+      ],
+      "t1_iso": "ar",
+      "t2_iso": "at",
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m051",
+      "ts": 1782162000000,
+      "kickoff_utc": "2026-06-22T21:00:00.000Z",
+      "date_il": "23.06",
+      "date_key": "2026-06-23",
+      "dow_he": "יום שלישי",
+      "time_il": "00:00",
+      "stage": "group",
+      "group": "I",
+      "t1": "FRA",
+      "t2": "IRQ",
+      "t1_he": "צרפת",
+      "t2_he": "עיראק",
+      "t1_short": "צרפת",
+      "t2_short": "עיראק",
+      "t1_flag": [
+        "#0055A4",
+        "#EF4135"
+      ],
+      "t2_flag": [
+        "#CE1126",
+        "#007A3D"
+      ],
+      "t1_iso": "fr",
+      "t2_iso": "iq",
+      "venue": "Philadelphia",
+      "venue_he": "פילדלפיה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m052",
+      "ts": 1782172800000,
+      "kickoff_utc": "2026-06-23T00:00:00.000Z",
+      "date_il": "23.06",
+      "date_key": "2026-06-23",
+      "dow_he": "יום שלישי",
+      "time_il": "03:00",
+      "stage": "group",
+      "group": "I",
+      "t1": "NOR",
+      "t2": "SEN",
+      "t1_he": "נורווגיה",
+      "t2_he": "סנגל",
+      "t1_short": "נורווגיה",
+      "t2_short": "סנגל",
+      "t1_flag": [
+        "#BA0C2F",
+        "#00205B"
+      ],
+      "t2_flag": [
+        "#00853F",
+        "#FDEF42"
+      ],
+      "t1_iso": "no",
+      "t2_iso": "sn",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m058",
+      "ts": 1782183600000,
+      "kickoff_utc": "2026-06-23T03:00:00.000Z",
+      "date_il": "23.06",
+      "date_key": "2026-06-23",
+      "dow_he": "יום שלישי",
+      "time_il": "06:00",
+      "stage": "group",
+      "group": "J",
+      "t1": "JOR",
+      "t2": "ALG",
+      "t1_he": "ירדן",
+      "t2_he": "אלג׳יריה",
+      "t1_short": "ירדן",
+      "t2_short": "אלג׳יריה",
+      "t1_flag": [
+        "#007A3D",
+        "#CE1126"
+      ],
+      "t2_flag": [
+        "#006233",
+        "#D21034"
+      ],
+      "t1_iso": "jo",
+      "t2_iso": "dz",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "venue_he": "סן פרנסיסקו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m063",
+      "ts": 1782234000000,
+      "kickoff_utc": "2026-06-23T17:00:00.000Z",
+      "date_il": "23.06",
+      "date_key": "2026-06-23",
+      "dow_he": "יום שלישי",
+      "time_il": "20:00",
+      "stage": "group",
+      "group": "K",
+      "t1": "POR",
+      "t2": "UZB",
+      "t1_he": "פורטוגל",
+      "t2_he": "אוזבקיסטן",
+      "t1_short": "פורטוגל",
+      "t2_short": "אוזבקיסטן",
+      "t1_flag": [
+        "#046A38",
+        "#DA291C"
+      ],
+      "t2_flag": [
+        "#0099B5",
+        "#1EB53A"
+      ],
+      "t1_iso": "pt",
+      "t2_iso": "uz",
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m069",
+      "ts": 1782244800000,
+      "kickoff_utc": "2026-06-23T20:00:00.000Z",
+      "date_il": "23.06",
+      "date_key": "2026-06-23",
+      "dow_he": "יום שלישי",
+      "time_il": "23:00",
+      "stage": "group",
+      "group": "L",
+      "t1": "ENG",
+      "t2": "GHA",
+      "t1_he": "אנגליה",
+      "t2_he": "גאנה",
+      "t1_short": "אנגליה",
+      "t2_short": "גאנה",
+      "t1_flag": [
+        "#C8102E",
+        "#8d0b20"
+      ],
+      "t2_flag": [
+        "#CE1126",
+        "#FCD116"
+      ],
+      "t1_iso": "gb-eng",
+      "t2_iso": "gh",
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m070",
+      "ts": 1782255600000,
+      "kickoff_utc": "2026-06-23T23:00:00.000Z",
+      "date_il": "24.06",
+      "date_key": "2026-06-24",
+      "dow_he": "יום רביעי",
+      "time_il": "02:00",
+      "stage": "group",
+      "group": "L",
+      "t1": "PAN",
+      "t2": "CRO",
+      "t1_he": "פנמה",
+      "t2_he": "קרואטיה",
+      "t1_short": "פנמה",
+      "t2_short": "קרואטיה",
+      "t1_flag": [
+        "#005293",
+        "#DA121A"
+      ],
+      "t2_flag": [
+        "#C8102E",
+        "#171796"
+      ],
+      "t1_iso": "pa",
+      "t2_iso": "hr",
+      "venue": "Toronto",
+      "venue_he": "טורונטו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m064",
+      "ts": 1782266400000,
+      "kickoff_utc": "2026-06-24T02:00:00.000Z",
+      "date_il": "24.06",
+      "date_key": "2026-06-24",
+      "dow_he": "יום רביעי",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "K",
+      "t1": "COL",
+      "t2": "COD",
+      "t1_he": "קולומביה",
+      "t2_he": "קונגו",
+      "t1_short": "קולומביה",
+      "t2_short": "קונגו",
+      "t1_flag": [
+        "#FCD116",
+        "#003893"
+      ],
+      "t2_flag": [
+        "#007FFF",
+        "#F7D618"
+      ],
+      "t1_iso": "co",
+      "t2_iso": "cd",
+      "venue": "Guadalajara (Zapopan)",
+      "venue_he": "גוודלחרה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m011",
+      "ts": 1782327600000,
+      "kickoff_utc": "2026-06-24T19:00:00.000Z",
+      "date_il": "24.06",
+      "date_key": "2026-06-24",
+      "dow_he": "יום רביעי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "B",
+      "t1": "SUI",
+      "t2": "CAN",
+      "t1_he": "שווייץ",
+      "t2_he": "קנדה",
+      "t1_short": "שווייץ",
+      "t2_short": "קנדה",
+      "t1_flag": [
+        "#D52B1E",
+        "#b71c12"
+      ],
+      "t2_flag": [
+        "#D80621",
+        "#a00318"
+      ],
+      "t1_iso": "ch",
+      "t2_iso": "ca",
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m012",
+      "ts": 1782327600000,
+      "kickoff_utc": "2026-06-24T19:00:00.000Z",
+      "date_il": "24.06",
+      "date_key": "2026-06-24",
+      "dow_he": "יום רביעי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "B",
+      "t1": "BIH",
+      "t2": "QAT",
+      "t1_he": "בוסניה והרצגובינה",
+      "t2_he": "קטאר",
+      "t1_short": "בוסניה",
+      "t2_short": "קטאר",
+      "t1_flag": [
+        "#002395",
+        "#FECB00"
+      ],
+      "t2_flag": [
+        "#8A1538",
+        "#6e102c"
+      ],
+      "t1_iso": "ba",
+      "t2_iso": "qa",
+      "venue": "Seattle",
+      "venue_he": "סיאטל",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m017",
+      "ts": 1782338400000,
+      "kickoff_utc": "2026-06-24T22:00:00.000Z",
+      "date_il": "25.06",
+      "date_key": "2026-06-25",
+      "dow_he": "יום חמישי",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "C",
+      "t1": "SCO",
+      "t2": "BRA",
+      "t1_he": "סקוטלנד",
+      "t2_he": "ברזיל",
+      "t1_short": "סקוטלנד",
+      "t2_short": "ברזיל",
+      "t1_flag": [
+        "#005EB8",
+        "#003a73"
+      ],
+      "t2_flag": [
+        "#009C3B",
+        "#FFDF00"
+      ],
+      "t1_iso": "gb-sct",
+      "t2_iso": "br",
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m018",
+      "ts": 1782338400000,
+      "kickoff_utc": "2026-06-24T22:00:00.000Z",
+      "date_il": "25.06",
+      "date_key": "2026-06-25",
+      "dow_he": "יום חמישי",
+      "time_il": "01:00",
+      "stage": "group",
+      "group": "C",
+      "t1": "MAR",
+      "t2": "HAI",
+      "t1_he": "מרוקו",
+      "t2_he": "האיטי",
+      "t1_short": "מרוקו",
+      "t2_short": "האיטי",
+      "t1_flag": [
+        "#C1272D",
+        "#006233"
+      ],
+      "t2_flag": [
+        "#00209F",
+        "#D21034"
+      ],
+      "t1_iso": "ma",
+      "t2_iso": "ht",
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m005",
+      "ts": 1782349200000,
+      "kickoff_utc": "2026-06-25T01:00:00.000Z",
+      "date_il": "25.06",
+      "date_key": "2026-06-25",
+      "dow_he": "יום חמישי",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "A",
+      "t1": "CZE",
+      "t2": "MEX",
+      "t1_he": "צ׳כיה",
+      "t2_he": "מקסיקו",
+      "t1_short": "צ׳כיה",
+      "t2_short": "מקסיקו",
+      "t1_flag": [
+        "#D7141A",
+        "#11457E"
+      ],
+      "t2_flag": [
+        "#006847",
+        "#CE1126"
+      ],
+      "t1_iso": "cz",
+      "t2_iso": "mx",
+      "venue": "Mexico City",
+      "venue_he": "מקסיקו סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m006",
+      "ts": 1782349200000,
+      "kickoff_utc": "2026-06-25T01:00:00.000Z",
+      "date_il": "25.06",
+      "date_key": "2026-06-25",
+      "dow_he": "יום חמישי",
+      "time_il": "04:00",
+      "stage": "group",
+      "group": "A",
+      "t1": "RSA",
+      "t2": "KOR",
+      "t1_he": "דרום אפריקה",
+      "t2_he": "דרום קוריאה",
+      "t1_short": "דרום אפריקה",
+      "t2_short": "דרום קוריאה",
+      "t1_flag": [
+        "#007749",
+        "#E03C31"
+      ],
+      "t2_flag": [
+        "#CD2E3A",
+        "#0047A0"
+      ],
+      "t1_iso": "za",
+      "t2_iso": "kr",
+      "venue": "Monterrey (Guadalupe)",
+      "venue_he": "מונטריי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m029",
+      "ts": 1782417600000,
+      "kickoff_utc": "2026-06-25T20:00:00.000Z",
+      "date_il": "25.06",
+      "date_key": "2026-06-25",
+      "dow_he": "יום חמישי",
+      "time_il": "23:00",
+      "stage": "group",
+      "group": "E",
+      "t1": "CUW",
+      "t2": "CIV",
+      "t1_he": "קורסאו",
+      "t2_he": "חוף השנהב",
+      "t1_short": "קורסאו",
+      "t2_short": "חוף השנהב",
+      "t1_flag": [
+        "#002B7F",
+        "#F9E814"
+      ],
+      "t2_flag": [
+        "#FF8200",
+        "#009E60"
+      ],
+      "t1_iso": "cw",
+      "t2_iso": "ci",
+      "venue": "Philadelphia",
+      "venue_he": "פילדלפיה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m030",
+      "ts": 1782417600000,
+      "kickoff_utc": "2026-06-25T20:00:00.000Z",
+      "date_il": "25.06",
+      "date_key": "2026-06-25",
+      "dow_he": "יום חמישי",
+      "time_il": "23:00",
+      "stage": "group",
+      "group": "E",
+      "t1": "ECU",
+      "t2": "GER",
+      "t1_he": "אקוודור",
+      "t2_he": "גרמניה",
+      "t1_short": "אקוודור",
+      "t2_short": "גרמניה",
+      "t1_flag": [
+        "#FFD100",
+        "#034EA2"
+      ],
+      "t2_flag": [
+        "#DD0000",
+        "#FFCE00"
+      ],
+      "t1_iso": "ec",
+      "t2_iso": "de",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m035",
+      "ts": 1782428400000,
+      "kickoff_utc": "2026-06-25T23:00:00.000Z",
+      "date_il": "26.06",
+      "date_key": "2026-06-26",
+      "dow_he": "יום שישי",
+      "time_il": "02:00",
+      "stage": "group",
+      "group": "F",
+      "t1": "JPN",
+      "t2": "SWE",
+      "t1_he": "יפן",
+      "t2_he": "שבדיה",
+      "t1_short": "יפן",
+      "t2_short": "שבדיה",
+      "t1_flag": [
+        "#BC002D",
+        "#8a0021"
+      ],
+      "t2_flag": [
+        "#006AA7",
+        "#FECC02"
+      ],
+      "t1_iso": "jp",
+      "t2_iso": "se",
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m036",
+      "ts": 1782428400000,
+      "kickoff_utc": "2026-06-25T23:00:00.000Z",
+      "date_il": "26.06",
+      "date_key": "2026-06-26",
+      "dow_he": "יום שישי",
+      "time_il": "02:00",
+      "stage": "group",
+      "group": "F",
+      "t1": "TUN",
+      "t2": "NED",
+      "t1_he": "תוניסיה",
+      "t2_he": "הולנד",
+      "t1_short": "תוניסיה",
+      "t2_short": "הולנד",
+      "t1_flag": [
+        "#E70013",
+        "#b3000f"
+      ],
+      "t2_flag": [
+        "#AE1C28",
+        "#21468B"
+      ],
+      "t1_iso": "tn",
+      "t2_iso": "nl",
+      "venue": "Kansas City",
+      "venue_he": "קנזס סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m023",
+      "ts": 1782439200000,
+      "kickoff_utc": "2026-06-26T02:00:00.000Z",
+      "date_il": "26.06",
+      "date_key": "2026-06-26",
+      "dow_he": "יום שישי",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "D",
+      "t1": "TUR",
+      "t2": "USA",
+      "t1_he": "טורקיה",
+      "t2_he": "ארצות הברית",
+      "t1_short": "טורקיה",
+      "t2_short": "ארה״ב",
+      "t1_flag": [
+        "#E30A17",
+        "#b00712"
+      ],
+      "t2_flag": [
+        "#B22234",
+        "#3C3B6E"
+      ],
+      "t1_iso": "tr",
+      "t2_iso": "us",
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m024",
+      "ts": 1782439200000,
+      "kickoff_utc": "2026-06-26T02:00:00.000Z",
+      "date_il": "26.06",
+      "date_key": "2026-06-26",
+      "dow_he": "יום שישי",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "D",
+      "t1": "PAR",
+      "t2": "AUS",
+      "t1_he": "פרגוואי",
+      "t2_he": "אוסטרליה",
+      "t1_short": "פרגוואי",
+      "t2_short": "אוסטרליה",
+      "t1_flag": [
+        "#D52B1E",
+        "#0038A8"
+      ],
+      "t2_flag": [
+        "#012169",
+        "#E4002B"
+      ],
+      "t1_iso": "py",
+      "t2_iso": "au",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "venue_he": "סן פרנסיסקו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m053",
+      "ts": 1782500400000,
+      "kickoff_utc": "2026-06-26T19:00:00.000Z",
+      "date_il": "26.06",
+      "date_key": "2026-06-26",
+      "dow_he": "יום שישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "I",
+      "t1": "NOR",
+      "t2": "FRA",
+      "t1_he": "נורווגיה",
+      "t2_he": "צרפת",
+      "t1_short": "נורווגיה",
+      "t2_short": "צרפת",
+      "t1_flag": [
+        "#BA0C2F",
+        "#00205B"
+      ],
+      "t2_flag": [
+        "#0055A4",
+        "#EF4135"
+      ],
+      "t1_iso": "no",
+      "t2_iso": "fr",
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m054",
+      "ts": 1782500400000,
+      "kickoff_utc": "2026-06-26T19:00:00.000Z",
+      "date_il": "26.06",
+      "date_key": "2026-06-26",
+      "dow_he": "יום שישי",
+      "time_il": "22:00",
+      "stage": "group",
+      "group": "I",
+      "t1": "SEN",
+      "t2": "IRQ",
+      "t1_he": "סנגל",
+      "t2_he": "עיראק",
+      "t1_short": "סנגל",
+      "t2_short": "עיראק",
+      "t1_flag": [
+        "#00853F",
+        "#FDEF42"
+      ],
+      "t2_flag": [
+        "#CE1126",
+        "#007A3D"
+      ],
+      "t1_iso": "sn",
+      "t2_iso": "iq",
+      "venue": "Toronto",
+      "venue_he": "טורונטו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m047",
+      "ts": 1782518400000,
+      "kickoff_utc": "2026-06-27T00:00:00.000Z",
+      "date_il": "27.06",
+      "date_key": "2026-06-27",
+      "dow_he": "יום שבת",
+      "time_il": "03:00",
+      "stage": "group",
+      "group": "H",
+      "t1": "CPV",
+      "t2": "KSA",
+      "t1_he": "כף ורדה",
+      "t2_he": "ערב הסעודית",
+      "t1_short": "כף ורדה",
+      "t2_short": "סעודיה",
+      "t1_flag": [
+        "#003893",
+        "#CF2027"
+      ],
+      "t2_flag": [
+        "#165B33",
+        "#0d3d22"
+      ],
+      "t1_iso": "cv",
+      "t2_iso": "sa",
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m048",
+      "ts": 1782518400000,
+      "kickoff_utc": "2026-06-27T00:00:00.000Z",
+      "date_il": "27.06",
+      "date_key": "2026-06-27",
+      "dow_he": "יום שבת",
+      "time_il": "03:00",
+      "stage": "group",
+      "group": "H",
+      "t1": "URU",
+      "t2": "ESP",
+      "t1_he": "אורוגוואי",
+      "t2_he": "ספרד",
+      "t1_short": "אורוגוואי",
+      "t2_short": "ספרד",
+      "t1_flag": [
+        "#5B92E5",
+        "#FCD116"
+      ],
+      "t2_flag": [
+        "#AA151B",
+        "#F1BF00"
+      ],
+      "t1_iso": "uy",
+      "t2_iso": "es",
+      "venue": "Guadalajara (Zapopan)",
+      "venue_he": "גוודלחרה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m041",
+      "ts": 1782529200000,
+      "kickoff_utc": "2026-06-27T03:00:00.000Z",
+      "date_il": "27.06",
+      "date_key": "2026-06-27",
+      "dow_he": "יום שבת",
+      "time_il": "06:00",
+      "stage": "group",
+      "group": "G",
+      "t1": "EGY",
+      "t2": "IRN",
+      "t1_he": "מצרים",
+      "t2_he": "איראן",
+      "t1_short": "מצרים",
+      "t2_short": "איראן",
+      "t1_flag": [
+        "#CE1126",
+        "#1a1a1a"
+      ],
+      "t2_flag": [
+        "#239F40",
+        "#DA0000"
+      ],
+      "t1_iso": "eg",
+      "t2_iso": "ir",
+      "venue": "Seattle",
+      "venue_he": "סיאטל",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m042",
+      "ts": 1782529200000,
+      "kickoff_utc": "2026-06-27T03:00:00.000Z",
+      "date_il": "27.06",
+      "date_key": "2026-06-27",
+      "dow_he": "יום שבת",
+      "time_il": "06:00",
+      "stage": "group",
+      "group": "G",
+      "t1": "NZL",
+      "t2": "BEL",
+      "t1_he": "ניו זילנד",
+      "t2_he": "בלגיה",
+      "t1_short": "ניו זילנד",
+      "t2_short": "בלגיה",
+      "t1_flag": [
+        "#00247D",
+        "#CC142B"
+      ],
+      "t2_flag": [
+        "#FDDA24",
+        "#EF3340"
+      ],
+      "t1_iso": "nz",
+      "t2_iso": "be",
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m071",
+      "ts": 1782594000000,
+      "kickoff_utc": "2026-06-27T21:00:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "00:00",
+      "stage": "group",
+      "group": "L",
+      "t1": "PAN",
+      "t2": "ENG",
+      "t1_he": "פנמה",
+      "t2_he": "אנגליה",
+      "t1_short": "פנמה",
+      "t2_short": "אנגליה",
+      "t1_flag": [
+        "#005293",
+        "#DA121A"
+      ],
+      "t2_flag": [
+        "#C8102E",
+        "#8d0b20"
+      ],
+      "t1_iso": "pa",
+      "t2_iso": "gb-eng",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m072",
+      "ts": 1782594000000,
+      "kickoff_utc": "2026-06-27T21:00:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "00:00",
+      "stage": "group",
+      "group": "L",
+      "t1": "CRO",
+      "t2": "GHA",
+      "t1_he": "קרואטיה",
+      "t2_he": "גאנה",
+      "t1_short": "קרואטיה",
+      "t2_short": "גאנה",
+      "t1_flag": [
+        "#C8102E",
+        "#171796"
+      ],
+      "t2_flag": [
+        "#CE1126",
+        "#FCD116"
+      ],
+      "t1_iso": "hr",
+      "t2_iso": "gh",
+      "venue": "Philadelphia",
+      "venue_he": "פילדלפיה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m065",
+      "ts": 1782603000000,
+      "kickoff_utc": "2026-06-27T23:30:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "02:30",
+      "stage": "group",
+      "group": "K",
+      "t1": "COL",
+      "t2": "POR",
+      "t1_he": "קולומביה",
+      "t2_he": "פורטוגל",
+      "t1_short": "קולומביה",
+      "t2_short": "פורטוגל",
+      "t1_flag": [
+        "#FCD116",
+        "#003893"
+      ],
+      "t2_flag": [
+        "#046A38",
+        "#DA291C"
+      ],
+      "t1_iso": "co",
+      "t2_iso": "pt",
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m066",
+      "ts": 1782603000000,
+      "kickoff_utc": "2026-06-27T23:30:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "02:30",
+      "stage": "group",
+      "group": "K",
+      "t1": "COD",
+      "t2": "UZB",
+      "t1_he": "קונגו",
+      "t2_he": "אוזבקיסטן",
+      "t1_short": "קונגו",
+      "t2_short": "אוזבקיסטן",
+      "t1_flag": [
+        "#007FFF",
+        "#F7D618"
+      ],
+      "t2_flag": [
+        "#0099B5",
+        "#1EB53A"
+      ],
+      "t1_iso": "cd",
+      "t2_iso": "uz",
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m059",
+      "ts": 1782612000000,
+      "kickoff_utc": "2026-06-28T02:00:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "J",
+      "t1": "ALG",
+      "t2": "AUT",
+      "t1_he": "אלג׳יריה",
+      "t2_he": "אוסטריה",
+      "t1_short": "אלג׳יריה",
+      "t2_short": "אוסטריה",
+      "t1_flag": [
+        "#006233",
+        "#D21034"
+      ],
+      "t2_flag": [
+        "#ED2939",
+        "#a31523"
+      ],
+      "t1_iso": "dz",
+      "t2_iso": "at",
+      "venue": "Kansas City",
+      "venue_he": "קנזס סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m060",
+      "ts": 1782612000000,
+      "kickoff_utc": "2026-06-28T02:00:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "05:00",
+      "stage": "group",
+      "group": "J",
+      "t1": "JOR",
+      "t2": "ARG",
+      "t1_he": "ירדן",
+      "t2_he": "ארגנטינה",
+      "t1_short": "ירדן",
+      "t2_short": "ארגנטינה",
+      "t1_flag": [
+        "#007A3D",
+        "#CE1126"
+      ],
+      "t2_flag": [
+        "#74ACDF",
+        "#F6B40E"
+      ],
+      "t1_iso": "jo",
+      "t2_iso": "ar",
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m073",
+      "ts": 1782673200000,
+      "kickoff_utc": "2026-06-28T19:00:00.000Z",
+      "date_il": "28.06",
+      "date_key": "2026-06-28",
+      "dow_he": "יום ראשון",
+      "time_il": "22:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "2A",
+      "t2": "2B",
+      "t1_he": "מקום 2 בית A",
+      "t2_he": "מקום 2 בית B",
+      "t1_short": "מקום 2 בית A",
+      "t2_short": "מקום 2 בית B",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m076",
+      "ts": 1782752400000,
+      "kickoff_utc": "2026-06-29T17:00:00.000Z",
+      "date_il": "29.06",
+      "date_key": "2026-06-29",
+      "dow_he": "יום שני",
+      "time_il": "20:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1C",
+      "t2": "2F",
+      "t1_he": "מנצחת בית C",
+      "t2_he": "מקום 2 בית F",
+      "t1_short": "מנצחת בית C",
+      "t2_short": "מקום 2 בית F",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m074",
+      "ts": 1782765000000,
+      "kickoff_utc": "2026-06-29T20:30:00.000Z",
+      "date_il": "29.06",
+      "date_key": "2026-06-29",
+      "dow_he": "יום שני",
+      "time_il": "23:30",
+      "stage": "r32",
+      "group": null,
+      "t1": "1E",
+      "t2": "3A/B/C/D/F",
+      "t1_he": "מנצחת בית E",
+      "t2_he": "מקום 3 (A/B/C/D/F)",
+      "t1_short": "מנצחת בית E",
+      "t2_short": "מקום 3 (A/B/C/D/F)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m075",
+      "ts": 1782781200000,
+      "kickoff_utc": "2026-06-30T01:00:00.000Z",
+      "date_il": "30.06",
+      "date_key": "2026-06-30",
+      "dow_he": "יום שלישי",
+      "time_il": "04:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1F",
+      "t2": "2C",
+      "t1_he": "מנצחת בית F",
+      "t2_he": "מקום 2 בית C",
+      "t1_short": "מנצחת בית F",
+      "t2_short": "מקום 2 בית C",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Monterrey (Guadalupe)",
+      "venue_he": "מונטריי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m078",
+      "ts": 1782838800000,
+      "kickoff_utc": "2026-06-30T17:00:00.000Z",
+      "date_il": "30.06",
+      "date_key": "2026-06-30",
+      "dow_he": "יום שלישי",
+      "time_il": "20:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "2E",
+      "t2": "2I",
+      "t1_he": "מקום 2 בית E",
+      "t2_he": "מקום 2 בית I",
+      "t1_short": "מקום 2 בית E",
+      "t2_short": "מקום 2 בית I",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m077",
+      "ts": 1782853200000,
+      "kickoff_utc": "2026-06-30T21:00:00.000Z",
+      "date_il": "01.07",
+      "date_key": "2026-07-01",
+      "dow_he": "יום רביעי",
+      "time_il": "00:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1I",
+      "t2": "3C/D/F/G/H",
+      "t1_he": "מנצחת בית I",
+      "t2_he": "מקום 3 (C/D/F/G/H)",
+      "t1_short": "מנצחת בית I",
+      "t2_short": "מקום 3 (C/D/F/G/H)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m079",
+      "ts": 1782867600000,
+      "kickoff_utc": "2026-07-01T01:00:00.000Z",
+      "date_il": "01.07",
+      "date_key": "2026-07-01",
+      "dow_he": "יום רביעי",
+      "time_il": "04:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1A",
+      "t2": "3C/E/F/H/I",
+      "t1_he": "מנצחת בית A",
+      "t2_he": "מקום 3 (C/E/F/H/I)",
+      "t1_short": "מנצחת בית A",
+      "t2_short": "מקום 3 (C/E/F/H/I)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Mexico City",
+      "venue_he": "מקסיקו סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m080",
+      "ts": 1782921600000,
+      "kickoff_utc": "2026-07-01T16:00:00.000Z",
+      "date_il": "01.07",
+      "date_key": "2026-07-01",
+      "dow_he": "יום רביעי",
+      "time_il": "19:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1L",
+      "t2": "3E/H/I/J/K",
+      "t1_he": "מנצחת בית L",
+      "t2_he": "מקום 3 (E/H/I/J/K)",
+      "t1_short": "מנצחת בית L",
+      "t2_short": "מקום 3 (E/H/I/J/K)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m082",
+      "ts": 1782936000000,
+      "kickoff_utc": "2026-07-01T20:00:00.000Z",
+      "date_il": "01.07",
+      "date_key": "2026-07-01",
+      "dow_he": "יום רביעי",
+      "time_il": "23:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1G",
+      "t2": "3A/E/H/I/J",
+      "t1_he": "מנצחת בית G",
+      "t2_he": "מקום 3 (A/E/H/I/J)",
+      "t1_short": "מנצחת בית G",
+      "t2_short": "מקום 3 (A/E/H/I/J)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Seattle",
+      "venue_he": "סיאטל",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m081",
+      "ts": 1782950400000,
+      "kickoff_utc": "2026-07-02T00:00:00.000Z",
+      "date_il": "02.07",
+      "date_key": "2026-07-02",
+      "dow_he": "יום חמישי",
+      "time_il": "03:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1D",
+      "t2": "3B/E/F/I/J",
+      "t1_he": "מנצחת בית D",
+      "t2_he": "מקום 3 (B/E/F/I/J)",
+      "t1_short": "מנצחת בית D",
+      "t2_short": "מקום 3 (B/E/F/I/J)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "venue_he": "סן פרנסיסקו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m084",
+      "ts": 1783018800000,
+      "kickoff_utc": "2026-07-02T19:00:00.000Z",
+      "date_il": "02.07",
+      "date_key": "2026-07-02",
+      "dow_he": "יום חמישי",
+      "time_il": "22:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1H",
+      "t2": "2J",
+      "t1_he": "מנצחת בית H",
+      "t2_he": "מקום 2 בית J",
+      "t1_short": "מנצחת בית H",
+      "t2_short": "מקום 2 בית J",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m083",
+      "ts": 1783033200000,
+      "kickoff_utc": "2026-07-02T23:00:00.000Z",
+      "date_il": "03.07",
+      "date_key": "2026-07-03",
+      "dow_he": "יום שישי",
+      "time_il": "02:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "2K",
+      "t2": "2L",
+      "t1_he": "מקום 2 בית K",
+      "t2_he": "מקום 2 בית L",
+      "t1_short": "מקום 2 בית K",
+      "t2_short": "מקום 2 בית L",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Toronto",
+      "venue_he": "טורונטו",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m085",
+      "ts": 1783047600000,
+      "kickoff_utc": "2026-07-03T03:00:00.000Z",
+      "date_il": "03.07",
+      "date_key": "2026-07-03",
+      "dow_he": "יום שישי",
+      "time_il": "06:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1B",
+      "t2": "3E/F/G/I/J",
+      "t1_he": "מנצחת בית B",
+      "t2_he": "מקום 3 (E/F/G/I/J)",
+      "t1_short": "מנצחת בית B",
+      "t2_short": "מקום 3 (E/F/G/I/J)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m088",
+      "ts": 1783101600000,
+      "kickoff_utc": "2026-07-03T18:00:00.000Z",
+      "date_il": "03.07",
+      "date_key": "2026-07-03",
+      "dow_he": "יום שישי",
+      "time_il": "21:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "2D",
+      "t2": "2G",
+      "t1_he": "מקום 2 בית D",
+      "t2_he": "מקום 2 בית G",
+      "t1_short": "מקום 2 בית D",
+      "t2_short": "מקום 2 בית G",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m086",
+      "ts": 1783116000000,
+      "kickoff_utc": "2026-07-03T22:00:00.000Z",
+      "date_il": "04.07",
+      "date_key": "2026-07-04",
+      "dow_he": "יום שבת",
+      "time_il": "01:00",
+      "stage": "r32",
+      "group": null,
+      "t1": "1J",
+      "t2": "2H",
+      "t1_he": "מנצחת בית J",
+      "t2_he": "מקום 2 בית H",
+      "t1_short": "מנצחת בית J",
+      "t2_short": "מקום 2 בית H",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m087",
+      "ts": 1783128600000,
+      "kickoff_utc": "2026-07-04T01:30:00.000Z",
+      "date_il": "04.07",
+      "date_key": "2026-07-04",
+      "dow_he": "יום שבת",
+      "time_il": "04:30",
+      "stage": "r32",
+      "group": null,
+      "t1": "1K",
+      "t2": "3D/E/I/J/L",
+      "t1_he": "מנצחת בית K",
+      "t2_he": "מקום 3 (D/E/I/J/L)",
+      "t1_short": "מנצחת בית K",
+      "t2_short": "מקום 3 (D/E/I/J/L)",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Kansas City",
+      "venue_he": "קנזס סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m090",
+      "ts": 1783184400000,
+      "kickoff_utc": "2026-07-04T17:00:00.000Z",
+      "date_il": "04.07",
+      "date_key": "2026-07-04",
+      "dow_he": "יום שבת",
+      "time_il": "20:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W73",
+      "t2": "W75",
+      "t1_he": "מנצחת משחק 73",
+      "t2_he": "מנצחת משחק 75",
+      "t1_short": "מנצחת משחק 73",
+      "t2_short": "מנצחת משחק 75",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Houston",
+      "venue_he": "יוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m089",
+      "ts": 1783198800000,
+      "kickoff_utc": "2026-07-04T21:00:00.000Z",
+      "date_il": "05.07",
+      "date_key": "2026-07-05",
+      "dow_he": "יום ראשון",
+      "time_il": "00:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W74",
+      "t2": "W77",
+      "t1_he": "מנצחת משחק 74",
+      "t2_he": "מנצחת משחק 77",
+      "t1_short": "מנצחת משחק 74",
+      "t2_short": "מנצחת משחק 77",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Philadelphia",
+      "venue_he": "פילדלפיה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m091",
+      "ts": 1783281600000,
+      "kickoff_utc": "2026-07-05T20:00:00.000Z",
+      "date_il": "05.07",
+      "date_key": "2026-07-05",
+      "dow_he": "יום ראשון",
+      "time_il": "23:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W76",
+      "t2": "W78",
+      "t1_he": "מנצחת משחק 76",
+      "t2_he": "מנצחת משחק 78",
+      "t1_short": "מנצחת משחק 76",
+      "t2_short": "מנצחת משחק 78",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m092",
+      "ts": 1783296000000,
+      "kickoff_utc": "2026-07-06T00:00:00.000Z",
+      "date_il": "06.07",
+      "date_key": "2026-07-06",
+      "dow_he": "יום שני",
+      "time_il": "03:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W79",
+      "t2": "W80",
+      "t1_he": "מנצחת משחק 79",
+      "t2_he": "מנצחת משחק 80",
+      "t1_short": "מנצחת משחק 79",
+      "t2_short": "מנצחת משחק 80",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Mexico City",
+      "venue_he": "מקסיקו סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m093",
+      "ts": 1783364400000,
+      "kickoff_utc": "2026-07-06T19:00:00.000Z",
+      "date_il": "06.07",
+      "date_key": "2026-07-06",
+      "dow_he": "יום שני",
+      "time_il": "22:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W83",
+      "t2": "W84",
+      "t1_he": "מנצחת משחק 83",
+      "t2_he": "מנצחת משחק 84",
+      "t1_short": "מנצחת משחק 83",
+      "t2_short": "מנצחת משחק 84",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m094",
+      "ts": 1783382400000,
+      "kickoff_utc": "2026-07-07T00:00:00.000Z",
+      "date_il": "07.07",
+      "date_key": "2026-07-07",
+      "dow_he": "יום שלישי",
+      "time_il": "03:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W81",
+      "t2": "W82",
+      "t1_he": "מנצחת משחק 81",
+      "t2_he": "מנצחת משחק 82",
+      "t1_short": "מנצחת משחק 81",
+      "t2_short": "מנצחת משחק 82",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Seattle",
+      "venue_he": "סיאטל",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m095",
+      "ts": 1783440000000,
+      "kickoff_utc": "2026-07-07T16:00:00.000Z",
+      "date_il": "07.07",
+      "date_key": "2026-07-07",
+      "dow_he": "יום שלישי",
+      "time_il": "19:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W86",
+      "t2": "W88",
+      "t1_he": "מנצחת משחק 86",
+      "t2_he": "מנצחת משחק 88",
+      "t1_short": "מנצחת משחק 86",
+      "t2_short": "מנצחת משחק 88",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m096",
+      "ts": 1783454400000,
+      "kickoff_utc": "2026-07-07T20:00:00.000Z",
+      "date_il": "07.07",
+      "date_key": "2026-07-07",
+      "dow_he": "יום שלישי",
+      "time_il": "23:00",
+      "stage": "r16",
+      "group": null,
+      "t1": "W85",
+      "t2": "W87",
+      "t1_he": "מנצחת משחק 85",
+      "t2_he": "מנצחת משחק 87",
+      "t1_short": "מנצחת משחק 85",
+      "t2_short": "מנצחת משחק 87",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Vancouver",
+      "venue_he": "ונקובר",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m097",
+      "ts": 1783627200000,
+      "kickoff_utc": "2026-07-09T20:00:00.000Z",
+      "date_il": "09.07",
+      "date_key": "2026-07-09",
+      "dow_he": "יום חמישי",
+      "time_il": "23:00",
+      "stage": "qf",
+      "group": null,
+      "t1": "W89",
+      "t2": "W90",
+      "t1_he": "מנצחת משחק 89",
+      "t2_he": "מנצחת משחק 90",
+      "t1_short": "מנצחת משחק 89",
+      "t2_short": "מנצחת משחק 90",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Boston (Foxborough)",
+      "venue_he": "בוסטון",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m098",
+      "ts": 1783710000000,
+      "kickoff_utc": "2026-07-10T19:00:00.000Z",
+      "date_il": "10.07",
+      "date_key": "2026-07-10",
+      "dow_he": "יום שישי",
+      "time_il": "22:00",
+      "stage": "qf",
+      "group": null,
+      "t1": "W93",
+      "t2": "W94",
+      "t1_he": "מנצחת משחק 93",
+      "t2_he": "מנצחת משחק 94",
+      "t1_short": "מנצחת משחק 93",
+      "t2_short": "מנצחת משחק 94",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Los Angeles (Inglewood)",
+      "venue_he": "לוס אנג׳לס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m099",
+      "ts": 1783803600000,
+      "kickoff_utc": "2026-07-11T21:00:00.000Z",
+      "date_il": "12.07",
+      "date_key": "2026-07-12",
+      "dow_he": "יום ראשון",
+      "time_il": "00:00",
+      "stage": "qf",
+      "group": null,
+      "t1": "W91",
+      "t2": "W92",
+      "t1_he": "מנצחת משחק 91",
+      "t2_he": "מנצחת משחק 92",
+      "t1_short": "מנצחת משחק 91",
+      "t2_short": "מנצחת משחק 92",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m100",
+      "ts": 1783818000000,
+      "kickoff_utc": "2026-07-12T01:00:00.000Z",
+      "date_il": "12.07",
+      "date_key": "2026-07-12",
+      "dow_he": "יום ראשון",
+      "time_il": "04:00",
+      "stage": "qf",
+      "group": null,
+      "t1": "W95",
+      "t2": "W96",
+      "t1_he": "מנצחת משחק 95",
+      "t2_he": "מנצחת משחק 96",
+      "t1_short": "מנצחת משחק 95",
+      "t2_short": "מנצחת משחק 96",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Kansas City",
+      "venue_he": "קנזס סיטי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m101",
+      "ts": 1784055600000,
+      "kickoff_utc": "2026-07-14T19:00:00.000Z",
+      "date_il": "14.07",
+      "date_key": "2026-07-14",
+      "dow_he": "יום שלישי",
+      "time_il": "22:00",
+      "stage": "sf",
+      "group": null,
+      "t1": "W97",
+      "t2": "W98",
+      "t1_he": "מנצחת משחק 97",
+      "t2_he": "מנצחת משחק 98",
+      "t1_short": "מנצחת משחק 97",
+      "t2_short": "מנצחת משחק 98",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Dallas (Arlington)",
+      "venue_he": "דאלאס",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m102",
+      "ts": 1784142000000,
+      "kickoff_utc": "2026-07-15T19:00:00.000Z",
+      "date_il": "15.07",
+      "date_key": "2026-07-15",
+      "dow_he": "יום רביעי",
+      "time_il": "22:00",
+      "stage": "sf",
+      "group": null,
+      "t1": "W99",
+      "t2": "W100",
+      "t1_he": "מנצחת משחק 99",
+      "t2_he": "מנצחת משחק 100",
+      "t1_short": "מנצחת משחק 99",
+      "t2_short": "מנצחת משחק 100",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Atlanta",
+      "venue_he": "אטלנטה",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m103",
+      "ts": 1784408400000,
+      "kickoff_utc": "2026-07-18T21:00:00.000Z",
+      "date_il": "19.07",
+      "date_key": "2026-07-19",
+      "dow_he": "יום ראשון",
+      "time_il": "00:00",
+      "stage": "third",
+      "group": null,
+      "t1": "L101",
+      "t2": "L102",
+      "t1_he": "מפסידת משחק 101",
+      "t2_he": "מפסידת משחק 102",
+      "t1_short": "מפסידת משחק 101",
+      "t2_short": "מפסידת משחק 102",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "Miami (Miami Gardens)",
+      "venue_he": "מיאמי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    },
+    {
+      "id": "m104",
+      "ts": 1784487600000,
+      "kickoff_utc": "2026-07-19T19:00:00.000Z",
+      "date_il": "19.07",
+      "date_key": "2026-07-19",
+      "dow_he": "יום ראשון",
+      "time_il": "22:00",
+      "stage": "final",
+      "group": null,
+      "t1": "W101",
+      "t2": "W102",
+      "t1_he": "מנצחת משחק 101",
+      "t2_he": "מנצחת משחק 102",
+      "t1_short": "מנצחת משחק 101",
+      "t2_short": "מנצחת משחק 102",
+      "t1_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t2_flag": [
+        "#8a93a6",
+        "#c2c9d6"
+      ],
+      "t1_iso": null,
+      "t2_iso": null,
+      "venue": "New York/New Jersey (East Rutherford)",
+      "venue_he": "ניו יורק / ניו ג׳רזי",
+      "status": "scheduled",
+      "score": null,
+      "minute": null,
+      "is_today": false,
+      "is_tomorrow": false
+    }
+  ],
+  "groups": {
+    "A": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "MEX",
+          "team": "Mexico",
+          "he": "מקסיקו",
+          "flag": [
+            "#006847",
+            "#CE1126"
+          ],
+          "iso": "mx",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 2,
+          "ga": 0,
+          "pts": 3,
+          "gd": 2,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "KOR",
+          "team": "South Korea",
+          "he": "דרום קוריאה",
+          "flag": [
+            "#CD2E3A",
+            "#0047A0"
+          ],
+          "iso": "kr",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 3,
+          "gd": 1,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
+          "code": "CZE",
+          "team": "Czech Republic",
+          "he": "צ׳כיה",
+          "flag": [
+            "#D7141A",
+            "#11457E"
+          ],
+          "iso": "cz",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 2,
+          "pts": 0,
+          "gd": -1,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "RSA",
+          "team": "South Africa",
+          "he": "דרום אפריקה",
+          "flag": [
+            "#007749",
+            "#E03C31"
+          ],
+          "iso": "za",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 2,
+          "pts": 0,
+          "gd": -2,
+          "pos": 4,
+          "status": "trailing"
+        }
+      ]
+    },
+    "B": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "BIH",
+          "team": "Bosnia & Herzegovina",
+          "he": "בוסניה והרצגובינה",
+          "flag": [
+            "#002395",
+            "#FECB00"
+          ],
+          "iso": "ba",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "CAN",
+          "team": "Canada",
+          "he": "קנדה",
+          "flag": [
+            "#D80621",
+            "#a00318"
+          ],
+          "iso": "ca",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
+          "code": "QAT",
+          "team": "Qatar",
+          "he": "קטאר",
+          "flag": [
+            "#8A1538",
+            "#6e102c"
+          ],
+          "iso": "qa",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "SUI",
+          "team": "Switzerland",
+          "he": "שווייץ",
+          "flag": [
+            "#D52B1E",
+            "#b71c12"
+          ],
+          "iso": "ch",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "trailing"
+        }
+      ]
+    },
+    "C": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "BRA",
+          "team": "Brazil",
+          "he": "ברזיל",
+          "flag": [
+            "#009C3B",
+            "#FFDF00"
+          ],
+          "iso": "br",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "HAI",
+          "team": "Haiti",
+          "he": "האיטי",
+          "flag": [
+            "#00209F",
+            "#D21034"
+          ],
+          "iso": "ht",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "MAR",
+          "team": "Morocco",
+          "he": "מרוקו",
+          "flag": [
+            "#C1272D",
+            "#006233"
+          ],
+          "iso": "ma",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "SCO",
+          "team": "Scotland",
+          "he": "סקוטלנד",
+          "flag": [
+            "#005EB8",
+            "#003a73"
+          ],
+          "iso": "gb-sct",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "D": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "USA",
+          "team": "USA",
+          "he": "ארצות הברית",
+          "flag": [
+            "#B22234",
+            "#3C3B6E"
+          ],
+          "iso": "us",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 3,
+          "gd": 3,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "AUS",
+          "team": "Australia",
+          "he": "אוסטרליה",
+          "flag": [
+            "#012169",
+            "#E4002B"
+          ],
+          "iso": "au",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
+          "code": "TUR",
+          "team": "Turkey",
+          "he": "טורקיה",
+          "flag": [
+            "#E30A17",
+            "#b00712"
+          ],
+          "iso": "tr",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "PAR",
+          "team": "Paraguay",
+          "he": "פרגוואי",
+          "flag": [
+            "#D52B1E",
+            "#0038A8"
+          ],
+          "iso": "py",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 4,
+          "pts": 0,
+          "gd": -3,
+          "pos": 4,
+          "status": "trailing"
+        }
+      ]
+    },
+    "E": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "ECU",
+          "team": "Ecuador",
+          "he": "אקוודור",
+          "flag": [
+            "#FFD100",
+            "#034EA2"
+          ],
+          "iso": "ec",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "GER",
+          "team": "Germany",
+          "he": "גרמניה",
+          "flag": [
+            "#DD0000",
+            "#FFCE00"
+          ],
+          "iso": "de",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "CIV",
+          "team": "Ivory Coast",
+          "he": "חוף השנהב",
+          "flag": [
+            "#FF8200",
+            "#009E60"
+          ],
+          "iso": "ci",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "CUW",
+          "team": "Curaçao",
+          "he": "קורסאו",
+          "flag": [
+            "#002B7F",
+            "#F9E814"
+          ],
+          "iso": "cw",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "F": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "NED",
+          "team": "Netherlands",
+          "he": "הולנד",
+          "flag": [
+            "#AE1C28",
+            "#21468B"
+          ],
+          "iso": "nl",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "JPN",
+          "team": "Japan",
+          "he": "יפן",
+          "flag": [
+            "#BC002D",
+            "#8a0021"
+          ],
+          "iso": "jp",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "SWE",
+          "team": "Sweden",
+          "he": "שבדיה",
+          "flag": [
+            "#006AA7",
+            "#FECC02"
+          ],
+          "iso": "se",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "TUN",
+          "team": "Tunisia",
+          "he": "תוניסיה",
+          "flag": [
+            "#E70013",
+            "#b3000f"
+          ],
+          "iso": "tn",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "G": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "IRN",
+          "team": "Iran",
+          "he": "איראן",
+          "flag": [
+            "#239F40",
+            "#DA0000"
+          ],
+          "iso": "ir",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "BEL",
+          "team": "Belgium",
+          "he": "בלגיה",
+          "flag": [
+            "#FDDA24",
+            "#EF3340"
+          ],
+          "iso": "be",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "EGY",
+          "team": "Egypt",
+          "he": "מצרים",
+          "flag": [
+            "#CE1126",
+            "#1a1a1a"
+          ],
+          "iso": "eg",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "NZL",
+          "team": "New Zealand",
+          "he": "ניו זילנד",
+          "flag": [
+            "#00247D",
+            "#CC142B"
+          ],
+          "iso": "nz",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "H": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "URU",
+          "team": "Uruguay",
+          "he": "אורוגוואי",
+          "flag": [
+            "#5B92E5",
+            "#FCD116"
+          ],
+          "iso": "uy",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "CPV",
+          "team": "Cape Verde",
+          "he": "כף ורדה",
+          "flag": [
+            "#003893",
+            "#CF2027"
+          ],
+          "iso": "cv",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "ESP",
+          "team": "Spain",
+          "he": "ספרד",
+          "flag": [
+            "#AA151B",
+            "#F1BF00"
+          ],
+          "iso": "es",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "KSA",
+          "team": "Saudi Arabia",
+          "he": "ערב הסעודית",
+          "flag": [
+            "#165B33",
+            "#0d3d22"
+          ],
+          "iso": "sa",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "I": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "NOR",
+          "team": "Norway",
+          "he": "נורווגיה",
+          "flag": [
+            "#BA0C2F",
+            "#00205B"
+          ],
+          "iso": "no",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "SEN",
+          "team": "Senegal",
+          "he": "סנגל",
+          "flag": [
+            "#00853F",
+            "#FDEF42"
+          ],
+          "iso": "sn",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "IRQ",
+          "team": "Iraq",
+          "he": "עיראק",
+          "flag": [
+            "#CE1126",
+            "#007A3D"
+          ],
+          "iso": "iq",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "FRA",
+          "team": "France",
+          "he": "צרפת",
+          "flag": [
+            "#0055A4",
+            "#EF4135"
+          ],
+          "iso": "fr",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "J": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "AUT",
+          "team": "Austria",
+          "he": "אוסטריה",
+          "flag": [
+            "#ED2939",
+            "#a31523"
+          ],
+          "iso": "at",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "ALG",
+          "team": "Algeria",
+          "he": "אלג׳יריה",
+          "flag": [
+            "#006233",
+            "#D21034"
+          ],
+          "iso": "dz",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "ARG",
+          "team": "Argentina",
+          "he": "ארגנטינה",
+          "flag": [
+            "#74ACDF",
+            "#F6B40E"
+          ],
+          "iso": "ar",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "JOR",
+          "team": "Jordan",
+          "he": "ירדן",
+          "flag": [
+            "#007A3D",
+            "#CE1126"
+          ],
+          "iso": "jo",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "K": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "UZB",
+          "team": "Uzbekistan",
+          "he": "אוזבקיסטן",
+          "flag": [
+            "#0099B5",
+            "#1EB53A"
+          ],
+          "iso": "uz",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "POR",
+          "team": "Portugal",
+          "he": "פורטוגל",
+          "flag": [
+            "#046A38",
+            "#DA291C"
+          ],
+          "iso": "pt",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "COL",
+          "team": "Colombia",
+          "he": "קולומביה",
+          "flag": [
+            "#FCD116",
+            "#003893"
+          ],
+          "iso": "co",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "COD",
+          "team": "DR Congo",
+          "he": "קונגו",
+          "flag": [
+            "#007FFF",
+            "#F7D618"
+          ],
+          "iso": "cd",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    },
+    "L": {
+      "complete": false,
+      "standings": [
+        {
+          "code": "ENG",
+          "team": "England",
+          "he": "אנגליה",
+          "flag": [
+            "#C8102E",
+            "#8d0b20"
+          ],
+          "iso": "gb-eng",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 1,
+          "status": "not-started"
+        },
+        {
+          "code": "GHA",
+          "team": "Ghana",
+          "he": "גאנה",
+          "flag": [
+            "#CE1126",
+            "#FCD116"
+          ],
+          "iso": "gh",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 2,
+          "status": "not-started"
+        },
+        {
+          "code": "PAN",
+          "team": "Panama",
+          "he": "פנמה",
+          "flag": [
+            "#005293",
+            "#DA121A"
+          ],
+          "iso": "pa",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 3,
+          "status": "not-started"
+        },
+        {
+          "code": "CRO",
+          "team": "Croatia",
+          "he": "קרואטיה",
+          "flag": [
+            "#C8102E",
+            "#171796"
+          ],
+          "iso": "hr",
+          "p": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 0,
+          "gd": 0,
+          "pos": 4,
+          "status": "not-started"
+        }
+      ]
+    }
+  }
+}

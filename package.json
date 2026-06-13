@@ -1,0 +1,14 @@
+{
+  "name": "futbolista-wc2026-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Live World Cup 2026 data feed for The Futbolista Closet hub page. Pulls the schedule/groups/results from openfootball + live scores from API-Football, converts to Israel time + Hebrew, and publishes one wc2026-data.json the storefront fetches directly. Standalone, OUTSIDE the theme repo — the live theme is never pushed on a data refresh.",
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "build": "node build.mjs --pretty",
+    "build:offline": "node build.mjs --offline --pretty",
+    "sample": "node preview/make-sample.mjs",
+    "preview": "node preview/serve.mjs"
+  }
+}

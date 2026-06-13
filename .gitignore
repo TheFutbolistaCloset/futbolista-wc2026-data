@@ -1,0 +1,10 @@
+# Secrets — this becomes a PUBLIC repo; never commit the API key.
+.env
+.env.*
+
+node_modules/
+logs/*.log
+.DS_Store
+
+# Local-only cache (regenerated each run; offline fallback)
+data/openfootball-2026.json

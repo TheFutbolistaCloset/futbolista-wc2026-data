@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>תצוגה מקדימה · לוח מונדיאל 2026 · פוטבוליסטה</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/wc-hub.css">
+  <style>
+    /* Preview chrome only — NOT part of the real Shopify section. Mirrors the
+       store's sticky header so the filter bar's sticky offset is realistic. */
+    :root { --font-body-family: 'Assistant', sans-serif; --font-heading-family: 'Assistant', sans-serif; }
+    html, body { margin: 0; background: #f6f8fc; }
+    .pv-header { position: sticky; top: 0; z-index: 40; height: 56px; display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: #fff; border-bottom: 1px solid #e4e9f2; font-family: 'Assistant', sans-serif; font-weight: 800; color: #0f1830; }
+    .pv-header small { font-weight: 600; color: #6b7488; }
+    .pv-sample { max-width: 1120px; margin: 12px auto 0; padding: 8px 14px; border-radius: 10px; background: #fff7e6; border: 1px solid #f1d59a;
+      color: #8a6400; font-family: 'Assistant', sans-serif; font-weight: 700; font-size: 13px; text-align: center; }
+    .pv-foot { max-width: 1120px; margin: 8px auto 48px; padding: 0 16px; color: #6b7488; font-family: 'Assistant', sans-serif; font-size: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+  <!-- preview-only sticky header (stands in for the store header) -->
+  <header class="section-header pv-header">פוטבוליסטה <small>· תצוגה מקדימה</small></header>
+
+  <main class="wc-hub">
+    <p class="pv-sample" data-sample-note>נתוני דוגמה · נכון ל-13.06.2026 22:30 · בלייב יתעדכן אוטומטית</p>
+
+    <!-- 1 · INTRO / HERO -->
+    <section class="wc-hero">
+      <div class="wc-hero__fx" aria-hidden="true">
+        <span class="wc-hero__glow wc-hero__glow--r"></span>
+        <span class="wc-hero__glow wc-hero__glow--b"></span>
+        <span class="wc-hero__glow wc-hero__glow--g"></span>
+      </div>
+      <div class="wc-hero__in">
+        <span class="wc-hero__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v6a5 5 0 0 1-10 0V4z"/><path d="M7 6H4a1 1 0 0 0-1 1c0 2.2 1.8 4 4 4M17 6h3a1 1 0 0 1 1 1c0 2.2-1.8 4-4 4"/></svg>
+          המונדיאל בעיצומו
+        </span>
+        <h1 class="wc-hero__title">לוח משחקי מונדיאל 2026 בשעון ישראל</h1>
+        <p class="wc-hero__sub">כל משחקי מונדיאל 2026 לפי שעון ישראל — תוצאות שמתעדכנות, משחקי היום, מצב הבתים והדרך לגמר של הנבחרות הגדולות.</p>
+        <div class="wc-facts">
+          <span class="wc-fact"><span class="wc-fact__k">פתיחה</span><span class="wc-fact__v">11.06</span></span>
+          <span class="wc-fact"><span class="wc-fact__k">גמר</span><span class="wc-fact__v">19.07</span></span>
+          <span class="wc-fact"><span class="wc-fact__k">שעון ישראל</span><span class="wc-fact__v">UTC+3</span></span>
+          <span class="wc-fact"><span class="wc-fact__k">נבחרות</span><span class="wc-fact__v">48</span></span>
+          <span class="wc-fact"><span class="wc-fact__k">משחקים</span><span class="wc-fact__v">104</span></span>
+        </div>
+        <a class="wc-next" id="wc-next" href="#wc-today"></a>
+      </div>
+      <div class="wc-hero__ribbon" aria-hidden="true"></div>
+    </section>
+
+    <!-- 1b · MY TEAMS (favorites) -->
+    <section class="wc-myteams" id="wc-myteams">
+      <div class="wc-myteams__in">
+        <span class="wc-myteams__label">
+          <svg viewBox="0 0 24 24" fill="#f3b32a" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9L12 3z"/></svg>
+          הנבחרות שלי
+        </span>
+        <div class="wc-myteams__chips" data-strip></div>
+      </div>
+      <div class="wc-panel" data-picker></div>
+    </section>
+
+    <!-- 2 · TODAY -->
+    <section class="wc-sec" id="wc-today">
+      <div class="wc-sec__in">
+        <div class="wc-sec__head">
+          <div>
+            <h2 class="wc-sec__title">משחקי <b>היום</b></h2>
+            <p class="wc-sec__sub" data-note>כל משחקי הערב בשעון ישראל</p>
+          </div>
+          <a class="wc-sec__link" href="#wc-schedule">ללוח המלא ›</a>
+        </div>
+        <div class="wc-cards wc-cards--today" data-cards></div>
+      </div>
+    </section>
+
+    <!-- 3 · FULL SCHEDULE + FILTERS -->
+    <section id="wc-schedule">
+      <div class="wc-filter">
+        <div class="wc-filter__in">
+          <div class="wc-chips" data-chips role="group" aria-label="סינון משחקים"></div>
+          <div class="wc-panel" data-panel></div>
+        </div>
+      </div>
+      <div class="wc-sec">
+        <div class="wc-sec__in">
+          <div class="wc-sec__head">
+            <div>
+              <h2 class="wc-sec__title">לוח המשחקים <b>המלא</b></h2>
+              <p class="wc-sec__sub">כל 104 המשחקים בשעון ישראל</p>
+            </div>
+            <div class="wc-headmeta">
+              <span class="wc-count" data-count aria-live="polite"></span>
+              <span class="wc-updated" data-updated></span>
+            </div>
+          </div>
+          <div data-cards></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · GROUP STANDINGS -->
+    <section class="wc-sec" id="wc-groups">
+      <div class="wc-sec__in">
+        <div class="wc-sec__head">
+          <div>
+            <h2 class="wc-sec__title">טבלאות <b>הבתים</b></h2>
+            <p class="wc-sec__sub">שתי הראשונות מכל בית עולות + 8 השלישיות הטובות</p>
+          </div>
+        </div>
+        <div class="wc-groups" data-groups></div>
+        <div class="wc-legend">
+          <span class="wc-legend__i"><span class="wc-legend__sw" style="background:#168542"></span>עולה לשלב הבא</span>
+          <span class="wc-legend__i"><span class="wc-legend__sw" style="background:#c79100"></span>מאבק על מקום שלישי</span>
+          <span class="wc-legend__i"><span class="wc-legend__sw" style="background:#d4dbe8"></span>נאבקת על ההישארות</span>
+          <span class="wc-legend__note">במונדיאל 2026 יש 12 בתים. שתי הראשונות מכל בית עולות, יחד עם 8 הנבחרות הטובות במקום השלישי — לכן גם המקום השלישי קריטי.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <p class="pv-foot">תצוגה מקדימה מקומית · העיצוב והקוד זהים למה שיופיע בחנות · אין כאן שום העלאה לאתר</p>
+
+  <script>
+    window.WC_HUB = {
+      feed: './sample-data.json',
+      collectionBase: 'https://thefutbolistacloset.com/collections/world-cup-2026-football-shirts',
+      allJerseysUrl: 'https://thefutbolistacloset.com/collections/world-cup-2026-football-shirts'
+    };
+  </script>
+  <script src="./assets/wc-hub.js"></script>
+</body>
+</html>
