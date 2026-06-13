@@ -1,0 +1,48 @@
+name: Refresh WC2026 feed
+
+# Cloud replacement for the local launchd cron: rebuilds public/wc2026-data.json
+# from openfootball and commits+pushes ONLY on a meaningful change. Runs 24/7,
+# independent of any laptop (so live scores keep updating even while the Mac
+# sleeps). The storefront fetches the raw feed — the live THEME is never touched.
+#
+# Public repo ⇒ Actions minutes are free & unlimited. Zero npm deps. All dates
+# are computed in Asia/Jerusalem inside lib/transform.mjs, so UTC runners are
+# correct; TZ is set below as belt-and-suspenders.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 minutes (GitHub's finest granularity)
+  workflow_dispatch: {}      # allow manual runs from the Actions tab
+
+# Only let GITHUB_TOKEN write contents; never let two runs race the same push.
+permissions:
+  contents: write
+concurrency:
+  group: refresh-feed
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Jerusalem
+    steps:
+      - name: Checkout (main, full history so git show/push are clean)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Identify the committer
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Rebuild feed + commit/push if changed
+        run: node scripts/refresh.mjs

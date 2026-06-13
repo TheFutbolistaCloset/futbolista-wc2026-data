@@ -37,6 +37,11 @@ if (existsSync(ENV)) {
   }
 }
 
+// Portable binaries: node = the interpreter running this script (works under
+// launchd's PATH and on Ubuntu CI alike); git resolved from PATH.
+const NODE = process.execPath;
+const GIT = 'git';
+const CI = !!process.env.CI; // GitHub Actions sets CI=true
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: ROOT, encoding: 'utf8' });
 const ts = () => new Date().toISOString();
 
@@ -66,8 +71,11 @@ const decide = (now) => {
 const lastBuild = () => { try { return +readFileSync(STATE, 'utf8').trim() || 0; } catch { return 0; } };
 
 const now = Date.now();
-const { state, gap } = decide(now);
-if (state !== 'ACTIVE' && now - lastBuild() < gap) {
+// In the cloud (GitHub Actions) Actions-minutes are free and there is no battery
+// to spare, so we always build every tick and rely on the meaningful-change gate
+// below to avoid timestamp-only commits. Locally (launchd) we self-throttle.
+const { state, gap } = CI ? { state: 'CI', gap: 0 } : decide(now);
+if (state !== 'ACTIVE' && state !== 'CI' && now - lastBuild() < gap) {
   const wait = Math.ceil((gap - (now - lastBuild())) / MIN);
   console.log(`${ts()} ${state} — throttled (next build in ~${wait}m), skip`);
   process.exit(0);
@@ -75,8 +83,8 @@ if (state !== 'ACTIVE' && now - lastBuild() < gap) {
 
 try {
   let prev = null;
-  try { prev = run('/usr/bin/git', ['show', 'HEAD:public/wc2026-data.json']); } catch { /* first run */ }
-  run('/usr/local/bin/node', ['build.mjs', '--pretty']);   // writes feed + SSR partials
+  try { prev = run(GIT, ['show', 'HEAD:public/wc2026-data.json']); } catch { /* first run */ }
+  run(NODE, ['build.mjs', '--pretty']);   // writes feed + SSR partials
   try { writeFileSync(STATE, String(now)); } catch { /* state is best-effort */ }
   const next = readFileSync(FEED, 'utf8');
   if (prev != null && meaningful(prev) === meaningful(next)) {
@@ -86,9 +94,9 @@ try {
   // Stage the whole public/ (feed + regenerated SSR snippets). The storefront
   // fetches the JSON feed live; the SSR snippets are deployed to the theme
   // separately (controlled push) — committing them here keeps the repo current.
-  run('/usr/bin/git', ['add', `${ROOT}/public`]);
-  run('/usr/bin/git', ['commit', '-m', `feed: refresh ${ts()}`]);
-  run('/usr/bin/git', ['push', 'origin', 'main:main']);     // explicit refspec, never HEAD
+  run(GIT, ['add', `${ROOT}/public`]);
+  run(GIT, ['commit', '-m', `feed: refresh ${ts()}`]);
+  run(GIT, ['push', 'origin', 'main:main']);     // explicit refspec, never HEAD
   console.log(`${ts()} ${state} — pushed feed update`);
 } catch (e) {
   console.error(`${ts()} refresh FAILED: ${e.message}`);
