@@ -32,7 +32,9 @@
 
 ## Git — מצב מדויק
 ### Theme (`~/wc-hub-port` → repo `Futbolista-Theme-Clean-V2`)
-- `origin/main` = **a4f1846e** | branch `feat/wc2026-homepage-entry` (pushed) | **תג גלגול-לאחור: `pre-wc2026-homepage-entry-2026-06-14` → 9dda8589**
+- `origin/main` = **aad277bc** | branches `feat/wc2026-homepage-entry`, `hotfix/wc2026-today-strict` (pushed)
+- תגי גלגול-לאחור: `pre-wc2026-homepage-entry-2026-06-14` → 9dda8589 ; `pre-wc2026-today-strict-2026-06-14` → a4f1846e
+- **Hotfix שני (חי):** `assets/wc-hub.js` — סקשן "היום" בדף ההאב הפך **strict ל-יום-לוח ישראלי** (`inToday` = live OR `is_today`; הוסר `TODAY_END_HOUR`). תיקן זליגה של משחקי מחר 02:00/05:00 ל"היום". אומת על הלייב (5 משחקי 14/6 בלבד).
 - קבצים שעלו ללייב (theme **186430161182**): `sections/wc2026-today.liquid` (חדש), `sections/wc2026-announcement-bar.liquid`, `sections/header-group.json`, `templates/index.json`.
 - גיבוי הסקשן שהוסר (image_banner — היה כבוי, הוסר כי דף הבית היה ב-25-section cap): `docs/homepage-section-backups/image_banner.json` (הפיך). ראה memory: "Shopify 25-section template cap".
 - **Rollback ללייב:**
