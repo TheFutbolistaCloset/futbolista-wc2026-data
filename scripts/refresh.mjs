@@ -35,13 +35,16 @@ const meaningful = (json) => { try { const o = JSON.parse(json); delete o.update
 try {
   let prev = null;
   try { prev = run('/usr/bin/git', ['show', 'HEAD:public/wc2026-data.json']); } catch { /* first run */ }
-  run('/usr/local/bin/node', ['build.mjs', '--pretty']);   // writes public/wc2026-data.json
+  run('/usr/local/bin/node', ['build.mjs', '--pretty']);   // writes feed + SSR partials
   const next = readFileSync(FEED, 'utf8');
   if (prev != null && meaningful(prev) === meaningful(next)) {
     console.log(`${ts()} no meaningful change — skip push`);
     process.exit(0);
   }
-  run('/usr/bin/git', ['add', FEED]);
+  // Stage the whole public/ (feed + regenerated SSR snippets). The storefront
+  // fetches the JSON feed live; the SSR snippets are deployed to the theme
+  // separately (controlled push) — committing them here keeps the repo current.
+  run('/usr/bin/git', ['add', `${ROOT}/public`]);
   run('/usr/bin/git', ['commit', '-m', `feed: refresh ${ts()}`]);
   run('/usr/bin/git', ['push', 'origin', 'main:main']);     // explicit refspec, never HEAD
   console.log(`${ts()} pushed feed update`);

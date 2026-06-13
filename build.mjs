@@ -18,6 +18,7 @@ import { fileURLToPath } from 'url';
 import { getOpenfootball, getLive } from './lib/sources.mjs';
 import { transform } from './lib/transform.mjs';
 import { jerseyUrl, HAS_JERSEY } from './lib/jersey.mjs';
+import { renderSSR } from './lib/ssr.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -53,11 +54,20 @@ async function main() {
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify(feed, null, PRETTY ? 2 : 0));
 
+  // Server-rendered SEO layer: three theme snippets the crawler can read as HTML.
+  // (Schedule + tables + SportsEvent JSON-LD; deployed to the theme separately.)
+  const OUT_DIR = dirname(OUT);
+  const ssr = renderSSR(feed, { allJerseysUrl: process.env.SSR_ALL_JERSEYS_URL });
+  writeFileSync(`${OUT_DIR}/wc2026-schedule-ssr.liquid`, ssr.schedule);
+  writeFileSync(`${OUT_DIR}/wc2026-standings-ssr.liquid`, ssr.standings);
+  writeFileSync(`${OUT_DIR}/wc2026-jsonld.liquid`, ssr.jsonld);
+
   const today = feed.matches.filter((m) => m.is_today).length;
   const live_n = feed.matches.filter((m) => m.status === 'live').length;
   const done = feed.matches.filter((m) => m.status === 'finished').length;
   const jerseys = Object.values(feed.teams).filter((t) => t.jersey?.has).length;
   console.log(`✓ ${OUT}`);
+  console.log(`  + wc2026-{schedule,standings,jsonld}-ssr.liquid`);
   console.log(`  matches=${feed.matches.length} finished=${done} live=${live_n} today=${today} groups=${Object.keys(feed.groups).length} jerseys=${jerseys}`);
   console.log(`  updated=${feed.updated}  now=${new Date(NOW).toISOString()}`);
 }
