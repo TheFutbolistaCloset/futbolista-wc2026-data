@@ -34,10 +34,8 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
+      # No setup-node: the runner ships Node 20+ and the project is zero-dependency,
+      # so `node scripts/refresh.mjs` runs on the preinstalled runtime directly.
 
       - name: Identify the committer
         run: |
