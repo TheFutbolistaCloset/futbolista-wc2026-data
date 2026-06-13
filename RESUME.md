@@ -1,85 +1,78 @@
 # ▶️ דף המונדיאל 2026 — קובץ המשכיות (START HERE)
-**מקור האמת היחיד להמשך העבודה.** עודכן: 2026-06-13.
+**מקור האמת היחיד להמשך העבודה.** עודכן: 2026-06-13 (אחרי עליית פרודקשן + SEO).
 
 ---
 
-## ✅ איך ממשיכים מחר (אידיאלי) — 3 צעדים
-1. **לראות איפה עצרנו (הפריוויו):**
-   ```bash
-   cd ~/futbolista-wc2026-data && npm run preview
-   ```
-   ופותחים: **http://localhost:8753/preview/**
-2. **לפתוח את Claude בתיקייה הזו** ולכתוב לו בדיוק את המשפט:
-   > "המשך את דף המונדיאל מהקובץ `~/futbolista-wc2026-data/RESUME.md`"
-
-   (גם "תמשיך מאיפה שעצרנו אתמול בדף המונדיאל" יעבוד — Claude טוען את הזיכרון אוטומטית.)
-3. Claude יקרא את הקובץ הזה + הזיכרון הקבוע ויידע בדיוק את כל המצב, מה נשאר, ואיך להמשיך.
-
-> 💡 אין צורך לזכור כלום. כל המידע נמצא כאן. אם תרצה רק להחליט על ה־3 דברים שתלויים בך (למטה ב-🟡), זה כל מה שצריך כדי לעלות לאוויר.
+## 🟢 מצב נוכחי (TL;DR) — הדף **חי בפרודקשן**
+דף מונדיאל 2026 חי בעברית: לוח 104 משחקים בשעון ישראל · משחקי היום · תוצאות חי · טבלאות בתים → מוביל למכירת חולצות.
+- **URL חי:** **https://thefutbolistacloset.com/pages/world-cup-2026-hub**
+- **ארכיטקטורה:** *progressive enhancement* — הלוח+הטבלאות+ה-JSON-LD **מרונדרים בשרת (Liquid)** כדי שגוגל יסרוק אותם כטקסט; ה-JS (`wc-hub.js`) מוסיף מעליהם פילטרים/מועדפים/**תוצאות חי**.
+- **SEO אומת:** Lighthouse SEO **100/100**; 104 משחקים + SportsEvent(72)+FAQPage+BreadcrumbList בקוד הגולמי; H1 יחיד; canonical/meta תקינים.
+- **תוצאות מתעדכנות חי למשתמשים:** ✅ פעיל. מנוע רענון (launchd, כל 10 דק') דוחף feed מעודכן ל-GitHub; ה-JS מושך משם. מפתח API-Football מחובר (נקרא רק בחלון משחק כדי לשמור על מכסת 100/יום).
 
 ---
 
-## 📍 איפה הכל שמור (מפה)
+## ✅ מה צריך לעשות מחר — 3 דברים (זה כל מה שנשאר, הכל תלוי בך)
+1. **Theme Access token** → להפעיל את הרענון היומי לגוגל (הסקריפט+ה-job מוכנים, רק חסר ה-token):
+   - Admin → **Apps** → "Theme Access" (אפליקציה רשמית של Shopify) → התקן → **Add password** → שם `wc2026-ssr-deploy` → העתק את ה-token (`shptka_...`).
+   - תן אותו ל-Claude: "הנה ה-Theme Access token: shptka_…". Claude יוסיף אותו ל-`.env` (gitignored) + יטען את ה-job `com.futbolista.wc2026-ssr-deploy`.
+   - *(לא חוסם — המשתמשים כבר מקבלים תוצאות חי דרך ה-JS. זה רק כדי שגם השכבה שגוגל סורק תתעדכן יומי.)*
+2. **לפרסם את 30 הקולקציות `wc2026-*`** (Admin → Products → Collections → סינון "מונדיאל 2026" → Bulk → הדלק Online Store → Save). כרגע 90 קישורי "חולצות X" בדף מובילים ל-`/search`; ברגע שתפרסם, הם **משתדרגים אוטומטית** ל-`/collections/wc2026-<team>` (קישורים פנימיים נקיים = SEO טוב יותר). ה-self-verify + הרענון היומי יעשו את זה לבד.
+3. **קישור בתפריט** (ידני — ל-token אין menus scope): להוסיף תת-פריט **"לוח משחקים · שעון ישראל"** → `/pages/world-cup-2026-hub` תחת הדרופדאון "מונדיאל 2026"; ולהפנות את הפריט הישן הכפול "מונדיאל 2026" → `/pages/euros-copa-america-2024` לדף החדש (ניקוי SEO).
+
+> אם תרצה רק להמשיך: פתח את Claude בתיקייה `~/futbolista-wc2026-data` וכתוב "המשך את דף המונדיאל מ-RESUME.md". הוא יידע בדיוק את כל המצב.
+
+---
+
+## 📍 מפת הכל (איפה מה)
 | מה | איפה |
 |----|------|
-| **הקובץ הזה** (להמשך) | `~/futbolista-wc2026-data/RESUME.md` |
-| כל הקוד (feed + preview) | `~/futbolista-wc2026-data/` |
-| לקחים מפורטים (לא חובה) | `~/futbolista-wc2026-data/RETROSPECTIVE.md` |
-| מערכת העיצוב | `~/futbolista-wc2026-data/design-system.md` |
-| התוכנית המלאה (3 סבבים) | `~/.claude/plans/quiet-floating-river.md` |
-| זיכרון קבוע (נטען אוטומטית) | `project_futbolista-wc2026-hub.md` + `reference_store-execute-scopes.md` |
-| 30 הקולקציות | חיות בחנות (Shopify Admin → Collections, handle `wc2026-*`) — **לא מפורסמות עדיין** |
+| הקובץ הזה (להמשך) | `~/futbolista-wc2026-data/RESUME.md` |
+| **דף חי** | `https://thefutbolistacloset.com/pages/world-cup-2026-hub` (page handle + template = `world-cup-2026-hub`) |
+| קוד ה-feed + ה-SSR + ה-preview | `~/futbolista-wc2026-data/` |
+| **ה-feed הציבורי שהאתר מושך** | `https://raw.githubusercontent.com/TheFutbolistaCloset/futbolista-wc2026-data/main/public/wc2026-data.json` |
+| קוד ה-theme שנפרס | worktree `~/wc-hub-port` (ענף `feat/wc2026-hub`, merged ל-origin/main) |
+| מפתח API-Football | `~/futbolista-wc2026-data/.env` → `APIFOOTBALL_KEY` (gitignored, Free 100/יום) |
+| job רענון feed (משתמשים) | `~/Library/LaunchAgents/com.futbolista.wc2026-data.plist` — **טעון**, כל 10 דק' |
+| job רענון SSR (גוגל) | `~/futbolista-wc2026-data/launchd/com.futbolista.wc2026-ssr-deploy.plist` — **לא טעון** (מחכה ל-token) |
+| תג גלגול לאחור (פרודקשן) | `pre-wc2026-hub-2026-06-13` → `48b01a32` |
 
 ---
 
-## מצב נוכחי (TL;DR)
-דף מונדיאל חי בעברית לפוטבוליסטה: לוח משחקים בשעון ישראל, משחקי היום, תוצאות חי, טבלאות בתים → מוביל למכירת חולצות. **ה-feed והפריוויו המלא בנויים ואומתו** (320→1680). **30 קולקציות לכל נבחרת נוצרו בחנות החיה** אבל **לא מפורסמות**. שום דבר עדיין לא נגע ב-theme/חנות — הכל מקומי והפיך.
-
-## DONE ✅
-- **Data feed:** openfootball 2026 (לוח/בתים/אצטדיונים/תוצאות, שעון ישראל) + חיבור API-Football (תוצאות חי; צריך מפתח). אומת — תואם ל-100% את הבריף.
-- **Core-4 preview:** פתיח+צ'יפ "המשחק הבא" חי · משחקי היום (חלון ערב-צפייה) · לוח מלא (מקובץ לפי יום, פילטרים דביקים) · טבלאות בתים (מקום 3 מודגש זהב).
-- **תוספות:** דגלים עגולים אמיתיים · אצטדיונים בעברית · מועדפים ("הנבחרות שלי" strip + ★ על כרטיסים + הצמדה + localStorage) · "ליומן" (.ics) · JSON-LD ל-SEO · "עודכן HH:MM" · תיקון יישור RTL של התוצאה והדגלים · שמות קצרים (ארה״ב/בוסניה/סעודיה) + גלישה בטוחה (שום שם לא נחתך).
-- **30 קולקציות `wc2026-<team>`** נוצרו בחנות (חוק: כותרת מכילה "נבחרת X" וגם "מונדיאל 2026"; 101 מוצרים — כולל ילדים/מכנסיים/שוער/תינוק).
-- **כפתורי החולצות לא נותנים 404 לעולם:** `lib/jersey.mjs` → קולקציה אם מפורסמת, אחרת חיפוש Shopify (אומת 200). משתדרג אוטומטית כשמפרסמים.
-
-## PENDING — תלוי בך 🟡 (זה מה שצריך כדי לעלות לאוויר)
-1. **לפרסם את 30 הקולקציות** (לא חוסם — החיפוש עובד בינתיים). Admin → Products → Collections → לסנן "מונדיאל 2026" → לבחור את כל ה-`wc2026-*` → Bulk edit → להדליק **Online Store** → Save. (או דרך **Sidekick**: "publish all collections whose handle starts with wc2026- to the Online Store".)
-2. **מפתח API-Football חינמי** (api-football.com) → לתוצאות חי. יישמר ב-env של הפרויקט (`APIFOOTBALL_KEY`), לעולם לא ב-theme.
-3. **אישור ליצור repo ציבורי** `futbolista-wc2026-data` (מארח את ה-feed שהאתר מושך).
-4. **אישור handle + שם בתפריט** (ברירת מחדל: `/pages/mundial-2026`, "מונדיאל 2026 · לוח משחקים").
-5. **אישור 3 תעתיקים** (gal-hebrew "ממתין"): כף ורדה / קונגו. (חוף השנהב כבר אושר.)
-
-## NEXT — העבודה שלי כשנפתח 🔜
-1. **Port:** להעתיק `preview/assets/wc-hub.{css,js}` ל-theme `assets/` (verbatim) + סקשנים דקים ב-Liquid + `snippets/wc2026-data.liquid` (fetch יחיד) + `templates/page.mundial-2026.json`. להוסיף גשר `?team=`/`#team=` ל-`sections/wc2026-collection-hero.liquid`.
-2. **לחבר feed חי:** `build.mjs` → `public/wc2026-data.json` → push ל-repo הציבורי; ה-theme מושך משם. `jerseyUrl(..., {checkLive:true})` כדי להעדיף קולקציות מפורסמות.
-3. **launchd:** `launchd/com.futbolista.wc2026-data.plist` (כל ~5–10 דק' בחלונות חי, אחרת כל שעה).
-4. **Deploy** לפי הפרוטוקול (futbolista-dev): ענף `feat/wc2026-hub` מ-origin/main טרי → staging (188847358238) → `YES, DEPLOY TO PRODUCTION` (186430161182) + tag לגלגול + CHANGELOG. קישור בתפריט — ידני (אין menus scope).
-5. **שלב 2 — מודולים 5–7** (מסלול לגמר / "שווה להישאר ער?" / "חולצת המשחק של היום") טיוטה יומית אוטומטית בקול gal-hebrew → Telegram לאישור.
+## מה נעשה בסשן הזה (איך) — הארכיטקטורה המלאה
+1. **תיקון כפתורי חולצות:** ב-build האמיתי אף נבחרת לא קיבלה לינק חולצה (רק ה-sample). תוקן — `build.mjs` ממלא 30 נבחרות דרך `jerseyUrl(...,{checkLive:true})` (קולקציה אם 200, אחרת חיפוש). `HAS_JERSEY` עבר ל-`lib/jersey.mjs` (משותף sample+build).
+2. **אירוח feed:** נוצר repo ציבורי `TheFutbolistaCloset/futbolista-wc2026-data`. ה-theme מושך את ה-JSON ה-raw (CORS פתוח, cache 5 דק'). **ה-theme לא נדחף לעולם ברענון נתונים.**
+3. **שכבת SEO מרונדרת-בשרת:** `lib/ssr.mjs` מייצר 3 snippets — `wc2026-{schedule,standings,jsonld}-ssr.liquid` — עם אותם classes כמו ה-JS (אז `wc-hub.css` מעצב אותם זהה). מרונדרים **בתוך** ה-mounts; ה-JS עושה `clear()`+rebuild (אז גוגל רואה את הכל, המשתמש מקבל אינטראקטיבי+חי). `buildJsonLd` ב-JS מדלג אם יש JSON-LD מהשרת (`data-wc-ssr`) → אין כפילות.
+4. **קופי SEO (gal-hebrew):** פסקת פתיח עשירת-מילות-מפתח + 7 שאלות נפוצות (`<details>`, נגיש) + FAQPage schema. עובדות אומתו מול ה-feed.
+5. **פונט:** הסקשן עושה self-host ל-`FtbAssistant` (Assistant 500/600/800 מתעוותים תחת custom-rtl) + נעילת font-family לפי id.
+6. **deploy לפרודקשן:** FF ל-origin/main → תג גלגול + CHANGELOG → push של 8 קבצים ל-theme 186430161182 (additive, שום קובץ קיים לא נדרס) → pull-back verify.
+7. **חי:** API key + window-gate ב-build; job רענון feed טעון (משתמשים); job רענון SSR יומי מוכן (גוגל, מחכה ל-token).
 
 ## פקודות
 ```bash
 cd ~/futbolista-wc2026-data
-npm run sample     # בונה מחדש את preview/sample-data.json
-npm run preview    # שרת → http://localhost:8753/preview/
-npm run build:offline                              # feed מ-cache (בלי תוצאות חי)
-node scripts/build-team-collections.mjs            # סריקה בלבד: רשימת נבחרות + כמויות
-node scripts/build-team-collections.mjs --create   # יצירת קולקציות (idempotent, צריך --allow-mutations)
+npm run build              # בונה feed + 3 snippets ל-SSR (לייב; API נקרא רק בחלון משחק)
+npm run build:offline      # מ-cache, בלי רשת/חי
+npm run sample && npm run preview   # תצוגה מקדימה מקומית → http://localhost:8753/preview/
+node scripts/refresh.mjs   # רענון feed ידני (push ל-GitHub אם יש שינוי אמיתי)
+node scripts/deploy-ssr.mjs   # push ידני של ה-SSR ל-live (צריך SHOPIFY_CLI_THEME_TOKEN+STORE ב-.env)
+launchctl list | grep futbolista   # אילו jobs טעונים
 ```
 
 ## מפת קבצים (בפרויקט)
-- `lib/teams.mjs` — 48 נבחרות: he, heShort (ארה״ב…), צבעי דגל, ISO (circle-flags), slug.
-- `lib/transform.mjs` — openfootball(+חי) → feed מנורמל (שעון ישראל, טבלאות).
-- `lib/sources.mjs` — fetch עם timeout+retry; cache fallback ל-openfootball.
-- `lib/jersey.mjs` — כתובת חולצות self-verifying (קולקציה אם 200, אחרת חיפוש).
-- `build.mjs` — מרכיב את `public/wc2026-data.json` (לא דוחף ל-theme).
-- `preview/` — `index.html` + `assets/wc-hub.{css,js}` (ה-renderer המשותף — מועתק ל-theme) + `make-sample.mjs` + `serve.mjs`.
-- `scripts/build-team-collections.mjs` — סורק/יוצר קולקציות לכל נבחרת.
+- `lib/teams.mjs` 48 נבחרות (he/heShort/דגל/ISO/slug) · `lib/venues.mjs` ערים בעברית · `lib/transform.mjs` openfootball(+חי)→feed (שעון ישראל, טבלאות) · `lib/sources.mjs` fetch+timeout+retry+cache · `lib/jersey.mjs` קישור חולצות self-verify + `HAS_JERSEY`.
+- `lib/ssr.mjs` רינדור שרת (לוח+טבלאות+JSON-LD) — **המנוע ל-SEO**.
+- `build.mjs` מרכיב feed + 3 snippets · `scripts/refresh.mjs` (cron feed) · `scripts/deploy-ssr.mjs` (cron SSR→live).
+- theme (ב-`~/wc-hub-port`): `sections/wc2026-hub.liquid` · `snippets/wc2026-{data,jsonld,schedule-ssr,standings-ssr}.liquid` · `assets/wc-hub.{css,js}` · `templates/page.world-cup-2026-hub.json`.
 
-## גוצ'ות / לקחים (כדי לא ליפול שוב — מלא ב-RETROSPECTIVE.md)
-- `shopify store execute` צריך `--allow-mutations` לכתיבה; **לא יכול לפרסם** (אין publications scope) ולא לגעת בתפריטים → פרסום וקישורי-תפריט ידניים. **לא** לעשות re-auth (ישבור את ה-tracker/backup ששותפים את אותו session).
-- Theme: שורש 10px → להשתמש ב-px; `custom-rtl.liquid` כופה גופן → לנעול font-family; CSS סינכרוני (async = FOUC).
-- מספרים ב-RTL (תוצאה / שערים) → להציג כ-flex עם `direction:rtl`, לא טקסט "a : b".
-- agent-browser: לפתוח מחדש את כתובת הפריוויו לפני בדיקת רוחב; לאמת `location.pathname`; לעטוף eval ב-IIFE.
+## גוצ'ות / לקחים
+- **מפתח API-Football = 100 בקשות/יום** → ה-build קורא ל-API **רק בחלון משחק** (kickoff-5דק' עד +150דק'). אחרת מדלג. אל תוריד את ה-gate.
+- **דף Shopify נשמר כ-Hidden = 404 לציבור.** היה צריך `pageUpdate(isPublished:true)`. אם הדף נעלם — בדוק Visibility.
+- **handle בעברית יוצא מקושקש** → תמיד להגדיר URL handle ידנית באנגלית.
+- **store-execute עובד עם `--store 143f82.myshopify.com`** (לא thefutbolistacloset.com). יש לו scope ל-`pageUpdate`. **לא** להריץ `shopify store auth` (ישבור tracker/backup).
+- **`shopify theme check` מציף 2.6MB** → להפנות לקובץ ולעשות grep. ה-baseline של ה-theme ~2683 הערות (קבצי backup) — לא שלנו.
+- agent-browser: צילום מסך נתקע על 104 דגלים מ-CDN; os-error-35 → `agent-browser close` ואז `open`. cache-bust ל-reload (`?v=N`).
+- ה-theme מוסיף `– TheFutbolistaCloset` ל-`<title>` → כדאי לא לכפול מיתוג ב-Page title.
 
 ## החלטות שננעלו
-Data=היברידי (openfootball + API-Football חינם) · עיצוב=בהיר/Apple + hero "מאצ'-נייט" כהה, #334fb4, Assistant, px · placement=דף חדש + קישור בתפריט · refresh=feed ציבורי בלי theme push · מועדפים=strip עליון + ★ על כרטיסים · חולצות=self-verify (קולקציה→חיפוש) · 30 קולקציות לפי כותרת (לא תיוג).
+דף (לא מאמר) · ארכיטקטורה=SSR ל-SEO + JS לחי · handle=`world-cup-2026-hub` · feed ציבורי ב-GitHub raw (לא jsDelivr — cache ארוך) · רענון: feed כל 10 דק' (משתמשים) + SSR יומי ל-live (גוגל) · תעתיקים: כף ורדה / קונגו / חוף השנהב (אושרו).
