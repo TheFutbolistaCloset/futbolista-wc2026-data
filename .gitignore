@@ -8,3 +8,6 @@ logs/*.log
 
 # Local-only cache (regenerated each run; offline fallback)
 data/openfootball-2026.json
+
+# Local deploy state (sha of last SSR pushed to live)
+.ssr-deploy-hash

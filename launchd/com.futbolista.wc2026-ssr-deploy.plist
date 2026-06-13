@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.futbolista.wc2026-ssr-deploy</string>
+
+  <!-- Once a day: regenerate the SSR snippets and push them to the LIVE theme
+       IF they changed (so Google's crawlable layer stays current). Change-gated,
+       3 content-only snippets. Users get live updates via the separate 10-min feed job. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Users/galvaknin/futbolista-wc2026-data/scripts/deploy-ssr.mjs</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>5</integer>
+    <key>Minute</key><integer>30</integer>
+  </dict>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/galvaknin/futbolista-wc2026-data/logs/ssr-deploy.out</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/galvaknin/futbolista-wc2026-data/logs/ssr-deploy.err</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
+</dict>
+</plist>
