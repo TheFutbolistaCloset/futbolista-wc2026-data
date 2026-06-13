@@ -12,7 +12,7 @@
 // Env: APIFOOTBALL_KEY (optional — live scores; without it the feed is
 // schedule+results only, which is correct outside live match windows).
 
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getOpenfootball, getLive } from './lib/sources.mjs';
@@ -31,14 +31,36 @@ const OUT = val('--out', `${ROOT}/public/wc2026-data.json`);
 const PRETTY = flag('--pretty');
 const CACHE = `${ROOT}/data/openfootball-2026.json`;
 
+// Load .env (APIFOOTBALL_KEY) so manual + cron + deploy-ssr runs all pick it up.
+const ENV = `${ROOT}/.env`;
+if (existsSync(ENV)) {
+  for (const line of readFileSync(ENV, 'utf8').split('\n')) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/i);
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+  }
+}
+
 async function main() {
   const raw = OFFLINE
-    ? JSON.parse((await import('fs')).readFileSync(CACHE, 'utf8'))
+    ? JSON.parse(readFileSync(CACHE, 'utf8'))
     : await getOpenfootball({ cacheFile: CACHE });
 
-  const live = OFFLINE ? [] : await getLive({ apiKey: process.env.APIFOOTBALL_KEY });
-
-  const feed = transform(raw, { now: NOW, live });
+  // Live overlay (API-Football) — only call WITHIN an actual match window, so the
+  // free-plan quota (100 req/day) isn't burned by a 10-min cron. Outside any window
+  // nothing is live anyway. getLive() degrades to [] on error → the feed always builds.
+  let live = [];
+  let feed = transform(raw, { now: NOW, live });
+  const KEY = process.env.APIFOOTBALL_KEY;
+  if (!OFFLINE && KEY) {
+    const WIN = 150 * 60000; // ~90 min + half-time + stoppage
+    const inWindow = feed.matches.some(
+      (m) => m.ts && m.status !== 'finished' && NOW >= m.ts - 5 * 60000 && NOW <= m.ts + WIN
+    );
+    if (inWindow) {
+      live = await getLive({ apiKey: KEY });
+      if (live.length) feed = transform(raw, { now: NOW, live });
+    }
+  }
 
   // Wire per-team jersey deep-links for the teams that have shirts. checkLive
   // (online builds) HEADs /collections/wc2026-<slug>: 200 ⇒ the branded
