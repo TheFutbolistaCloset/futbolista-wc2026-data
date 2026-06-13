@@ -19,7 +19,6 @@
   var COLL = CFG.collectionBase || '#';
   var ALL_JERSEYS = CFG.allJerseysUrl || COLL;
   var FLAG_BASE = CFG.flagBase || 'https://cdn.jsdelivr.net/gh/HatScripts/circle-flags/flags/';
-  var TODAY_END_HOUR = 9; // late games before 09:00 IL count as "tonight"
 
   var SVG = {
     trophy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v6a5 5 0 0 1-10 0V4z"/><path d="M7 6H4a1 1 0 0 0-1 1c0 2.2 1.8 4 4 4M17 6h3a1 1 0 0 1 1 1c0 2.2-1.8 4-4 4"/></svg>',
@@ -221,14 +220,15 @@
     if (!sec) return;
     var mount = sec.querySelector('[data-cards]') || sec;
     var note = sec.querySelector('[data-note]');
-    function inTonight(m) {
-      if (m.status === 'live') return true;
-      if (m.is_today) return true;
-      if (m.is_tomorrow && m.time_il && parseInt(m.time_il, 10) < TODAY_END_HOUR) return true;
-      return false;
+    function inToday(m) {
+      // Strict Israel calendar day: only matches whose IL date is today — plus any
+      // match currently in play (so a game crossing midnight stays visible).
+      // WC2026 kickoffs are US-evening = IL small hours, so "today" groups a date's
+      // early-AM + evening games; tomorrow's games never leak in.
+      return m.status === 'live' || !!m.is_today;
     }
     function render() {
-      var list = feed.matches.filter(inTonight);
+      var list = feed.matches.filter(inToday);
       if (!list.length) {
         var future = feed.matches.filter(function (m) { return m.ts && m.date_key && m.status !== 'finished'; });
         if (future.length) {
