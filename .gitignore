@@ -3,7 +3,7 @@
 .env.*
 
 node_modules/
-logs/*.log
+logs/
 .DS_Store
 
 # Local-only cache (regenerated each run; offline fallback)
