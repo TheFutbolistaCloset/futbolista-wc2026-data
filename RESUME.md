@@ -8,7 +8,7 @@
 - **URL חי:** **https://thefutbolistacloset.com/pages/world-cup-2026-hub**
 - **ארכיטקטורה:** *progressive enhancement* — הלוח+הטבלאות+ה-JSON-LD **מרונדרים בשרת (Liquid)** כדי שגוגל יסרוק אותם כטקסט; ה-JS (`wc-hub.js`) מוסיף מעליהם פילטרים/מועדפים/**תוצאות חי**.
 - **SEO אומת:** Lighthouse SEO **100/100**; 104 משחקים + SportsEvent(72)+FAQPage+BreadcrumbList בקוד הגולמי; H1 יחיד; canonical/meta תקינים.
-- **תוצאות למשתמשים:** המקור הוא **openfootball בלבד** (חינם), בעיכוב פרסום של דקות־שעות אחרי שריקת הסיום — **לא** חי דקה־אחר־דקה. מנוע רענון (launchd, יורה כל 5 דק' עם self-throttle אדפטיבי) דוחף feed מעודכן ל-GitHub; ה-JS מושך משם.
+- **תוצאות למשתמשים:** המקור הוא **openfootball בלבד** (חינם), בעיכוב פרסום של דקות־שעות אחרי שריקת הסיום — **לא** חי דקה־אחר־דקה. מנוע רענון רץ עכשיו ב-**GitHub Actions** (ענן, כל 5 דק', 24/7 — לא תלוי במחשב/שינה) ודוחף feed מעודכן ל-GitHub; ה-JS מושך משם. (ה-cron המקומי launchd **פורק** — ה-plist עבר ל-`.disabled`.)
   - ⚠️ **API-Football לא עובד ל-2026:** התוכנית החינמית חוסמת את העונה (`"Free plans do not have access to this season"`). ה-overlay החי דורמנטי מאחורי דגל `LIVE_API=on` (כבוי) — להדליק רק עם תוכנית בתשלום. (החלטה 2026-06-13: נשארים חינמי/openfootball.)
   - תדירות אדפטיבית: ACTIVE≈5 דק' בחלון משחק (פתיחה −15 עד +160 דק') · IDLE 30 דק' ביום · 60 דק' בלילה עמוק (01:00–08:00 שעון ישראל ללא משחק). מצב ב-`logs/last-build.txt`.
 
@@ -35,7 +35,7 @@
 | **ה-feed הציבורי שהאתר מושך** | `https://raw.githubusercontent.com/TheFutbolistaCloset/futbolista-wc2026-data/main/public/wc2026-data.json` |
 | קוד ה-theme שנפרס | worktree `~/wc-hub-port` (ענף `feat/wc2026-hub`, merged ל-origin/main) |
 | מפתח API-Football | `~/futbolista-wc2026-data/.env` → `APIFOOTBALL_KEY` (gitignored, Free 100/יום) |
-| job רענון feed (משתמשים) | `~/Library/LaunchAgents/com.futbolista.wc2026-data.plist` — **טעון**, יורה כל 5 דק' (self-throttle אדפטיבי) |
+| job רענון feed (משתמשים) | **GitHub Actions** `.github/workflows/refresh-feed.yml` (cron `*/5`, 24/7 בענן). ה-launchd המקומי פורק → `~/Library/LaunchAgents/com.futbolista.wc2026-data.plist.disabled` (להחזיר: rename + `launchctl load`). `scripts/refresh.mjs` portable+CI-aware (אותו קוד מקומי/ענן). |
 | job רענון SSR (גוגל) | `~/futbolista-wc2026-data/launchd/com.futbolista.wc2026-ssr-deploy.plist` — **לא טעון** (מחכה ל-token) |
 | תג גלגול לאחור (פרודקשן) | `pre-wc2026-hub-2026-06-13` → `48b01a32` |
 
