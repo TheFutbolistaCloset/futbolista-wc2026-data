@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.futbolista.wc2026-data</string>
+
+  <!-- Rebuild + push the WC2026 feed. Idempotent: pushes only when the feed
+       changed, so most idle runs are no-ops. The live theme is never touched. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Users/galvaknin/futbolista-wc2026-data/scripts/refresh.mjs</string>
+  </array>
+
+  <!-- Every 10 minutes. Cheap build; cache-fallback if openfootball stalls. -->
+  <key>StartInterval</key>
+  <integer>600</integer>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/galvaknin/futbolista-wc2026-data/logs/launchd.out</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/galvaknin/futbolista-wc2026-data/logs/launchd.err</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
+</dict>
+</plist>
