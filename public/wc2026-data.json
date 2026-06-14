@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T12:55:22.875Z",
+  "updated": "2026-06-14T19:15:26.657Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1014,8 +1014,11 @@
       "t2_iso": "cw",
       "venue": "Houston",
       "venue_he": "יוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        7,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4596,6 +4599,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "GER",
+          "team": "Germany",
+          "he": "גרמניה",
+          "flag": [
+            "#DD0000",
+            "#FFCE00"
+          ],
+          "iso": "de",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 1,
+          "pts": 3,
+          "gd": 6,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "ECU",
           "team": "Ecuador",
           "he": "אקוודור",
@@ -4612,28 +4635,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 1,
-          "status": "not-started"
-        },
-        {
-          "code": "GER",
-          "team": "Germany",
-          "he": "גרמניה",
-          "flag": [
-            "#DD0000",
-            "#FFCE00"
-          ],
-          "iso": "de",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 2,
-          "status": "not-started"
+          "status": "advancing"
         },
         {
           "code": "CIV",
@@ -4653,7 +4656,7 @@
           "pts": 0,
           "gd": 0,
           "pos": 3,
-          "status": "not-started"
+          "status": "third-watch"
         },
         {
           "code": "CUW",
@@ -4664,16 +4667,16 @@
             "#F9E814"
           ],
           "iso": "cw",
-          "p": 0,
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 7,
           "pts": 0,
-          "gd": 0,
+          "gd": -6,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
