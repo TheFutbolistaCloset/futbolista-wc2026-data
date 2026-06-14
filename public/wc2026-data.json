@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T06:19:18.680Z",
+  "updated": "2026-06-14T12:55:22.875Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -977,8 +977,11 @@
       "t2_iso": "tr",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4536,14 +4539,14 @@
             "#E4002B"
           ],
           "iso": "au",
-          "p": 0,
-          "w": 0,
+          "p": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
+          "gf": 2,
           "ga": 0,
-          "pts": 0,
-          "gd": 0,
+          "pts": 3,
+          "gd": 2,
           "pos": 2,
           "status": "advancing"
         },
@@ -4556,14 +4559,14 @@
             "#b00712"
           ],
           "iso": "tr",
-          "p": 0,
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 0,
-          "ga": 0,
+          "ga": 2,
           "pts": 0,
-          "gd": 0,
+          "gd": -2,
           "pos": 3,
           "status": "third-watch"
         },
