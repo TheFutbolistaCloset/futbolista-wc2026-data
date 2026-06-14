@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T21:00:29.907Z",
+  "updated": "2026-06-14T22:00:29.253Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1051,8 +1051,11 @@
       "t2_iso": "jp",
       "venue": "Dallas (Arlington)",
       "venue_he": "דאלאס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        2
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4692,16 +4695,16 @@
             "#21468B"
           ],
           "iso": "nl",
-          "p": 0,
+          "p": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
           "gd": 0,
           "pos": 1,
-          "status": "not-started"
+          "status": "advancing"
         },
         {
           "code": "JPN",
@@ -4712,16 +4715,16 @@
             "#8a0021"
           ],
           "iso": "jp",
-          "p": 0,
+          "p": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
           "gd": 0,
           "pos": 2,
-          "status": "not-started"
+          "status": "advancing"
         },
         {
           "code": "SWE",
@@ -4741,7 +4744,7 @@
           "pts": 0,
           "gd": 0,
           "pos": 3,
-          "status": "not-started"
+          "status": "third-watch"
         },
         {
           "code": "TUN",
@@ -4761,7 +4764,7 @@
           "pts": 0,
           "gd": 0,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
