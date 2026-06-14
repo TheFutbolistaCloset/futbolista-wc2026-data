@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T19:15:26.657Z",
+  "updated": "2026-06-14T21:00:29.907Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -909,7 +909,7 @@
         1
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -946,7 +946,7 @@
         1
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -983,7 +983,7 @@
         0
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -1020,7 +1020,7 @@
         1
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -1054,7 +1054,7 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -1088,8 +1088,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m032",
@@ -1122,8 +1122,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m043",
@@ -1156,8 +1156,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m037",
@@ -1190,8 +1190,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m044",
@@ -1225,7 +1225,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m038",
@@ -1259,7 +1259,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m049",
@@ -1293,7 +1293,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m050",
