@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T01:37:51.090Z",
+  "updated": "2026-06-14T06:19:18.680Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -940,8 +940,11 @@
       "t2_iso": "gb-sct",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4420,6 +4423,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "SCO",
+          "team": "Scotland",
+          "he": "סקוטלנד",
+          "flag": [
+            "#005EB8",
+            "#003a73"
+          ],
+          "iso": "gb-sct",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 1,
+          "ga": 0,
+          "pts": 3,
+          "gd": 1,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "BRA",
           "team": "Brazil",
           "he": "ברזיל",
@@ -4436,7 +4459,7 @@
           "ga": 1,
           "pts": 1,
           "gd": 0,
-          "pos": 1,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -4456,8 +4479,8 @@
           "ga": 1,
           "pts": 1,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
+          "pos": 3,
+          "status": "third-watch"
         },
         {
           "code": "HAI",
@@ -4468,34 +4491,14 @@
             "#D21034"
           ],
           "iso": "ht",
-          "p": 0,
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 0,
-          "ga": 0,
+          "ga": 1,
           "pts": 0,
-          "gd": 0,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
-          "code": "SCO",
-          "team": "Scotland",
-          "he": "סקוטלנד",
-          "flag": [
-            "#005EB8",
-            "#003a73"
-          ],
-          "iso": "gb-sct",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
+          "gd": -1,
           "pos": 4,
           "status": "trailing"
         }
