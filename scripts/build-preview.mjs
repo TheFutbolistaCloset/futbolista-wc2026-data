@@ -3,12 +3,11 @@
 // Assembles real section CSS + real generated body snippets + REAL products (fetched read-only)
 // into a clickable local mini-site. Serve /tmp/wc26-preview with any static server.
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
-import { spawnSync } from 'child_process';
 import { HAS_JERSEY } from '../lib/jersey.mjs';
 import { slugOf, TEAMS } from '../lib/teams.mjs';
+import { productsFor } from '../lib/preview-lib.mjs';
 
 const THEME = process.env.WC_THEME_DIR || '/Users/galvaknin/futbolista-dev-wt';
-const STORE = process.env.SHOPIFY_STORE || '143f82.myshopify.com';
 const OUT = '/tmp/wc26-preview';
 mkdirSync(OUT, { recursive: true });
 
@@ -36,21 +35,7 @@ const trustUl = (read('sections/wc2026-team-hero.liquid').match(/<ul class="wc26
 const moreTail = localLinks((read('snippets/wc2026-team-more-body.liquid').match(/\{%-?\s*endcase\s*-?%\}([\s\S]*)$/) || [, ''])[1]);
 const gridBody = localLinks(read('snippets/wc2026-team-grid.liquid').replace(/\{%-[\s\S]*?-%\}/g, '').replace(/^[\s\S]*?<style>/, '<style>'));
 
-// ── read-only product fetch ──
-function gql(query) {
-  const r = spawnSync('shopify', ['store', 'execute', '--store', STORE, '--json', '--query', query], { encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024 });
-  const out = r.stdout || ''; const i = out.indexOf('{'), j = out.lastIndexOf('}');
-  try { return JSON.parse(out.slice(i, j + 1)); } catch { return null; }
-}
-function productsFor(slug) {
-  const q = `query{ c: collectionByHandle(handle:"wc2026-${slug}"){ products(first:12){ nodes{ title featuredImage{ url } priceRangeV2{ minVariantPrice{ amount currencyCode } } } } } }`;
-  const d = gql(q); const nodes = ((d && (d.data || d).c) || {}).products?.nodes || [];
-  return nodes.map((n) => ({
-    title: n.title,
-    img: n.featuredImage ? n.featuredImage.url : null,
-    price: n.priceRangeV2 ? Math.round(Number(n.priceRangeV2.minVariantPrice.amount)) : null,
-  })).filter((p) => p.img);
-}
+// ── read-only product fetch (storefront-accurate; drops DRAFT/ARCHIVED) — lib/preview-lib.mjs ──
 
 const teams = Object.values(TEAMS).map((t) => ({ code: t.code, slug: slugOf(t.code), he: t.he })).filter((t) => t.slug);
 
@@ -73,7 +58,7 @@ const PV_CSS = `
 
 const HEAD = (title) => `<!doctype html><html dir="rtl" lang="he"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>${title}</title>
-<style>:root{font-size:62.5%;--font-body-family:'FtbAssistant','Assistant',sans-serif;--font-heading-family:'FtbAssistant','Assistant',sans-serif}body{margin:0;background:#fff}</style>
+<style>:root{font-size:62.5%;--font-body-family:'FtbAssistant','Assistant',sans-serif;--font-heading-family:'FtbAssistant','Assistant',sans-serif}body{margin:0;background:#f6f8fc}</style>
 <style>${heroCss}</style><style>${versionsCss}</style><style>${infoCss}</style><style>${faqCss}</style><style>${moreCss}</style><style>${PV_CSS}</style></head><body>`;
 const BAR = `<div class="pv-bar"><b>תצוגה מקומית · WC2026 Team Pages</b><a href="index.html">כל הנבחרות</a><span>— לא פורסם, לא נוגע ב-Live</span></div>`;
 

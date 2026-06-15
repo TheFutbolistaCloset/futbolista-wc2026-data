@@ -58,6 +58,17 @@ function accentFor(hex) {
   return BRAND_BLUE; // light flag (yellow/sky/white) that can't reach AA → safe brand fallback
 }
 
+/* ── Navy-hero CTA: a BRIGHT flag color that pops on dark navy (else gold). Returns fill + ink.
+   The Spotlight hero sits on navy, so the AA-on-white accent above reads too dark there. ── */
+const GOLD = '#ffd700';
+function brightFor(hexA, hexB) {
+  const a = hexRgb(hexA), b = hexRgb(hexB);
+  const bright = relLum(a) >= relLum(b) ? a : b;
+  const fill = relLum(bright) > 0.32 ? rgbHex(bright) : GOLD; // too-dark flags → gold
+  const ink = relLum(hexRgb(fill)) > 0.45 ? '#0b1322' : '#fff';
+  return { fill, ink };
+}
+
 /* ── Hebrew helpers ── */
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); // HTML-safe (attrs/text)
 function joinHe(arr) { if (arr.length <= 1) return arr.join(''); return arr.slice(0, -1).join(', ') + ' ו' + arr[arr.length - 1]; }
@@ -139,12 +150,13 @@ const teams = Object.values(TEAMS).map((t) => info(t.code)).filter((t) => t.slug
 
 // 1 · hero body — sets --team-* on the section root, then emblem + eyebrow + H1 + lead + CTA
 function buildHeroBody() {
-  let out = GEN_HEADER('wc2026-team-hero-body', 'Params: slug, sid (section.id). Sets --team-1/2/accent on #wc26t-{sid}.');
+  let out = GEN_HEADER('wc2026-team-hero-body', 'Params: slug, sid (section.id). Sets --team-1/2/accent + --team-bright(/-ink) on #wc26t-{sid}.');
   out += '{%- case slug -%}\n';
   for (const t of teams) {
     const accent = accentFor(t.flag[0]);
+    const bright = brightFor(t.flag[0], t.flag[1]);
     out += `{%- when '${t.slug}' -%}\n`;
-    out += `<style>#wc26t-{{ sid }}{--team-1:${t.flag[0]};--team-2:${t.flag[1]};--team-accent:${accent};}</style>\n`;
+    out += `<style>#wc26t-{{ sid }}{--team-1:${t.flag[0]};--team-2:${t.flag[1]};--team-accent:${accent};--team-bright:${bright.fill};--team-bright-ink:${bright.ink};}</style>\n`;
     out += `<div class="wc26t__head">\n`;
     out += `  <span class="wc26t__emblem"><img src="${flagUrl(t.iso)}" alt="${esc(t.he)}" width="120" height="120" loading="eager" fetchpriority="high" decoding="async"></span>\n`;
     out += `  <span class="wc26t__eyebrow">${esc(copy.eyebrow(t.group))}</span>\n`;
@@ -231,7 +243,7 @@ function buildJsonLd() {
 <script type="application/ld+json">
 { "@context":"https://schema.org","@type":"ItemList","name":{{ t_he | prepend: 'חולצות נבחרת ' | append: ' למונדיאל 2026' | json }},"numberOfItems":{{ collection.products.size }},"itemListElement":[
 {%- for product in collection.products limit: 50 -%}
-{"@type":"ListItem","position":{{ forloop.index }},"url":{{ product.url | prepend: shop.url | json }},"name":{{ product.title | json }}}{%- unless forloop.last -%},{%- endunless -%}
+{"@type":"ListItem","position":{{ forloop.index }},"item":{"@type":"Product","name":{{ product.title | json }},"url":{{ product.url | prepend: shop.url | json }}{%- if product.featured_image -%},"image":{{ product.featured_image | image_url: width: 800 | prepend: 'https:' | json }}{%- endif -%},"brand":{"@type":"Brand","name":"The Futbolista Closet"},"offers":{"@type":"Offer","priceCurrency":{{ cart.currency.iso_code | default: 'ILS' | json }},"price":{{ product.price | divided_by: 100.0 | json }},"availability":{%- if product.available -%}"https://schema.org/InStock"{%- else -%}"https://schema.org/OutOfStock"{%- endif -%},"url":{{ product.url | prepend: shop.url | json }}}}}{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 ]}
 </script>
