@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T01:10:22.296Z",
+  "updated": "2026-06-15T04:05:21.313Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1125,8 +1125,11 @@
       "t2_iso": "tn",
       "venue": "Monterrey (Guadalupe)",
       "venue_he": "מונטריי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        5,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4690,6 +4693,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "SWE",
+          "team": "Sweden",
+          "he": "שבדיה",
+          "flag": [
+            "#006AA7",
+            "#FECC02"
+          ],
+          "iso": "se",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 3,
+          "gd": 4,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "NED",
           "team": "Netherlands",
           "he": "הולנד",
@@ -4706,7 +4729,7 @@
           "ga": 2,
           "pts": 1,
           "gd": 0,
-          "pos": 1,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -4726,26 +4749,6 @@
           "ga": 2,
           "pts": 1,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "SWE",
-          "team": "Sweden",
-          "he": "שבדיה",
-          "flag": [
-            "#006AA7",
-            "#FECC02"
-          ],
-          "iso": "se",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 3,
           "status": "third-watch"
         },
@@ -4758,14 +4761,14 @@
             "#b3000f"
           ],
           "iso": "tn",
-          "p": 0,
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 5,
           "pts": 0,
-          "gd": 0,
+          "gd": -4,
           "pos": 4,
           "status": "trailing"
         }
