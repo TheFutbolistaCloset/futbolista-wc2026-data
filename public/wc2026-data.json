@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T15:32:42.318Z",
+  "updated": "2026-06-15T18:00:37.239Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1252,8 +1252,11 @@
       "t2_iso": "cv",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4953,6 +4956,46 @@
       "complete": false,
       "standings": [
         {
+          "code": "CPV",
+          "team": "Cape Verde",
+          "he": "כף ורדה",
+          "flag": [
+            "#003893",
+            "#CF2027"
+          ],
+          "iso": "cv",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 1,
+          "gd": 0,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "ESP",
+          "team": "Spain",
+          "he": "ספרד",
+          "flag": [
+            "#AA151B",
+            "#F1BF00"
+          ],
+          "iso": "es",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "URU",
           "team": "Uruguay",
           "he": "אורוגוואי",
@@ -4969,48 +5012,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 1,
-          "status": "not-started"
-        },
-        {
-          "code": "CPV",
-          "team": "Cape Verde",
-          "he": "כף ורדה",
-          "flag": [
-            "#003893",
-            "#CF2027"
-          ],
-          "iso": "cv",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 2,
-          "status": "not-started"
-        },
-        {
-          "code": "ESP",
-          "team": "Spain",
-          "he": "ספרד",
-          "flag": [
-            "#AA151B",
-            "#F1BF00"
-          ],
-          "iso": "es",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 3,
-          "status": "not-started"
+          "status": "third-watch"
         },
         {
           "code": "KSA",
@@ -5030,7 +5033,7 @@
           "pts": 0,
           "gd": 0,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
