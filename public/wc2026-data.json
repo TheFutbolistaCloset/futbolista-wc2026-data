@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T09:20:22.944Z",
+  "updated": "2026-06-15T10:10:11.521Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -99,7 +99,12 @@
         "#FECB00"
       ],
       "iso": "ba",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-bosnia",
+        "he": "בוסניה והרצגובינה"
+      }
     },
     "QAT": {
       "key": "Qatar",
@@ -110,7 +115,12 @@
         "#6e102c"
       ],
       "iso": "qa",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-qatar",
+        "he": "קטאר"
+      }
     },
     "SUI": {
       "key": "Switzerland",
@@ -121,7 +131,12 @@
         "#b71c12"
       ],
       "iso": "ch",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-switzerland",
+        "he": "שווייץ"
+      }
     },
     "BRA": {
       "key": "Brazil",
@@ -164,7 +179,12 @@
         "#D21034"
       ],
       "iso": "ht",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-haiti",
+        "he": "האיטי"
+      }
     },
     "SCO": {
       "key": "Scotland",
@@ -223,7 +243,12 @@
         "#E4002B"
       ],
       "iso": "au",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-australia",
+        "he": "אוסטרליה"
+      }
     },
     "TUR": {
       "key": "Turkey",
@@ -234,7 +259,12 @@
         "#b00712"
       ],
       "iso": "tr",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-turkey",
+        "he": "טורקיה"
+      }
     },
     "GER": {
       "key": "Germany",
@@ -293,7 +323,12 @@
         "#034EA2"
       ],
       "iso": "ec",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-ecuador",
+        "he": "אקוודור"
+      }
     },
     "NED": {
       "key": "Netherlands",
@@ -352,7 +387,12 @@
         "#b3000f"
       ],
       "iso": "tn",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-tunisia",
+        "he": "תוניסיה"
+      }
     },
     "BEL": {
       "key": "Belgium",
@@ -395,7 +435,12 @@
         "#DA0000"
       ],
       "iso": "ir",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-iran",
+        "he": "איראן"
+      }
     },
     "NZL": {
       "key": "New Zealand",
@@ -406,7 +451,12 @@
         "#CC142B"
       ],
       "iso": "nz",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-new-zealand",
+        "he": "ניו זילנד"
+      }
     },
     "ESP": {
       "key": "Spain",
@@ -433,7 +483,12 @@
         "#CF2027"
       ],
       "iso": "cv",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-cape-verde",
+        "he": "כף ורדה"
+      }
     },
     "KSA": {
       "key": "Saudi Arabia",
@@ -492,7 +547,12 @@
         "#FDEF42"
       ],
       "iso": "sn",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-senegal",
+        "he": "סנגל"
+      }
     },
     "IRQ": {
       "key": "Iraq",
@@ -503,7 +563,12 @@
         "#007A3D"
       ],
       "iso": "iq",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-iraq",
+        "he": "עיראק"
+      }
     },
     "NOR": {
       "key": "Norway",
@@ -578,7 +643,12 @@
         "#CE1126"
       ],
       "iso": "jo",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-jordan",
+        "he": "ירדן"
+      }
     },
     "POR": {
       "key": "Portugal",
@@ -605,7 +675,12 @@
         "#F7D618"
       ],
       "iso": "cd",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-dr-congo",
+        "he": "קונגו"
+      }
     },
     "UZB": {
       "key": "Uzbekistan",
@@ -616,7 +691,12 @@
         "#1EB53A"
       ],
       "iso": "uz",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-uzbekistan",
+        "he": "אוזבקיסטן"
+      }
     },
     "COL": {
       "key": "Colombia",
@@ -675,7 +755,12 @@
         "#FCD116"
       ],
       "iso": "gh",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-ghana",
+        "he": "גאנה"
+      }
     },
     "PAN": {
       "key": "Panama",
@@ -686,7 +771,12 @@
         "#DA121A"
       ],
       "iso": "pa",
-      "group": null
+      "group": null,
+      "jersey": {
+        "has": true,
+        "url": "https://thefutbolistacloset.com/collections/wc2026-panama",
+        "he": "פנמה"
+      }
     }
   },
   "matches": [
