@@ -38,6 +38,9 @@ const THEME_DIR = process.env.WC_THEME_DIR || join(process.env.HOME || '', 'futb
 const SNIPPETS = join(THEME_DIR, 'snippets');
 const STORE = process.env.SHOPIFY_STORE || '143f82.myshopify.com';
 const APPLY = process.argv.includes('--apply');
+// Optional canary subset for --apply: `--teams=spain,brazil,argentina` (slugs). Empty ⇒ all.
+const TEAMS_ARG = (process.argv.find((a) => a.startsWith('--teams=')) || '').slice('--teams='.length);
+const TEAM_FILTER = TEAMS_ARG ? new Set(TEAMS_ARG.split(',').map((s) => s.trim()).filter(Boolean)) : null;
 // Flags: accurate lipis/flag-icons via flagUrl() (lib/teams.mjs).
 
 if (!existsSync(SNIPPETS)) { console.error(`✗ snippets dir not found: ${SNIPPETS}\n  set WC_THEME_DIR to the theme repo.`); process.exit(1); }
@@ -369,7 +372,9 @@ function gql(query, variables, mutate) {
 }
 const UPDATE = `mutation($id:ID!,$suffix:String){ collectionUpdate(input:{id:$id, templateSuffix:$suffix}){ collection{ id handle templateSuffix } userErrors{ field message } } }`;
 let ok = 0, miss = 0, fail = 0;
-for (const t of teams) {
+const applyTeams = TEAM_FILTER ? teams.filter((t) => TEAM_FILTER.has(t.slug)) : teams;
+if (TEAM_FILTER) console.log(`--teams filter: applying to ${applyTeams.length} of ${teams.length} (${[...TEAM_FILTER].join(', ')})`);
+for (const t of applyTeams) {
   const handle = `wc2026-${t.slug}`;
   try {
     const q = gql(`query{ collectionByHandle(handle:"${handle}"){ id templateSuffix } }`);
