@@ -164,13 +164,14 @@ function buildHeroBody() {
     out += `  <span class="wc26t__emblem"><img src="${flagUrl(t.iso)}" alt="${esc(t.he)}" width="120" height="120" loading="eager" fetchpriority="high" decoding="async"></span>\n`;
     out += `  <span class="wc26t__eyebrow">${esc(copy.eyebrow(t.group))}</span>\n`;
     out += `  <h1 class="wc26t__title">${esc(copy.h1(t.he))}</h1>\n`;
-    if (t.hasJersey) {
-      out += `  <p class="wc26t__lead">${esc(copy.heroLead(t.he))}</p>\n`;
-      out += `  <button type="button" class="wc26t__cta" data-wc26t-scroll>${esc(copy.cta(t.he))}</button>\n`;
-    } else {
-      out += `  <p class="wc26t__lead">${esc(copy.heroLeadSoon(t.he))}</p>\n`;
-      out += `  <button type="button" class="wc26t__cta" data-wc26t-notify>${esc(copy.ctaSoon())}</button>\n`;
-    }
+    // RUNTIME commerce/coming-soon: the page auto-flips when shirts are added (no re-generate).
+    out += `  {%- if collection.products.size > 0 -%}\n`;
+    out += `  <p class="wc26t__lead">${esc(copy.heroLead(t.he))}</p>\n`;
+    out += `  <button type="button" class="wc26t__cta" data-wc26t-scroll>${esc(copy.cta(t.he))}</button>\n`;
+    out += `  {%- else -%}\n`;
+    out += `  <p class="wc26t__lead">${esc(copy.heroLeadSoon(t.he))}</p>\n`;
+    out += `  <button type="button" class="wc26t__cta" data-wc26t-notify>${esc(copy.ctaSoon())}</button>\n`;
+    out += `  {%- endif -%}\n`;
     out += `</div>\n`;
   }
   out += '{%- else -%}\n';
@@ -188,7 +189,7 @@ function buildInfoBody() {
     const oppList = joinHe(fx.map((f) => f.opp_he));
     out += `{%- when '${t.slug}' -%}\n`;
     out += `<h2 class="wc26ti__h2">${esc(copy.infoH2(t.he))}</h2>\n`;
-    out += `<p class="wc26ti__lead">${esc(t.hasJersey ? copy.infoPara(t.he, t.group, oppList) : copy.infoParaSoon(t.he, t.group, oppList))}</p>\n`;
+    out += `<p class="wc26ti__lead">{%- if collection.products.size > 0 -%}${esc(copy.infoPara(t.he, t.group, oppList))}{%- else -%}${esc(copy.infoParaSoon(t.he, t.group, oppList))}{%- endif -%}</p>\n`;
     out += `<h3 class="wc26ti__fxhead">${esc(copy.fixturesHead(t.he))}</h3>\n`;
     out += `<div class="wc26ti__tblwrap"><table class="wc26ti__tbl"><thead><tr><th>תאריך</th><th>יריבה</th><th>אצטדיון</th></tr></thead><tbody>`;
     for (const f of fx) {
@@ -210,10 +211,16 @@ function buildFaqBody() {
     const fx = fixturesFor(t.code);
     const oppList = joinHe(fx.map((f) => f.opp_he));
     const fixturesList = fx.map((f) => `מול ${f.opp_he} ב-${f.date_il} בשעה ${f.time_il}`).join('; ');
-    const qa = (t.hasJersey ? copy.faq : copy.faqSoon)(t.he, t.group, oppList, fixturesList);
+    const qaC = copy.faq(t.he, t.group, oppList, fixturesList);
+    const qaS = copy.faqSoon(t.he, t.group, oppList, fixturesList);
     out += `{%- when '${t.slug}' -%}\n`;
     out += `<h2 class="wc26tf__h2">שאלות נפוצות · נבחרת ${esc(t.he)}</h2>\n`;
-    for (const [q, a] of qa) out += `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>\n`;
+    // RUNTIME: visible FAQ matches the FAQPage JSON-LD; both gate on collection.products.size.
+    out += `{%- if collection.products.size > 0 -%}\n`;
+    for (const [q, a] of qaC) out += `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>\n`;
+    out += `{%- else -%}\n`;
+    for (const [q, a] of qaS) out += `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>\n`;
+    out += `{%- endif -%}\n`;
   }
   out += '{%- else -%}\n{%- endcase -%}\n';
   return out;
@@ -227,11 +234,13 @@ function buildJsonLd() {
     const fx = fixturesFor(t.code);
     const oppList = joinHe(fx.map((f) => f.opp_he));
     const fixturesList = fx.map((f) => `מול ${f.opp_he} ב-${f.date_il} בשעה ${f.time_il}`).join('; ');
-    const qa = (t.hasJersey ? copy.faq : copy.faqSoon)(t.he, t.group, oppList, fixturesList);
-    const faqEntities = qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }));
+    const entitiesOf = (qa) => qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }));
+    const faqC = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entitiesOf(copy.faq(t.he, t.group, oppList, fixturesList)) });
+    const faqS = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entitiesOf(copy.faqSoon(t.he, t.group, oppList, fixturesList)) });
     out += `{%- when '${t.slug}' -%}{%- assign t_he = ${JSON.stringify(t.he)} -%}\n`;
     out += `<script type="application/ld+json">\n${JSON.stringify({ '@context': 'https://schema.org', '@type': 'SportsTeam', name: t.he, sport: 'Soccer' })}\n</script>\n`;
-    out += `<script type="application/ld+json">\n${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqEntities })}\n</script>\n`;
+    // RUNTIME: FAQPage schema mirrors the visible FAQ; both gate on collection.products.size.
+    out += `{%- if collection.products.size > 0 -%}\n<script type="application/ld+json">\n${faqC}\n</script>\n{%- else -%}\n<script type="application/ld+json">\n${faqS}\n</script>\n{%- endif -%}\n`;
   }
   out += '{%- else -%}{%- assign t_he = collection.title -%}\n{%- endcase -%}\n';
   // Breadcrumb + ItemList use Liquid (collection/shop) — same for every team, t_he from the case above.
