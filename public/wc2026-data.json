@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T21:00:38.529Z",
+  "updated": "2026-06-15T21:05:19.191Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1289,8 +1289,11 @@
       "t2_iso": "eg",
       "venue": "Seattle",
       "venue_he": "סיאטל",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4871,6 +4874,46 @@
       "complete": false,
       "standings": [
         {
+          "code": "BEL",
+          "team": "Belgium",
+          "he": "בלגיה",
+          "flag": [
+            "#FDDA24",
+            "#EF3340"
+          ],
+          "iso": "be",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "EGY",
+          "team": "Egypt",
+          "he": "מצרים",
+          "flag": [
+            "#CE1126",
+            "#1a1a1a"
+          ],
+          "iso": "eg",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "IRN",
           "team": "Iran",
           "he": "איראן",
@@ -4887,48 +4930,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 1,
-          "status": "not-started"
-        },
-        {
-          "code": "BEL",
-          "team": "Belgium",
-          "he": "בלגיה",
-          "flag": [
-            "#FDDA24",
-            "#EF3340"
-          ],
-          "iso": "be",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 2,
-          "status": "not-started"
-        },
-        {
-          "code": "EGY",
-          "team": "Egypt",
-          "he": "מצרים",
-          "flag": [
-            "#CE1126",
-            "#1a1a1a"
-          ],
-          "iso": "eg",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 3,
-          "status": "not-started"
+          "status": "third-watch"
         },
         {
           "code": "NZL",
@@ -4948,7 +4951,7 @@
           "pts": 0,
           "gd": 0,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
