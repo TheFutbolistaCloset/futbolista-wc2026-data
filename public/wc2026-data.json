@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T22:00:29.253Z",
+  "updated": "2026-06-15T01:10:22.296Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1088,8 +1088,11 @@
       "t2_iso": "ec",
       "venue": "Philadelphia",
       "venue_he": "פילדלפיה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4622,26 +4625,6 @@
           "status": "advancing"
         },
         {
-          "code": "ECU",
-          "team": "Ecuador",
-          "he": "אקוודור",
-          "flag": [
-            "#FFD100",
-            "#034EA2"
-          ],
-          "iso": "ec",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
           "code": "CIV",
           "team": "Ivory Coast",
           "he": "חוף השנהב",
@@ -4650,14 +4633,34 @@
             "#009E60"
           ],
           "iso": "ci",
-          "p": 0,
-          "w": 0,
+          "p": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
+          "gf": 1,
           "ga": 0,
+          "pts": 3,
+          "gd": 1,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
+          "code": "ECU",
+          "team": "Ecuador",
+          "he": "אקוודור",
+          "flag": [
+            "#FFD100",
+            "#034EA2"
+          ],
+          "iso": "ec",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 1,
           "pts": 0,
-          "gd": 0,
+          "gd": -1,
           "pos": 3,
           "status": "third-watch"
         },
