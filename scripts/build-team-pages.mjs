@@ -108,6 +108,22 @@ function info(code) {
 }
 
 const jerseySet = new Set(HAS_JERSEY);
+// Teams whose retro shirts live in /collections/retro-national-teams. Gal also listed Italy, but
+// Italy did NOT qualify for WC2026 → no wc2026-italy page, so it's omitted here.
+const RETRO = new Set(['ARG', 'ESP', 'BRA', 'NED', 'GER', 'FRA', 'POR', 'ENG', 'COL', 'JPN']);
+const RETRO_URL = '{{ routes.collections_url }}/retro-national-teams';
+// "אילו חולצות אפשר לקנות" answer. Plain string normally; for RETRO teams returns {text, html}
+// so the JSON-LD gets plain text and the visible FAQ gets a clickable link to the retro collection.
+const RETRO_LINK_TXT = 'אוסף חולצות הרטרו של הנבחרות';
+function retroAnswer(he, retro) {
+  const base = `בחנות תמצאו את החולצות של נבחרת ${he} למונדיאל 2026 — גרסת אוהד וגרסת שחקן, עם עיצוב אישי בחינם (הדפסת שם ומספר).`;
+  if (!retro) return base;
+  const tail = `בנוסף, יש לנו גם חולצות רטרו של נבחרת ${he} מהעונות הקלאסיות — ב${RETRO_LINK_TXT}.`;
+  return {
+    text: `${base} ${tail}`,
+    html: `${esc(base)} בנוסף, יש לנו גם חולצות רטרו של נבחרת ${esc(he)} מהעונות הקלאסיות — ב<a href="${RETRO_URL}">${esc(RETRO_LINK_TXT)}</a>.`,
+  };
+}
 const searchQ = (he) => encodeURIComponent('נבחרת ' + he + ' מונדיאל 2026');
 // Liquid route objects (theme standard) — collection page if the team has one, else search.
 const teamUrl = (code, he) => (jerseySet.has(code)
@@ -121,12 +137,13 @@ const copy = {
   heroLead: (he) => `כל חולצות נבחרת ${he} למונדיאל 2026 במקום אחד — גרסת אוהד וגרסת שחקן, עם עיצוב אישי בחינם ומשלוח חינם. בוא לייצג את ${he} בקיץ הגדול.`,
   cta: (he) => `לכל החולצות של ${he} ›`,
   infoH2: (he) => `נבחרת ${he} במונדיאל 2026`,
-  infoPara: (he, g, oppList) => `נבחרת ${he} שובצה לבית ${g} במונדיאל 2026, לצד ${oppList}. שלב הבתים יקבע אם ${he} תמשיך הלאה לנוקאאוט. כאן ריכזנו את כל החולצות של הנבחרת — גרסת אוהד וגרסת שחקן, עם עיצוב אישי בחינם (הדפסת שם ומספר) ומשלוח חינם, בדיוק בזמן למונדיאל.`,
+  infoPara: (he, g, oppList) => `נבחרת ${he} שובצה לבית ${g} במונדיאל 2026, לצד ${oppList}. שלב הבתים יקבע אם ${he} תמשיך הלאה לנוקאאוט. כאן ריכזנו את כל החולצות של הנבחרת בשתי גרסאות — גרסת אוהד בגזרה הנוחה ליום-יום וליציע, וגרסת שחקן הצמודה בדיוק כמו על המגרש — שתיהן עם עיצוב אישי בחינם (הדפסת שם ומספר) ומשלוח חינם, בדיוק בזמן למונדיאל.`,
   fixturesHead: (he) => `משחקי הבית של ${he} (שעון ישראל)`,
-  faq: (he, g, oppList, fixturesList) => [
+  faq: (he, g, oppList, fixturesList, retro) => [
     [`באיזה בית משחקת נבחרת ${he} במונדיאל 2026?`, `נבחרת ${he} שובצה לבית ${g}, לצד ${oppList}.`],
     [`מתי המשחקים של נבחרת ${he} בשלב הבתים?`, `שלושת משחקי הבית של ${he} (שעון ישראל): ${fixturesList}.`],
-    [`אילו חולצות של נבחרת ${he} אפשר לקנות בחנות?`, `בחנות תמצאו את החולצות של נבחרת ${he} למונדיאל 2026 — גרסת אוהד וגרסת שחקן, עם עיצוב אישי בחינם (הדפסת שם ומספר).`],
+    [`אילו חולצות של נבחרת ${he} אפשר לקנות בחנות?`, retroAnswer(he, retro)],
+    [`מה ההבדל בין גרסת אוהד לגרסת שחקן?`, `גרסת אוהד היא החולצה הקלאסית של היציע — גזרה רגילה ונוחה, סמלים רקומים, אידיאלית ליום-יום. גרסת שחקן היא בדיוק החולצה שהשחקנים לובשים על המגרש — גזרה צמודה וספורטיבית, בד קל עם סמלים מודפסים כדי לשמור על החולצה קלה, אידיאלית למכון הכושר, לריצות, למשחקים ולאימונים. שתי הגרסאות מגיעות עם עיצוב אישי בחינם — הדפסת שם ומספר.`],
     [`האם המחיר כולל עיצוב אישי ומשלוח?`, `כן — כל חולצות נבחרת ${he} מגיעות עם עיצוב אישי (שם ומספר) בחינם, ומשלוח חינם בכל הזמנה.`],
   ],
   // ── "coming soon" variants (teams without a jersey collection yet) ──
@@ -137,6 +154,7 @@ const copy = {
     [`באיזה בית משחקת נבחרת ${he} במונדיאל 2026?`, `נבחרת ${he} שובצה לבית ${g}, לצד ${oppList}.`],
     [`מתי המשחקים של נבחרת ${he} בשלב הבתים?`, `שלושת משחקי הבית של ${he} (שעון ישראל): ${fixturesList}.`],
     [`מתי יגיעו החולצות של נבחרת ${he} למונדיאל?`, `החולצות של ${he} עדיין לא עלו לאתר. השאירו מייל בעמוד ונעדכן אתכם ברגע שהן יגיעו — גרסת אוהד וגרסת שחקן, עם עיצוב אישי בחינם.`],
+    [`מה ההבדל בין גרסת אוהד לגרסת שחקן?`, `גרסת אוהד היא החולצה הקלאסית של היציע — גזרה רגילה ונוחה, סמלים רקומים, אידיאלית ליום-יום. גרסת שחקן היא בדיוק החולצה שהשחקנים לובשים על המגרש — גזרה צמודה וספורטיבית, בד קל עם סמלים מודפסים כדי לשמור על החולצה קלה, אידיאלית למכון הכושר, לריצות, למשחקים ולאימונים. שתי הגרסאות מגיעות עם עיצוב אישי בחינם — הדפסת שם ומספר.`],
     [`החולצות יגיעו עם עיצוב אישי ומשלוח חינם?`, `כן — כל חולצות הנבחרת יגיעו עם עיצוב אישי (שם ומספר) בחינם ומשלוח חינם, בדיוק כמו שאר חולצות המונדיאל.`],
   ],
 };
@@ -205,21 +223,22 @@ function buildInfoBody() {
 
 // 3 · faq body — visible <details> (text is byte-identical to the FAQPage schema in the jsonld snippet)
 function buildFaqBody() {
-  let out = GEN_HEADER('wc2026-team-faq-body', 'Param: slug. Visible FAQ; text mirrors FAQPage schema exactly.');
+  let out = GEN_HEADER('wc2026-team-faq-body', 'Param: slug. Visible FAQ; text mirrors FAQPage schema (retro teams add a link to the retro collection — same words, anchor only here).');
   out += '{%- case slug -%}\n';
   for (const t of teams) {
     const fx = fixturesFor(t.code);
     const oppList = joinHe(fx.map((f) => f.opp_he));
     const fixturesList = fx.map((f) => `מול ${f.opp_he} ב-${f.date_il} בשעה ${f.time_il}`).join('; ');
-    const qaC = copy.faq(t.he, t.group, oppList, fixturesList);
+    const qaC = copy.faq(t.he, t.group, oppList, fixturesList, RETRO.has(t.code));
     const qaS = copy.faqSoon(t.he, t.group, oppList, fixturesList);
+    const ansHtml = (a) => (a && typeof a === 'object') ? a.html : esc(a); // object answers carry pre-built HTML (retro link)
     out += `{%- when '${t.slug}' -%}\n`;
     out += `<h2 class="wc26tf__h2">שאלות נפוצות · נבחרת ${esc(t.he)}</h2>\n`;
     // RUNTIME: visible FAQ matches the FAQPage JSON-LD; both gate on collection.products.size.
     out += `{%- if collection.products.size > 0 -%}\n`;
-    for (const [q, a] of qaC) out += `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>\n`;
+    for (const [q, a] of qaC) out += `<details><summary>${esc(q)}</summary><p>${ansHtml(a)}</p></details>\n`;
     out += `{%- else -%}\n`;
-    for (const [q, a] of qaS) out += `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>\n`;
+    for (const [q, a] of qaS) out += `<details><summary>${esc(q)}</summary><p>${ansHtml(a)}</p></details>\n`;
     out += `{%- endif -%}\n`;
   }
   out += '{%- else -%}\n{%- endcase -%}\n';
@@ -234,8 +253,9 @@ function buildJsonLd() {
     const fx = fixturesFor(t.code);
     const oppList = joinHe(fx.map((f) => f.opp_he));
     const fixturesList = fx.map((f) => `מול ${f.opp_he} ב-${f.date_il} בשעה ${f.time_il}`).join('; ');
-    const entitiesOf = (qa) => qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }));
-    const faqC = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entitiesOf(copy.faq(t.he, t.group, oppList, fixturesList)) });
+    const ansText = (a) => (a && typeof a === 'object') ? a.text : a; // object answers expose plain text for schema
+    const entitiesOf = (qa) => qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: ansText(a) } }));
+    const faqC = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entitiesOf(copy.faq(t.he, t.group, oppList, fixturesList, RETRO.has(t.code))) });
     const faqS = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entitiesOf(copy.faqSoon(t.he, t.group, oppList, fixturesList)) });
     out += `{%- when '${t.slug}' -%}{%- assign t_he = ${JSON.stringify(t.he)} -%}\n`;
     out += `<script type="application/ld+json">\n${JSON.stringify({ '@context': 'https://schema.org', '@type': 'SportsTeam', name: t.he, sport: 'Soccer' })}\n</script>\n`;
