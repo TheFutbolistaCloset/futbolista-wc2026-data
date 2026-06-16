@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T21:00:35.772Z",
+  "updated": "2026-06-16T21:10:23.504Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1400,8 +1400,11 @@
       "t2_iso": "sn",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -5050,6 +5053,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "FRA",
+          "team": "France",
+          "he": "צרפת",
+          "flag": [
+            "#0055A4",
+            "#EF4135"
+          ],
+          "iso": "fr",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 3,
+          "gd": 2,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "NOR",
           "team": "Norway",
           "he": "נורווגיה",
@@ -5066,28 +5089,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 1,
-          "status": "not-started"
-        },
-        {
-          "code": "SEN",
-          "team": "Senegal",
-          "he": "סנגל",
-          "flag": [
-            "#00853F",
-            "#FDEF42"
-          ],
-          "iso": "sn",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 2,
-          "status": "not-started"
+          "status": "advancing"
         },
         {
           "code": "IRQ",
@@ -5107,27 +5110,27 @@
           "pts": 0,
           "gd": 0,
           "pos": 3,
-          "status": "not-started"
+          "status": "third-watch"
         },
         {
-          "code": "FRA",
-          "team": "France",
-          "he": "צרפת",
+          "code": "SEN",
+          "team": "Senegal",
+          "he": "סנגל",
           "flag": [
-            "#0055A4",
-            "#EF4135"
+            "#00853F",
+            "#FDEF42"
           ],
-          "iso": "fr",
-          "p": 0,
+          "iso": "sn",
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
           "pts": 0,
-          "gd": 0,
+          "gd": -2,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
