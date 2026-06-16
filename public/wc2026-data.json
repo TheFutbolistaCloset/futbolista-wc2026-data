@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T00:10:24.318Z",
+  "updated": "2026-06-16T03:10:26.068Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1363,8 +1363,11 @@
       "t2_iso": "nz",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        2
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4877,6 +4880,46 @@
       "complete": false,
       "standings": [
         {
+          "code": "IRN",
+          "team": "Iran",
+          "he": "איראן",
+          "flag": [
+            "#239F40",
+            "#DA0000"
+          ],
+          "iso": "ir",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
+          "gd": 0,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "NZL",
+          "team": "New Zealand",
+          "he": "ניו זילנד",
+          "flag": [
+            "#00247D",
+            "#CC142B"
+          ],
+          "iso": "nz",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "BEL",
           "team": "Belgium",
           "he": "בלגיה",
@@ -4893,8 +4936,8 @@
           "ga": 1,
           "pts": 1,
           "gd": 0,
-          "pos": 1,
-          "status": "advancing"
+          "pos": 3,
+          "status": "third-watch"
         },
         {
           "code": "EGY",
@@ -4912,46 +4955,6 @@
           "gf": 1,
           "ga": 1,
           "pts": 1,
-          "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "IRN",
-          "team": "Iran",
-          "he": "איראן",
-          "flag": [
-            "#239F40",
-            "#DA0000"
-          ],
-          "iso": "ir",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
-          "code": "NZL",
-          "team": "New Zealand",
-          "he": "ניו זילנד",
-          "flag": [
-            "#00247D",
-            "#CC142B"
-          ],
-          "iso": "nz",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
           "gd": 0,
           "pos": 4,
           "status": "trailing"
