@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T21:05:19.191Z",
+  "updated": "2026-06-16T00:10:24.318Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1326,8 +1326,11 @@
       "t2_iso": "uy",
       "venue": "Miami (Miami Gardens)",
       "venue_he": "מיאמי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4959,6 +4962,46 @@
       "complete": false,
       "standings": [
         {
+          "code": "URU",
+          "team": "Uruguay",
+          "he": "אורוגוואי",
+          "flag": [
+            "#5B92E5",
+            "#FCD116"
+          ],
+          "iso": "uy",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "KSA",
+          "team": "Saudi Arabia",
+          "he": "ערב הסעודית",
+          "flag": [
+            "#165B33",
+            "#0d3d22"
+          ],
+          "iso": "sa",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "CPV",
           "team": "Cape Verde",
           "he": "כף ורדה",
@@ -4975,8 +5018,8 @@
           "ga": 0,
           "pts": 1,
           "gd": 0,
-          "pos": 1,
-          "status": "advancing"
+          "pos": 3,
+          "status": "third-watch"
         },
         {
           "code": "ESP",
@@ -4994,46 +5037,6 @@
           "gf": 0,
           "ga": 0,
           "pts": 1,
-          "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "URU",
-          "team": "Uruguay",
-          "he": "אורוגוואי",
-          "flag": [
-            "#5B92E5",
-            "#FCD116"
-          ],
-          "iso": "uy",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
-          "code": "KSA",
-          "team": "Saudi Arabia",
-          "he": "ערב הסעודית",
-          "flag": [
-            "#165B33",
-            "#0d3d22"
-          ],
-          "iso": "sa",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
           "gd": 0,
           "pos": 4,
           "status": "trailing"
