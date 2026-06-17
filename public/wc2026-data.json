@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T06:05:24.757Z",
+  "updated": "2026-06-17T06:15:22.002Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1511,8 +1511,11 @@
       "t2_iso": "jo",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "venue_he": "סן פרנסיסקו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5172,14 +5175,14 @@
             "#a31523"
           ],
           "iso": "at",
-          "p": 0,
-          "w": 0,
+          "p": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 3,
+          "gd": 2,
           "pos": 2,
           "status": "advancing"
         },
@@ -5192,14 +5195,14 @@
             "#CE1126"
           ],
           "iso": "jo",
-          "p": 0,
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
           "pts": 0,
-          "gd": 0,
+          "gd": -2,
           "pos": 3,
           "status": "third-watch"
         },
