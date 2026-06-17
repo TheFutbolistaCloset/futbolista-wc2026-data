@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T00:10:22.570Z",
+  "updated": "2026-06-17T03:05:17.826Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1474,8 +1474,11 @@
       "t2_iso": "dz",
       "venue": "Kansas City",
       "venue_he": "קנזס סיטי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5141,6 +5144,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "ARG",
+          "team": "Argentina",
+          "he": "ארגנטינה",
+          "flag": [
+            "#74ACDF",
+            "#F6B40E"
+          ],
+          "iso": "ar",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 3,
+          "ga": 0,
+          "pts": 3,
+          "gd": 3,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "AUT",
           "team": "Austria",
           "he": "אוסטריה",
@@ -5157,48 +5180,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 1,
-          "status": "not-started"
-        },
-        {
-          "code": "ALG",
-          "team": "Algeria",
-          "he": "אלג׳יריה",
-          "flag": [
-            "#006233",
-            "#D21034"
-          ],
-          "iso": "dz",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 2,
-          "status": "not-started"
-        },
-        {
-          "code": "ARG",
-          "team": "Argentina",
-          "he": "ארגנטינה",
-          "flag": [
-            "#74ACDF",
-            "#F6B40E"
-          ],
-          "iso": "ar",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 3,
-          "status": "not-started"
+          "status": "advancing"
         },
         {
           "code": "JOR",
@@ -5217,8 +5200,28 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "ALG",
+          "team": "Algeria",
+          "he": "אלג׳יריה",
+          "flag": [
+            "#006233",
+            "#D21034"
+          ],
+          "iso": "dz",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 3,
+          "pts": 0,
+          "gd": -3,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
