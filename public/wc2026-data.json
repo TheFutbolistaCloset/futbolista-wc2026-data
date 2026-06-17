@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T18:00:41.145Z",
+  "updated": "2026-06-17T19:05:31.861Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1548,8 +1548,11 @@
       "t2_iso": "cd",
       "venue": "Houston",
       "venue_he": "יוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5232,6 +5235,46 @@
       "complete": false,
       "standings": [
         {
+          "code": "POR",
+          "team": "Portugal",
+          "he": "פורטוגל",
+          "flag": [
+            "#046A38",
+            "#DA291C"
+          ],
+          "iso": "pt",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "COD",
+          "team": "DR Congo",
+          "he": "קונגו",
+          "flag": [
+            "#007FFF",
+            "#F7D618"
+          ],
+          "iso": "cd",
+          "p": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 1,
+          "gd": 0,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "UZB",
           "team": "Uzbekistan",
           "he": "אוזבקיסטן",
@@ -5248,28 +5291,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 1,
-          "status": "not-started"
-        },
-        {
-          "code": "POR",
-          "team": "Portugal",
-          "he": "פורטוגל",
-          "flag": [
-            "#046A38",
-            "#DA291C"
-          ],
-          "iso": "pt",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 2,
-          "status": "not-started"
+          "pos": 3,
+          "status": "third-watch"
         },
         {
           "code": "COL",
@@ -5288,28 +5311,8 @@
           "ga": 0,
           "pts": 0,
           "gd": 0,
-          "pos": 3,
-          "status": "not-started"
-        },
-        {
-          "code": "COD",
-          "team": "DR Congo",
-          "he": "קונגו",
-          "flag": [
-            "#007FFF",
-            "#F7D618"
-          ],
-          "iso": "cd",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 4,
-          "status": "not-started"
+          "status": "trailing"
         }
       ]
     },
