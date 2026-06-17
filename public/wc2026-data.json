@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T21:10:23.504Z",
+  "updated": "2026-06-17T00:10:22.570Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1437,8 +1437,11 @@
       "t2_iso": "no",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        4
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5053,6 +5056,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "NOR",
+          "team": "Norway",
+          "he": "נורווגיה",
+          "flag": [
+            "#BA0C2F",
+            "#00205B"
+          ],
+          "iso": "no",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 3,
+          "gd": 3,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "FRA",
           "team": "France",
           "he": "צרפת",
@@ -5069,48 +5092,8 @@
           "ga": 1,
           "pts": 3,
           "gd": 2,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "NOR",
-          "team": "Norway",
-          "he": "נורווגיה",
-          "flag": [
-            "#BA0C2F",
-            "#00205B"
-          ],
-          "iso": "no",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
           "pos": 2,
           "status": "advancing"
-        },
-        {
-          "code": "IRQ",
-          "team": "Iraq",
-          "he": "עיראק",
-          "flag": [
-            "#CE1126",
-            "#007A3D"
-          ],
-          "iso": "iq",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
-          "pos": 3,
-          "status": "third-watch"
         },
         {
           "code": "SEN",
@@ -5129,6 +5112,26 @@
           "ga": 3,
           "pts": 0,
           "gd": -2,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "IRQ",
+          "team": "Iraq",
+          "he": "עיראק",
+          "flag": [
+            "#CE1126",
+            "#007A3D"
+          ],
+          "iso": "iq",
+          "p": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 4,
+          "pts": 0,
+          "gd": -3,
           "pos": 4,
           "status": "trailing"
         }
