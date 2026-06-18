@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T21:00:31.150Z",
+  "updated": "2026-06-18T21:10:24.691Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1733,8 +1733,11 @@
       "t2_iso": "ba",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        4,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4482,22 +4485,22 @@
       "complete": false,
       "standings": [
         {
-          "code": "BIH",
-          "team": "Bosnia & Herzegovina",
-          "he": "בוסניה והרצגובינה",
+          "code": "SUI",
+          "team": "Switzerland",
+          "he": "שווייץ",
           "flag": [
-            "#002395",
-            "#FECB00"
+            "#D52B1E",
+            "#b71c12"
           ],
-          "iso": "ba",
-          "p": 1,
-          "w": 0,
+          "iso": "ch",
+          "p": 2,
+          "w": 1,
           "d": 1,
           "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 4,
+          "gd": 3,
           "pos": 1,
           "status": "advancing"
         },
@@ -4542,22 +4545,22 @@
           "status": "third-watch"
         },
         {
-          "code": "SUI",
-          "team": "Switzerland",
-          "he": "שווייץ",
+          "code": "BIH",
+          "team": "Bosnia & Herzegovina",
+          "he": "בוסניה והרצגובינה",
           "flag": [
-            "#D52B1E",
-            "#b71c12"
+            "#002395",
+            "#FECB00"
           ],
-          "iso": "ch",
-          "p": 1,
+          "iso": "ba",
+          "p": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 5,
           "pts": 1,
-          "gd": 0,
+          "gd": -3,
           "pos": 4,
           "status": "trailing"
         }
