@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T10:45:21.977Z",
+  "updated": "2026-06-18T11:00:31.822Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -22,7 +22,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-mexico",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A7%D7%A1%D7%99%D7%A7%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "מקסיקו"
       }
     },
@@ -70,7 +70,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-czechia",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A6%D7%B3%D7%9B%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "צ׳כיה"
       }
     },
@@ -86,7 +86,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-canada",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%A0%D7%93%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "קנדה"
       }
     },
@@ -150,7 +150,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-brazil",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%91%D7%A8%D7%96%D7%99%D7%9C%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "ברזיל"
       }
     },
@@ -166,7 +166,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-morocco",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A8%D7%95%D7%A7%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "מרוקו"
       }
     },
@@ -294,7 +294,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-curacao",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%95%D7%A8%D7%A1%D7%90%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "קורסאו"
       }
     },
@@ -310,7 +310,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-ivory-coast",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%97%D7%95%D7%A3%20%D7%94%D7%A9%D7%A0%D7%94%D7%91%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "חוף השנהב"
       }
     },
@@ -358,7 +358,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-japan",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%99%D7%A4%D7%9F%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "יפן"
       }
     },
@@ -486,7 +486,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-cape-verde",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9B%D7%A3%20%D7%95%D7%A8%D7%93%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "כף ורדה"
       }
     },
@@ -502,7 +502,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-saudi-arabia",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A2%D7%A8%D7%91%20%D7%94%D7%A1%D7%A2%D7%95%D7%93%D7%99%D7%AA%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "ערב הסעודית"
       }
     },
@@ -582,7 +582,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-norway",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A0%D7%95%D7%A8%D7%95%D7%95%D7%92%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "נורווגיה"
       }
     },
@@ -662,7 +662,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-portugal",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A4%D7%95%D7%A8%D7%98%D7%95%D7%92%D7%9C%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "פורטוגל"
       }
     },
@@ -774,7 +774,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-panama",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A4%D7%A0%D7%9E%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "פנמה"
       }
     }
