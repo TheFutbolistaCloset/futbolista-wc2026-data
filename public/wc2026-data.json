@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T14:25:21.679Z",
+  "updated": "2026-06-18T18:05:22.774Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1696,8 +1696,11 @@
       "t2_iso": "za",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4442,13 +4445,13 @@
             "#11457E"
           ],
           "iso": "cz",
-          "p": 1,
+          "p": 2,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 1,
-          "ga": 2,
-          "pts": 0,
+          "gf": 2,
+          "ga": 3,
+          "pts": 1,
           "gd": -1,
           "pos": 3,
           "status": "third-watch"
@@ -4462,13 +4465,13 @@
             "#E03C31"
           ],
           "iso": "za",
-          "p": 1,
+          "p": 2,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 0,
-          "ga": 2,
-          "pts": 0,
+          "gf": 1,
+          "ga": 3,
+          "pts": 1,
           "gd": -2,
           "pos": 4,
           "status": "trailing"
