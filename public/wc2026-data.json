@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T03:45:26.963Z",
+  "updated": "2026-06-18T04:15:22.564Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1659,8 +1659,11 @@
       "t2_iso": "co",
       "venue": "Mexico City",
       "venue_he": "מקסיקו סיטי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        3
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5241,6 +5244,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "COL",
+          "team": "Colombia",
+          "he": "קולומביה",
+          "flag": [
+            "#FCD116",
+            "#003893"
+          ],
+          "iso": "co",
+          "p": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 3,
+          "gd": 2,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "POR",
           "team": "Portugal",
           "he": "פורטוגל",
@@ -5257,7 +5280,7 @@
           "ga": 1,
           "pts": 1,
           "gd": 0,
-          "pos": 1,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -5277,8 +5300,8 @@
           "ga": 1,
           "pts": 1,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
+          "pos": 3,
+          "status": "third-watch"
         },
         {
           "code": "UZB",
@@ -5289,34 +5312,14 @@
             "#1EB53A"
           ],
           "iso": "uz",
-          "p": 0,
+          "p": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
           "pts": 0,
-          "gd": 0,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
-          "code": "COL",
-          "team": "Colombia",
-          "he": "קולומביה",
-          "flag": [
-            "#FCD116",
-            "#003893"
-          ],
-          "iso": "co",
-          "p": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "pts": 0,
-          "gd": 0,
+          "gd": -2,
           "pos": 4,
           "status": "trailing"
         }
