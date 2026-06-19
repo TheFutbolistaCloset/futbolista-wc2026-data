@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T00:10:21.914Z",
+  "updated": "2026-06-19T03:10:22.648Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1807,8 +1807,11 @@
       "t2_iso": "kr",
       "venue": "Guadalajara (Zapopan)",
       "venue_he": "גוודלחרה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4411,14 +4414,14 @@
             "#CE1126"
           ],
           "iso": "mx",
-          "p": 1,
-          "w": 1,
+          "p": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 2,
+          "gf": 3,
           "ga": 0,
-          "pts": 3,
-          "gd": 2,
+          "pts": 6,
+          "gd": 3,
           "pos": 1,
           "status": "advancing"
         },
@@ -4431,14 +4434,14 @@
             "#0047A0"
           ],
           "iso": "kr",
-          "p": 1,
+          "p": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 2,
-          "ga": 1,
+          "ga": 2,
           "pts": 3,
-          "gd": 1,
+          "gd": 0,
           "pos": 2,
           "status": "advancing"
         },
