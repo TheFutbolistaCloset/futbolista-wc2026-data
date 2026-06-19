@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T21:10:24.691Z",
+  "updated": "2026-06-19T00:10:21.914Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1770,8 +1770,11 @@
       "t2_iso": "qa",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        6,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4485,6 +4488,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "CAN",
+          "team": "Canada",
+          "he": "קנדה",
+          "flag": [
+            "#D80621",
+            "#a00318"
+          ],
+          "iso": "ca",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 1,
+          "pts": 4,
+          "gd": 6,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "SUI",
           "team": "Switzerland",
           "he": "שווייץ",
@@ -4501,48 +4524,8 @@
           "ga": 2,
           "pts": 4,
           "gd": 3,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "QAT",
-          "team": "Qatar",
-          "he": "קטאר",
-          "flag": [
-            "#8A1538",
-            "#6e102c"
-          ],
-          "iso": "qa",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
           "pos": 2,
           "status": "advancing"
-        },
-        {
-          "code": "CAN",
-          "team": "Canada",
-          "he": "קנדה",
-          "flag": [
-            "#D80621",
-            "#a00318"
-          ],
-          "iso": "ca",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
-          "pos": 3,
-          "status": "third-watch"
         },
         {
           "code": "BIH",
@@ -4561,6 +4544,26 @@
           "ga": 5,
           "pts": 1,
           "gd": -3,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "QAT",
+          "team": "Qatar",
+          "he": "קטאר",
+          "flag": [
+            "#8A1538",
+            "#6e102c"
+          ],
+          "iso": "qa",
+          "p": 2,
+          "w": 0,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 7,
+          "pts": 1,
+          "gd": -6,
           "pos": 4,
           "status": "trailing"
         }
