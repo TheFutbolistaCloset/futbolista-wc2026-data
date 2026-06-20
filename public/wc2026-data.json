@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T21:00:35.225Z",
+  "updated": "2026-06-20T22:09:17.069Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2029,8 +2029,11 @@
       "t2_iso": "ci",
       "venue": "Toronto",
       "venue_he": "טורונטו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4769,14 +4772,14 @@
             "#FFCE00"
           ],
           "iso": "de",
-          "p": 1,
-          "w": 1,
+          "p": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 7,
-          "ga": 1,
-          "pts": 3,
-          "gd": 6,
+          "gf": 9,
+          "ga": 2,
+          "pts": 6,
+          "gd": 7,
           "pos": 1,
           "status": "advancing"
         },
@@ -4789,14 +4792,14 @@
             "#009E60"
           ],
           "iso": "ci",
-          "p": 1,
+          "p": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
-          "gf": 1,
-          "ga": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
           "pts": 3,
-          "gd": 1,
+          "gd": 0,
           "pos": 2,
           "status": "advancing"
         },
