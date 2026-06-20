@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T03:50:21.840Z",
+  "updated": "2026-06-20T05:30:29.759Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1955,8 +1955,11 @@
       "t2_iso": "py",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "venue_he": "סן פרנסיסקו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4710,26 +4713,6 @@
           "status": "advancing"
         },
         {
-          "code": "TUR",
-          "team": "Turkey",
-          "he": "טורקיה",
-          "flag": [
-            "#E30A17",
-            "#b00712"
-          ],
-          "iso": "tr",
-          "p": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 2,
-          "pts": 0,
-          "gd": -2,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
           "code": "PAR",
           "team": "Paraguay",
           "he": "פרגוואי",
@@ -4738,12 +4721,32 @@
             "#0038A8"
           ],
           "iso": "py",
-          "p": 1,
-          "w": 0,
+          "p": 2,
+          "w": 1,
           "d": 0,
           "l": 1,
-          "gf": 1,
+          "gf": 2,
           "ga": 4,
+          "pts": 3,
+          "gd": -2,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "TUR",
+          "team": "Turkey",
+          "he": "טורקיה",
+          "flag": [
+            "#E30A17",
+            "#b00712"
+          ],
+          "iso": "tr",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 3,
           "pts": 0,
           "gd": -3,
           "pos": 4,
