@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T17:30:28.720Z",
+  "updated": "2026-06-20T19:10:22.599Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1992,8 +1992,11 @@
       "t2_iso": "se",
       "venue": "Houston",
       "venue_he": "יוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        5,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4843,26 +4846,6 @@
       "complete": false,
       "standings": [
         {
-          "code": "SWE",
-          "team": "Sweden",
-          "he": "שבדיה",
-          "flag": [
-            "#006AA7",
-            "#FECC02"
-          ],
-          "iso": "se",
-          "p": 1,
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "gf": 5,
-          "ga": 1,
-          "pts": 3,
-          "gd": 4,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
           "code": "NED",
           "team": "Netherlands",
           "he": "הולנד",
@@ -4871,13 +4854,33 @@
             "#21468B"
           ],
           "iso": "nl",
-          "p": 1,
-          "w": 0,
+          "p": 2,
+          "w": 1,
           "d": 1,
           "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 1,
+          "gf": 7,
+          "ga": 3,
+          "pts": 4,
+          "gd": 4,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "SWE",
+          "team": "Sweden",
+          "he": "שבדיה",
+          "flag": [
+            "#006AA7",
+            "#FECC02"
+          ],
+          "iso": "se",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 6,
+          "pts": 3,
           "gd": 0,
           "pos": 2,
           "status": "advancing"
