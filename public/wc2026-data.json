@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T02:15:24.807Z",
+  "updated": "2026-06-20T02:45:21.041Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1918,8 +1918,11 @@
       "t2_iso": "ht",
       "venue": "Philadelphia",
       "venue_he": "פילדלפיה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4582,6 +4585,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "BRA",
+          "team": "Brazil",
+          "he": "ברזיל",
+          "flag": [
+            "#009C3B",
+            "#FFDF00"
+          ],
+          "iso": "br",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 4,
+          "gd": 3,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "MAR",
           "team": "Morocco",
           "he": "מרוקו",
@@ -4598,7 +4621,7 @@
           "ga": 1,
           "pts": 4,
           "gd": 1,
-          "pos": 1,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -4618,26 +4641,6 @@
           "ga": 1,
           "pts": 3,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "BRA",
-          "team": "Brazil",
-          "he": "ברזיל",
-          "flag": [
-            "#009C3B",
-            "#FFDF00"
-          ],
-          "iso": "br",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
           "pos": 3,
           "status": "third-watch"
         },
@@ -4650,14 +4653,14 @@
             "#D21034"
           ],
           "iso": "ht",
-          "p": 1,
+          "p": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 0,
-          "ga": 1,
+          "ga": 4,
           "pts": 0,
-          "gd": -1,
+          "gd": -4,
           "pos": 4,
           "status": "trailing"
         }
