@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T23:45:23.424Z",
+  "updated": "2026-06-20T00:05:18.598Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -1881,8 +1881,11 @@
       "t2_iso": "ma",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4579,6 +4582,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "MAR",
+          "team": "Morocco",
+          "he": "מרוקו",
+          "flag": [
+            "#C1272D",
+            "#006233"
+          ],
+          "iso": "ma",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 4,
+          "gd": 1,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "SCO",
           "team": "Scotland",
           "he": "סקוטלנד",
@@ -4587,15 +4610,15 @@
             "#003a73"
           ],
           "iso": "gb-sct",
-          "p": 1,
+          "p": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 1,
-          "ga": 0,
+          "ga": 1,
           "pts": 3,
-          "gd": 1,
-          "pos": 1,
+          "gd": 0,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -4607,26 +4630,6 @@
             "#FFDF00"
           ],
           "iso": "br",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "MAR",
-          "team": "Morocco",
-          "he": "מרוקו",
-          "flag": [
-            "#C1272D",
-            "#006233"
-          ],
-          "iso": "ma",
           "p": 1,
           "w": 0,
           "d": 1,
