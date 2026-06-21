@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T02:01:48.900Z",
+  "updated": "2026-06-21T06:10:22.956Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2103,8 +2103,11 @@
       "t2_iso": "jp",
       "venue": "Monterrey (Guadalupe)",
       "venue_he": "מונטריי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        4
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4872,6 +4875,26 @@
           "status": "advancing"
         },
         {
+          "code": "JPN",
+          "team": "Japan",
+          "he": "יפן",
+          "flag": [
+            "#BC002D",
+            "#8a0021"
+          ],
+          "iso": "jp",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 4,
+          "gd": 4,
+          "pos": 2,
+          "status": "advancing"
+        },
+        {
           "code": "SWE",
           "team": "Sweden",
           "he": "שבדיה",
@@ -4888,26 +4911,6 @@
           "ga": 6,
           "pts": 3,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "JPN",
-          "team": "Japan",
-          "he": "יפן",
-          "flag": [
-            "#BC002D",
-            "#8a0021"
-          ],
-          "iso": "jp",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 1,
-          "gd": 0,
           "pos": 3,
           "status": "third-watch"
         },
@@ -4920,14 +4923,14 @@
             "#b3000f"
           ],
           "iso": "tn",
-          "p": 1,
+          "p": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 5,
+          "ga": 9,
           "pts": 0,
-          "gd": -4,
+          "gd": -8,
           "pos": 4,
           "status": "trailing"
         }
