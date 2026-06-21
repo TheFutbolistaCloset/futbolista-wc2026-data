@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T08:10:23.735Z",
+  "updated": "2026-06-21T18:10:25.146Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2140,8 +2140,11 @@
       "t2_iso": "sa",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        4,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5025,6 +5028,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "ESP",
+          "team": "Spain",
+          "he": "ספרד",
+          "flag": [
+            "#AA151B",
+            "#F1BF00"
+          ],
+          "iso": "es",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 0,
+          "pts": 4,
+          "gd": 4,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "URU",
           "team": "Uruguay",
           "he": "אורוגוואי",
@@ -5033,26 +5056,6 @@
             "#FCD116"
           ],
           "iso": "uy",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "KSA",
-          "team": "Saudi Arabia",
-          "he": "ערב הסעודית",
-          "flag": [
-            "#165B33",
-            "#0d3d22"
-          ],
-          "iso": "sa",
           "p": 1,
           "w": 0,
           "d": 1,
@@ -5085,22 +5088,22 @@
           "status": "third-watch"
         },
         {
-          "code": "ESP",
-          "team": "Spain",
-          "he": "ספרד",
+          "code": "KSA",
+          "team": "Saudi Arabia",
+          "he": "ערב הסעודית",
           "flag": [
-            "#AA151B",
-            "#F1BF00"
+            "#165B33",
+            "#0d3d22"
           ],
-          "iso": "es",
-          "p": 1,
+          "iso": "sa",
+          "p": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 5,
           "pts": 1,
-          "gd": 0,
+          "gd": -4,
           "pos": 4,
           "status": "trailing"
         }
