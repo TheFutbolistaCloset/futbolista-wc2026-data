@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T21:00:30.080Z",
+  "updated": "2026-06-21T21:10:21.246Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2177,8 +2177,11 @@
       "t2_iso": "ir",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4951,15 +4954,35 @@
             "#DA0000"
           ],
           "iso": "ir",
-          "p": 1,
+          "p": 2,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 2,
           "ga": 2,
-          "pts": 1,
+          "pts": 2,
           "gd": 0,
           "pos": 1,
+          "status": "advancing"
+        },
+        {
+          "code": "BEL",
+          "team": "Belgium",
+          "he": "בלגיה",
+          "flag": [
+            "#FDDA24",
+            "#EF3340"
+          ],
+          "iso": "be",
+          "p": 2,
+          "w": 0,
+          "d": 2,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "pts": 2,
+          "gd": 0,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -4977,26 +5000,6 @@
           "l": 0,
           "gf": 2,
           "ga": 2,
-          "pts": 1,
-          "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "BEL",
-          "team": "Belgium",
-          "he": "בלגיה",
-          "flag": [
-            "#FDDA24",
-            "#EF3340"
-          ],
-          "iso": "be",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
           "pts": 1,
           "gd": 0,
           "pos": 3,
