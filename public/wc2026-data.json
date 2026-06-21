@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T22:50:23.426Z",
+  "updated": "2026-06-21T02:01:48.900Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2066,8 +2066,11 @@
       "t2_iso": "cw",
       "venue": "Kansas City",
       "venue_he": "קנזס סיטי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4812,13 +4815,13 @@
             "#034EA2"
           ],
           "iso": "ec",
-          "p": 1,
+          "p": 2,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 1,
           "gf": 0,
           "ga": 1,
-          "pts": 0,
+          "pts": 1,
           "gd": -1,
           "pos": 3,
           "status": "third-watch"
@@ -4832,13 +4835,13 @@
             "#F9E814"
           ],
           "iso": "cw",
-          "p": 1,
+          "p": 2,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 1,
           "gf": 1,
           "ga": 7,
-          "pts": 0,
+          "pts": 1,
           "gd": -6,
           "pos": 4,
           "status": "trailing"
