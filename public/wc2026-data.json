@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T11:50:24.093Z",
+  "updated": "2026-06-22T19:10:26.607Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2288,8 +2288,11 @@
       "t2_iso": "at",
       "venue": "Dallas (Arlington)",
       "venue_he": "דאלאס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5215,14 +5218,14 @@
             "#F6B40E"
           ],
           "iso": "ar",
-          "p": 1,
-          "w": 1,
+          "p": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 3,
+          "gf": 5,
           "ga": 0,
-          "pts": 3,
-          "gd": 3,
+          "pts": 6,
+          "gd": 5,
           "pos": 1,
           "status": "advancing"
         },
@@ -5235,14 +5238,14 @@
             "#a31523"
           ],
           "iso": "at",
-          "p": 1,
+          "p": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 3,
-          "ga": 1,
+          "ga": 3,
           "pts": 3,
-          "gd": 2,
+          "gd": 0,
           "pos": 2,
           "status": "advancing"
         },
