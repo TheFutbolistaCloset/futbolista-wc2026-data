@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T09:10:22.833Z",
+  "updated": "2026-06-23T19:05:23.933Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2436,8 +2436,11 @@
       "t2_iso": "uz",
       "venue": "Houston",
       "venue_he": "יוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        5,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5304,6 +5307,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "POR",
+          "team": "Portugal",
+          "he": "פורטוגל",
+          "flag": [
+            "#046A38",
+            "#DA291C"
+          ],
+          "iso": "pt",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 4,
+          "gd": 5,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "COL",
           "team": "Colombia",
           "he": "קולומביה",
@@ -5320,26 +5343,6 @@
           "ga": 1,
           "pts": 3,
           "gd": 2,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "POR",
-          "team": "Portugal",
-          "he": "פורטוגל",
-          "flag": [
-            "#046A38",
-            "#DA291C"
-          ],
-          "iso": "pt",
-          "p": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 1,
-          "gd": 0,
           "pos": 2,
           "status": "advancing"
         },
@@ -5372,14 +5375,14 @@
             "#1EB53A"
           ],
           "iso": "uz",
-          "p": 1,
+          "p": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 3,
+          "ga": 8,
           "pts": 0,
-          "gd": -2,
+          "gd": -7,
           "pos": 4,
           "status": "trailing"
         }
