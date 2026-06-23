@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T00:30:26.589Z",
+  "updated": "2026-06-23T01:30:27.692Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2325,8 +2325,11 @@
       "t2_iso": "iq",
       "venue": "Philadelphia",
       "venue_he": "פילדלפיה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5125,6 +5128,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "FRA",
+          "team": "France",
+          "he": "צרפת",
+          "flag": [
+            "#0055A4",
+            "#EF4135"
+          ],
+          "iso": "fr",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 6,
+          "gd": 5,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "NOR",
           "team": "Norway",
           "he": "נורווגיה",
@@ -5141,26 +5164,6 @@
           "ga": 1,
           "pts": 3,
           "gd": 3,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "FRA",
-          "team": "France",
-          "he": "צרפת",
-          "flag": [
-            "#0055A4",
-            "#EF4135"
-          ],
-          "iso": "fr",
-          "p": 1,
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "gf": 3,
-          "ga": 1,
-          "pts": 3,
-          "gd": 2,
           "pos": 2,
           "status": "advancing"
         },
@@ -5193,14 +5196,14 @@
             "#007A3D"
           ],
           "iso": "iq",
-          "p": 1,
+          "p": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 4,
+          "ga": 7,
           "pts": 0,
-          "gd": -3,
+          "gd": -6,
           "pos": 4,
           "status": "trailing"
         }
