@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T01:30:27.692Z",
+  "updated": "2026-06-23T02:10:21.956Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2362,8 +2362,11 @@
       "t2_iso": "sn",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        2
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5156,14 +5159,14 @@
             "#00205B"
           ],
           "iso": "no",
-          "p": 1,
-          "w": 1,
+          "p": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 4,
-          "ga": 1,
-          "pts": 3,
-          "gd": 3,
+          "gf": 7,
+          "ga": 3,
+          "pts": 6,
+          "gd": 4,
           "pos": 2,
           "status": "advancing"
         },
@@ -5176,14 +5179,14 @@
             "#FDEF42"
           ],
           "iso": "sn",
-          "p": 1,
+          "p": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
-          "gf": 1,
-          "ga": 3,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
           "pts": 0,
-          "gd": -2,
+          "gd": -3,
           "pos": 3,
           "status": "third-watch"
         },
