@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T02:10:21.956Z",
+  "updated": "2026-06-23T05:10:25.560Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2399,8 +2399,11 @@
       "t2_iso": "dz",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "venue_he": "סן פרנסיסקו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        2
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5256,26 +5259,6 @@
           "status": "advancing"
         },
         {
-          "code": "JOR",
-          "team": "Jordan",
-          "he": "ירדן",
-          "flag": [
-            "#007A3D",
-            "#CE1126"
-          ],
-          "iso": "jo",
-          "p": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 1,
-          "ga": 3,
-          "pts": 0,
-          "gd": -2,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
           "code": "ALG",
           "team": "Algeria",
           "he": "אלג׳יריה",
@@ -5284,12 +5267,32 @@
             "#D21034"
           ],
           "iso": "dz",
-          "p": 1,
-          "w": 0,
+          "p": 2,
+          "w": 1,
           "d": 0,
           "l": 1,
-          "gf": 0,
-          "ga": 3,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3,
+          "gd": -2,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "JOR",
+          "team": "Jordan",
+          "he": "ירדן",
+          "flag": [
+            "#007A3D",
+            "#CE1126"
+          ],
+          "iso": "jo",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
           "pts": 0,
           "gd": -3,
           "pos": 4,
