@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:40:21.224Z",
+  "updated": "2026-06-24T01:05:18.944Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -118,7 +118,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-qatar",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%98%D7%90%D7%A8%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "קטאר"
       }
     },
@@ -2510,8 +2510,11 @@
       "t2_iso": "hr",
       "venue": "Toronto",
       "venue_he": "טורונטו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5435,26 +5438,6 @@
           "status": "advancing"
         },
         {
-          "code": "PAN",
-          "team": "Panama",
-          "he": "פנמה",
-          "flag": [
-            "#005293",
-            "#DA121A"
-          ],
-          "iso": "pa",
-          "p": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 1,
-          "pts": 0,
-          "gd": -1,
-          "pos": 3,
-          "status": "third-watch"
-        },
-        {
           "code": "CRO",
           "team": "Croatia",
           "he": "קרואטיה",
@@ -5463,12 +5446,32 @@
             "#171796"
           ],
           "iso": "hr",
-          "p": 1,
-          "w": 0,
+          "p": 2,
+          "w": 1,
           "d": 0,
           "l": 1,
-          "gf": 2,
+          "gf": 3,
           "ga": 4,
+          "pts": 3,
+          "gd": -1,
+          "pos": 3,
+          "status": "third-watch"
+        },
+        {
+          "code": "PAN",
+          "team": "Panama",
+          "he": "פנמה",
+          "flag": [
+            "#005293",
+            "#DA121A"
+          ],
+          "iso": "pa",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 2,
           "pts": 0,
           "gd": -2,
           "pos": 4,
