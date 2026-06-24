@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T03:55:17.761Z",
+  "updated": "2026-06-24T04:10:23.841Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2547,8 +2547,11 @@
       "t2_iso": "cd",
       "venue": "Guadalajara (Zapopan)",
       "venue_he": "גוודלחרה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5313,6 +5316,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "COL",
+          "team": "Colombia",
+          "he": "קולומביה",
+          "flag": [
+            "#FCD116",
+            "#003893"
+          ],
+          "iso": "co",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 6,
+          "gd": 3,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "POR",
           "team": "Portugal",
           "he": "פורטוגל",
@@ -5329,26 +5352,6 @@
           "ga": 1,
           "pts": 4,
           "gd": 5,
-          "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "COL",
-          "team": "Colombia",
-          "he": "קולומביה",
-          "flag": [
-            "#FCD116",
-            "#003893"
-          ],
-          "iso": "co",
-          "p": 1,
-          "w": 1,
-          "d": 0,
-          "l": 0,
-          "gf": 3,
-          "ga": 1,
-          "pts": 3,
-          "gd": 2,
           "pos": 2,
           "status": "advancing"
         },
@@ -5361,14 +5364,14 @@
             "#F7D618"
           ],
           "iso": "cd",
-          "p": 1,
+          "p": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
+          "l": 1,
           "gf": 1,
-          "ga": 1,
+          "ga": 2,
           "pts": 1,
-          "gd": 0,
+          "gd": -1,
           "pos": 3,
           "status": "third-watch"
         },
