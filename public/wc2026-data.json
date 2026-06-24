@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T21:00:32.618Z",
+  "updated": "2026-06-24T21:05:18.026Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2584,8 +2584,11 @@
       "t2_iso": "ca",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -2618,8 +2621,11 @@
       "t2_iso": "qa",
       "venue": "Seattle",
       "venue_he": "סיאטל",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4548,28 +4554,8 @@
       ]
     },
     "B": {
-      "complete": false,
+      "complete": true,
       "standings": [
-        {
-          "code": "CAN",
-          "team": "Canada",
-          "he": "קנדה",
-          "flag": [
-            "#D80621",
-            "#a00318"
-          ],
-          "iso": "ca",
-          "p": 2,
-          "w": 1,
-          "d": 1,
-          "l": 0,
-          "gf": 7,
-          "ga": 1,
-          "pts": 4,
-          "gd": 6,
-          "pos": 1,
-          "status": "advancing"
-        },
         {
           "code": "SUI",
           "team": "Switzerland",
@@ -4579,16 +4565,36 @@
             "#b71c12"
           ],
           "iso": "ch",
-          "p": 2,
-          "w": 1,
+          "p": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 5,
-          "ga": 2,
+          "gf": 7,
+          "ga": 3,
+          "pts": 7,
+          "gd": 4,
+          "pos": 1,
+          "status": "qualified"
+        },
+        {
+          "code": "CAN",
+          "team": "Canada",
+          "he": "קנדה",
+          "flag": [
+            "#D80621",
+            "#a00318"
+          ],
+          "iso": "ca",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
           "pts": 4,
-          "gd": 3,
+          "gd": 5,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "BIH",
@@ -4599,16 +4605,16 @@
             "#FECB00"
           ],
           "iso": "ba",
-          "p": 2,
-          "w": 0,
+          "p": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 2,
-          "ga": 5,
-          "pts": 1,
-          "gd": -3,
+          "gf": 5,
+          "ga": 6,
+          "pts": 4,
+          "gd": -1,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "QAT",
@@ -4619,16 +4625,16 @@
             "#6e102c"
           ],
           "iso": "qa",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
-          "gf": 1,
-          "ga": 7,
+          "l": 2,
+          "gf": 2,
+          "ga": 10,
           "pts": 1,
-          "gd": -6,
+          "gd": -8,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
