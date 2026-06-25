@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T15:25:21.448Z",
+  "updated": "2026-06-25T21:00:29.234Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2664,7 +2664,7 @@
         3
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -2701,7 +2701,7 @@
         2
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -2738,7 +2738,7 @@
         3
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -2775,7 +2775,7 @@
         0
       ],
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -2809,7 +2809,7 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -2843,7 +2843,7 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": true,
+      "is_today": false,
       "is_tomorrow": false
     },
     {
@@ -2877,8 +2877,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m036",
@@ -2911,8 +2911,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m023",
@@ -2945,8 +2945,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m024",
@@ -2979,8 +2979,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m053",
@@ -3013,8 +3013,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m054",
@@ -3047,8 +3047,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m047",
@@ -3082,7 +3082,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m048",
@@ -3116,7 +3116,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m041",
@@ -3150,7 +3150,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m042",
@@ -3184,7 +3184,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m071",
