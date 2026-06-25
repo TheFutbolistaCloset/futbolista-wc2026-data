@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T21:00:29.234Z",
+  "updated": "2026-06-25T22:05:16.061Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2806,8 +2806,11 @@
       "t2_iso": "ci",
       "venue": "Philadelphia",
       "venue_he": "פילדלפיה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        2
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -2840,8 +2843,11 @@
       "t2_iso": "de",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4821,7 +4827,7 @@
       ]
     },
     "E": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "GER",
@@ -4832,16 +4838,16 @@
             "#FFCE00"
           ],
           "iso": "de",
-          "p": 2,
+          "p": 3,
           "w": 2,
           "d": 0,
-          "l": 0,
-          "gf": 9,
-          "ga": 2,
+          "l": 1,
+          "gf": 10,
+          "ga": 4,
           "pts": 6,
-          "gd": 7,
+          "gd": 6,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "CIV",
@@ -4852,16 +4858,16 @@
             "#009E60"
           ],
           "iso": "ci",
-          "p": 2,
-          "w": 1,
+          "p": 3,
+          "w": 2,
           "d": 0,
           "l": 1,
-          "gf": 2,
+          "gf": 4,
           "ga": 2,
-          "pts": 3,
-          "gd": 0,
+          "pts": 6,
+          "gd": 2,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "ECU",
@@ -4872,16 +4878,16 @@
             "#034EA2"
           ],
           "iso": "ec",
-          "p": 2,
-          "w": 0,
+          "p": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 0,
-          "ga": 1,
-          "pts": 1,
-          "gd": -1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4,
+          "gd": 0,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "CUW",
@@ -4892,16 +4898,16 @@
             "#F9E814"
           ],
           "iso": "cw",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 7,
+          "ga": 9,
           "pts": 1,
-          "gd": -6,
+          "gd": -8,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
