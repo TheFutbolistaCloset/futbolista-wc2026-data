@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T21:05:20.167Z",
+  "updated": "2026-06-26T21:10:23.646Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -630,7 +630,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-austria",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%95%D7%A1%D7%98%D7%A8%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "אוסטריה"
       }
     },
@@ -3065,8 +3065,11 @@
       "t2_iso": "iq",
       "venue": "Toronto",
       "venue_he": "טורונטו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        5,
+        0
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -5182,7 +5185,7 @@
       ]
     },
     "I": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "FRA",
@@ -5202,7 +5205,7 @@
           "pts": 9,
           "gd": 8,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "NOR",
@@ -5222,7 +5225,7 @@
           "pts": 6,
           "gd": 1,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "SEN",
@@ -5233,16 +5236,16 @@
             "#FDEF42"
           ],
           "iso": "sn",
-          "p": 2,
-          "w": 0,
+          "p": 3,
+          "w": 1,
           "d": 0,
           "l": 2,
-          "gf": 3,
+          "gf": 8,
           "ga": 6,
-          "pts": 0,
-          "gd": -3,
+          "pts": 3,
+          "gd": 2,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "IRQ",
@@ -5253,16 +5256,16 @@
             "#007A3D"
           ],
           "iso": "iq",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
+          "l": 3,
           "gf": 1,
-          "ga": 7,
+          "ga": 12,
           "pts": 0,
-          "gd": -6,
+          "gd": -11,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
