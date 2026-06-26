@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T04:10:22.123Z",
+  "updated": "2026-06-26T04:15:22.177Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2954,8 +2954,11 @@
       "t2_iso": "us",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        2
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4751,7 +4754,7 @@
       ]
     },
     "D": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "USA",
@@ -4762,16 +4765,16 @@
             "#3C3B6E"
           ],
           "iso": "us",
-          "p": 2,
+          "p": 3,
           "w": 2,
           "d": 0,
-          "l": 0,
-          "gf": 6,
-          "ga": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
           "pts": 6,
-          "gd": 5,
+          "gd": 4,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "AUS",
@@ -4791,7 +4794,7 @@
           "pts": 4,
           "gd": 0,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "PAR",
@@ -4811,7 +4814,7 @@
           "pts": 4,
           "gd": -2,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "TUR",
@@ -4822,16 +4825,16 @@
             "#b00712"
           ],
           "iso": "tr",
-          "p": 2,
-          "w": 0,
+          "p": 3,
+          "w": 1,
           "d": 0,
           "l": 2,
-          "gf": 0,
-          "ga": 3,
-          "pts": 0,
-          "gd": -3,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3,
+          "gd": -2,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
