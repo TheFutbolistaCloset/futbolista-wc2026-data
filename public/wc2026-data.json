@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T01:00:30.919Z",
+  "updated": "2026-06-26T01:05:20.667Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -2880,8 +2880,11 @@
       "t2_iso": "se",
       "venue": "Dallas (Arlington)",
       "venue_he": "דאלאס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -4915,7 +4918,7 @@
       ]
     },
     "F": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "NED",
@@ -4935,7 +4938,7 @@
           "pts": 7,
           "gd": 6,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "JPN",
@@ -4946,16 +4949,16 @@
             "#8a0021"
           ],
           "iso": "jp",
-          "p": 2,
+          "p": 3,
           "w": 1,
-          "d": 1,
+          "d": 2,
           "l": 0,
-          "gf": 6,
-          "ga": 2,
-          "pts": 4,
+          "gf": 7,
+          "ga": 3,
+          "pts": 5,
           "gd": 4,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "SWE",
@@ -4966,16 +4969,16 @@
             "#FECC02"
           ],
           "iso": "se",
-          "p": 2,
+          "p": 3,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 1,
-          "gf": 6,
-          "ga": 6,
-          "pts": 3,
+          "gf": 7,
+          "ga": 7,
+          "pts": 4,
           "gd": 0,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "TUN",
@@ -4995,7 +4998,7 @@
           "pts": 0,
           "gd": -10,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
