@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T21:00:29.712Z",
+  "updated": "2026-06-26T21:05:20.167Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3028,8 +3028,11 @@
       "t2_iso": "fr",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        4
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -5190,14 +5193,14 @@
             "#EF4135"
           ],
           "iso": "fr",
-          "p": 2,
-          "w": 2,
+          "p": 3,
+          "w": 3,
           "d": 0,
           "l": 0,
-          "gf": 6,
-          "ga": 1,
-          "pts": 6,
-          "gd": 5,
+          "gf": 10,
+          "ga": 2,
+          "pts": 9,
+          "gd": 8,
           "pos": 1,
           "status": "advancing"
         },
@@ -5210,14 +5213,14 @@
             "#00205B"
           ],
           "iso": "no",
-          "p": 2,
+          "p": 3,
           "w": 2,
           "d": 0,
-          "l": 0,
-          "gf": 7,
-          "ga": 3,
+          "l": 1,
+          "gf": 8,
+          "ga": 7,
           "pts": 6,
-          "gd": 4,
+          "gd": 1,
           "pos": 2,
           "status": "advancing"
         },
