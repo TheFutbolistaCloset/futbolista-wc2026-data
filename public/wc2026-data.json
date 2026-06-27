@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T02:05:18.722Z",
+  "updated": "2026-06-27T02:10:24.182Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3139,8 +3139,11 @@
       "t2_iso": "es",
       "venue": "Guadalajara (Zapopan)",
       "venue_he": "גוודלחרה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5103,7 +5106,7 @@
       ]
     },
     "H": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "ESP",
@@ -5114,16 +5117,16 @@
             "#F1BF00"
           ],
           "iso": "es",
-          "p": 2,
-          "w": 1,
+          "p": 3,
+          "w": 2,
           "d": 1,
           "l": 0,
-          "gf": 4,
+          "gf": 5,
           "ga": 0,
-          "pts": 4,
-          "gd": 4,
+          "pts": 7,
+          "gd": 5,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "CPV",
@@ -5143,7 +5146,7 @@
           "pts": 3,
           "gd": 0,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "URU",
@@ -5154,16 +5157,16 @@
             "#FCD116"
           ],
           "iso": "uy",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 2,
-          "l": 0,
+          "l": 1,
           "gf": 3,
-          "ga": 3,
+          "ga": 4,
           "pts": 2,
-          "gd": 0,
+          "gd": -1,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "KSA",
@@ -5183,7 +5186,7 @@
           "pts": 2,
           "gd": -4,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
