@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T05:05:16.390Z",
+  "updated": "2026-06-27T05:10:21.469Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3176,8 +3176,11 @@
       "t2_iso": "ir",
       "venue": "Seattle",
       "venue_he": "סיאטל",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5024,7 +5027,7 @@
       ]
     },
     "G": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "BEL",
@@ -5044,7 +5047,7 @@
           "pts": 5,
           "gd": 4,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "EGY",
@@ -5055,16 +5058,16 @@
             "#1a1a1a"
           ],
           "iso": "eg",
-          "p": 2,
+          "p": 3,
           "w": 1,
-          "d": 1,
+          "d": 2,
           "l": 0,
-          "gf": 4,
-          "ga": 2,
-          "pts": 4,
+          "gf": 5,
+          "ga": 3,
+          "pts": 5,
           "gd": 2,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "IRN",
@@ -5075,16 +5078,16 @@
             "#DA0000"
           ],
           "iso": "ir",
-          "p": 2,
+          "p": 3,
           "w": 0,
-          "d": 2,
+          "d": 3,
           "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "pts": 2,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3,
           "gd": 0,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "NZL",
@@ -5104,7 +5107,7 @@
           "pts": 1,
           "gd": -6,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
