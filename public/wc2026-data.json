@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T23:05:17.685Z",
+  "updated": "2026-06-27T23:10:21.761Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3287,8 +3287,11 @@
       "t2_iso": "gh",
       "venue": "Philadelphia",
       "venue_he": "פילדלפיה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5455,7 +5458,7 @@
       ]
     },
     "L": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "ENG",
@@ -5475,27 +5478,7 @@
           "pts": 7,
           "gd": 4,
           "pos": 1,
-          "status": "advancing"
-        },
-        {
-          "code": "GHA",
-          "team": "Ghana",
-          "he": "גאנה",
-          "flag": [
-            "#CE1126",
-            "#FCD116"
-          ],
-          "iso": "gh",
-          "p": 2,
-          "w": 1,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 0,
-          "pts": 4,
-          "gd": 1,
-          "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "CRO",
@@ -5506,16 +5489,36 @@
             "#171796"
           ],
           "iso": "hr",
-          "p": 2,
-          "w": 1,
+          "p": 3,
+          "w": 2,
           "d": 0,
           "l": 1,
-          "gf": 3,
-          "ga": 4,
-          "pts": 3,
-          "gd": -1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 6,
+          "gd": 0,
+          "pos": 2,
+          "status": "qualified"
+        },
+        {
+          "code": "GHA",
+          "team": "Ghana",
+          "he": "גאנה",
+          "flag": [
+            "#CE1126",
+            "#FCD116"
+          ],
+          "iso": "gh",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4,
+          "gd": 0,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "PAN",
@@ -5535,7 +5538,7 @@
           "pts": 0,
           "gd": -4,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     }
