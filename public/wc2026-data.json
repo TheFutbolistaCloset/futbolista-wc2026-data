@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T02:25:17.081Z",
+  "updated": "2026-06-27T05:05:16.390Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3210,8 +3210,11 @@
       "t2_iso": "be",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        5
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5024,6 +5027,26 @@
       "complete": false,
       "standings": [
         {
+          "code": "BEL",
+          "team": "Belgium",
+          "he": "בלגיה",
+          "flag": [
+            "#FDDA24",
+            "#EF3340"
+          ],
+          "iso": "be",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 5,
+          "gd": 4,
+          "pos": 1,
+          "status": "advancing"
+        },
+        {
           "code": "EGY",
           "team": "Egypt",
           "he": "מצרים",
@@ -5040,7 +5063,7 @@
           "ga": 2,
           "pts": 4,
           "gd": 2,
-          "pos": 1,
+          "pos": 2,
           "status": "advancing"
         },
         {
@@ -5060,26 +5083,6 @@
           "ga": 2,
           "pts": 2,
           "gd": 0,
-          "pos": 2,
-          "status": "advancing"
-        },
-        {
-          "code": "BEL",
-          "team": "Belgium",
-          "he": "בלגיה",
-          "flag": [
-            "#FDDA24",
-            "#EF3340"
-          ],
-          "iso": "be",
-          "p": 2,
-          "w": 0,
-          "d": 2,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "pts": 2,
-          "gd": 0,
           "pos": 3,
           "status": "third-watch"
         },
@@ -5092,14 +5095,14 @@
             "#CC142B"
           ],
           "iso": "nz",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 1,
-          "l": 1,
-          "gf": 3,
-          "ga": 5,
+          "l": 2,
+          "gf": 4,
+          "ga": 10,
           "pts": 1,
-          "gd": -2,
+          "gd": -6,
           "pos": 4,
           "status": "trailing"
         }
