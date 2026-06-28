@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T04:05:16.667Z",
+  "updated": "2026-06-28T08:05:16.608Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3523,21 +3523,21 @@
       "stage": "r32",
       "group": null,
       "t1": "GER",
-      "t2": "3A/B/C/D/F",
+      "t2": "PAR",
       "t1_he": "גרמניה",
-      "t2_he": "מקום 3 (A/B/C/D/F)",
+      "t2_he": "פרגוואי",
       "t1_short": "גרמניה",
-      "t2_short": "מקום 3 (A/B/C/D/F)",
+      "t2_short": "פרגוואי",
       "t1_flag": [
         "#DD0000",
         "#FFCE00"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#D52B1E",
+        "#0038A8"
       ],
       "t1_iso": "de",
-      "t2_iso": null,
+      "t2_iso": "py",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
       "status": "scheduled",
@@ -3591,21 +3591,21 @@
       "stage": "r32",
       "group": null,
       "t1": "CIV",
-      "t2": "2I",
+      "t2": "NOR",
       "t1_he": "חוף השנהב",
-      "t2_he": "מקום 2 בית I",
+      "t2_he": "נורווגיה",
       "t1_short": "חוף השנהב",
-      "t2_short": "מקום 2 בית I",
+      "t2_short": "נורווגיה",
       "t1_flag": [
         "#FF8200",
         "#009E60"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#BA0C2F",
+        "#00205B"
       ],
       "t1_iso": "ci",
-      "t2_iso": null,
+      "t2_iso": "no",
       "venue": "Dallas (Arlington)",
       "venue_he": "דאלאס",
       "status": "scheduled",
@@ -3624,22 +3624,22 @@
       "time_il": "00:00",
       "stage": "r32",
       "group": null,
-      "t1": "1I",
-      "t2": "3C/D/F/G/H",
-      "t1_he": "מנצחת בית I",
-      "t2_he": "מקום 3 (C/D/F/G/H)",
-      "t1_short": "מנצחת בית I",
-      "t2_short": "מקום 3 (C/D/F/G/H)",
+      "t1": "FRA",
+      "t2": "SWE",
+      "t1_he": "צרפת",
+      "t2_he": "שבדיה",
+      "t1_short": "צרפת",
+      "t2_short": "שבדיה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#0055A4",
+        "#EF4135"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#006AA7",
+        "#FECC02"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "fr",
+      "t2_iso": "se",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
       "status": "scheduled",
@@ -3659,21 +3659,21 @@
       "stage": "r32",
       "group": null,
       "t1": "MEX",
-      "t2": "3C/E/F/H/I",
+      "t2": "ECU",
       "t1_he": "מקסיקו",
-      "t2_he": "מקום 3 (C/E/F/H/I)",
+      "t2_he": "אקוודור",
       "t1_short": "מקסיקו",
-      "t2_short": "מקום 3 (C/E/F/H/I)",
+      "t2_short": "אקוודור",
       "t1_flag": [
         "#006847",
         "#CE1126"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#FFD100",
+        "#034EA2"
       ],
       "t1_iso": "mx",
-      "t2_iso": null,
+      "t2_iso": "ec",
       "venue": "Mexico City",
       "venue_he": "מקסיקו סיטי",
       "status": "scheduled",
@@ -3692,22 +3692,22 @@
       "time_il": "19:00",
       "stage": "r32",
       "group": null,
-      "t1": "1L",
-      "t2": "3E/H/I/J/K",
-      "t1_he": "מנצחת בית L",
-      "t2_he": "מקום 3 (E/H/I/J/K)",
-      "t1_short": "מנצחת בית L",
-      "t2_short": "מקום 3 (E/H/I/J/K)",
+      "t1": "ENG",
+      "t2": "COD",
+      "t1_he": "אנגליה",
+      "t2_he": "קונגו",
+      "t1_short": "אנגליה",
+      "t2_short": "קונגו",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#C8102E",
+        "#8d0b20"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#007FFF",
+        "#F7D618"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "gb-eng",
+      "t2_iso": "cd",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
       "status": "scheduled",
@@ -3726,22 +3726,22 @@
       "time_il": "23:00",
       "stage": "r32",
       "group": null,
-      "t1": "1G",
-      "t2": "3A/E/H/I/J",
-      "t1_he": "מנצחת בית G",
-      "t2_he": "מקום 3 (A/E/H/I/J)",
-      "t1_short": "מנצחת בית G",
-      "t2_short": "מקום 3 (A/E/H/I/J)",
+      "t1": "BEL",
+      "t2": "SEN",
+      "t1_he": "בלגיה",
+      "t2_he": "סנגל",
+      "t1_short": "בלגיה",
+      "t2_short": "סנגל",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#FDDA24",
+        "#EF3340"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#00853F",
+        "#FDEF42"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "be",
+      "t2_iso": "sn",
       "venue": "Seattle",
       "venue_he": "סיאטל",
       "status": "scheduled",
@@ -3761,21 +3761,21 @@
       "stage": "r32",
       "group": null,
       "t1": "USA",
-      "t2": "3B/E/F/I/J",
+      "t2": "BIH",
       "t1_he": "ארצות הברית",
-      "t2_he": "מקום 3 (B/E/F/I/J)",
+      "t2_he": "בוסניה והרצגובינה",
       "t1_short": "ארה״ב",
-      "t2_short": "מקום 3 (B/E/F/I/J)",
+      "t2_short": "בוסניה",
       "t1_flag": [
         "#B22234",
         "#3C3B6E"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#002395",
+        "#FECB00"
       ],
       "t1_iso": "us",
-      "t2_iso": null,
+      "t2_iso": "ba",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "venue_he": "סן פרנסיסקו",
       "status": "scheduled",
@@ -3794,22 +3794,22 @@
       "time_il": "22:00",
       "stage": "r32",
       "group": null,
-      "t1": "1H",
-      "t2": "2J",
-      "t1_he": "מנצחת בית H",
-      "t2_he": "מקום 2 בית J",
-      "t1_short": "מנצחת בית H",
-      "t2_short": "מקום 2 בית J",
+      "t1": "ESP",
+      "t2": "AUT",
+      "t1_he": "ספרד",
+      "t2_he": "אוסטריה",
+      "t1_short": "ספרד",
+      "t2_short": "אוסטריה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#AA151B",
+        "#F1BF00"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#ED2939",
+        "#a31523"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "es",
+      "t2_iso": "at",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
       "status": "scheduled",
@@ -3828,22 +3828,22 @@
       "time_il": "02:00",
       "stage": "r32",
       "group": null,
-      "t1": "2K",
-      "t2": "2L",
-      "t1_he": "מקום 2 בית K",
-      "t2_he": "מקום 2 בית L",
-      "t1_short": "מקום 2 בית K",
-      "t2_short": "מקום 2 בית L",
+      "t1": "POR",
+      "t2": "CRO",
+      "t1_he": "פורטוגל",
+      "t2_he": "קרואטיה",
+      "t1_short": "פורטוגל",
+      "t2_short": "קרואטיה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#046A38",
+        "#DA291C"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#C8102E",
+        "#171796"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "pt",
+      "t2_iso": "hr",
       "venue": "Toronto",
       "venue_he": "טורונטו",
       "status": "scheduled",
@@ -3863,21 +3863,21 @@
       "stage": "r32",
       "group": null,
       "t1": "SUI",
-      "t2": "3E/F/G/I/J",
+      "t2": "ALG",
       "t1_he": "שווייץ",
-      "t2_he": "מקום 3 (E/F/G/I/J)",
+      "t2_he": "אלג׳יריה",
       "t1_short": "שווייץ",
-      "t2_short": "מקום 3 (E/F/G/I/J)",
+      "t2_short": "אלג׳יריה",
       "t1_flag": [
         "#D52B1E",
         "#b71c12"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#006233",
+        "#D21034"
       ],
       "t1_iso": "ch",
-      "t2_iso": null,
+      "t2_iso": "dz",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
       "status": "scheduled",
@@ -3897,21 +3897,21 @@
       "stage": "r32",
       "group": null,
       "t1": "AUS",
-      "t2": "2G",
+      "t2": "EGY",
       "t1_he": "אוסטרליה",
-      "t2_he": "מקום 2 בית G",
+      "t2_he": "מצרים",
       "t1_short": "אוסטרליה",
-      "t2_short": "מקום 2 בית G",
+      "t2_short": "מצרים",
       "t1_flag": [
         "#012169",
         "#E4002B"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#CE1126",
+        "#1a1a1a"
       ],
       "t1_iso": "au",
-      "t2_iso": null,
+      "t2_iso": "eg",
       "venue": "Dallas (Arlington)",
       "venue_he": "דאלאס",
       "status": "scheduled",
@@ -3930,22 +3930,22 @@
       "time_il": "01:00",
       "stage": "r32",
       "group": null,
-      "t1": "1J",
-      "t2": "2H",
-      "t1_he": "מנצחת בית J",
-      "t2_he": "מקום 2 בית H",
-      "t1_short": "מנצחת בית J",
-      "t2_short": "מקום 2 בית H",
+      "t1": "ARG",
+      "t2": "CPV",
+      "t1_he": "ארגנטינה",
+      "t2_he": "כף ורדה",
+      "t1_short": "ארגנטינה",
+      "t2_short": "כף ורדה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#74ACDF",
+        "#F6B40E"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#003893",
+        "#CF2027"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "ar",
+      "t2_iso": "cv",
       "venue": "Miami (Miami Gardens)",
       "venue_he": "מיאמי",
       "status": "scheduled",
@@ -3964,22 +3964,22 @@
       "time_il": "04:30",
       "stage": "r32",
       "group": null,
-      "t1": "1K",
-      "t2": "3D/E/I/J/L",
-      "t1_he": "מנצחת בית K",
-      "t2_he": "מקום 3 (D/E/I/J/L)",
-      "t1_short": "מנצחת בית K",
-      "t2_short": "מקום 3 (D/E/I/J/L)",
+      "t1": "COL",
+      "t2": "GHA",
+      "t1_he": "קולומביה",
+      "t2_he": "גאנה",
+      "t1_short": "קולומביה",
+      "t2_short": "גאנה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#FCD116",
+        "#003893"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#CE1126",
+        "#FCD116"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "co",
+      "t2_iso": "gh",
       "venue": "Kansas City",
       "venue_he": "קנזס סיטי",
       "status": "scheduled",
