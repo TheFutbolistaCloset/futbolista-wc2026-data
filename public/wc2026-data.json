@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T01:35:19.263Z",
+  "updated": "2026-06-28T01:40:23.464Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3361,8 +3361,11 @@
       "t2_iso": "uz",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
@@ -5376,7 +5379,7 @@
       ]
     },
     "K": {
-      "complete": false,
+      "complete": true,
       "standings": [
         {
           "code": "COL",
@@ -5396,7 +5399,7 @@
           "pts": 7,
           "gd": 3,
           "pos": 1,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "POR",
@@ -5416,7 +5419,7 @@
           "pts": 5,
           "gd": 5,
           "pos": 2,
-          "status": "advancing"
+          "status": "qualified"
         },
         {
           "code": "COD",
@@ -5427,16 +5430,16 @@
             "#F7D618"
           ],
           "iso": "cd",
-          "p": 2,
-          "w": 0,
+          "p": 3,
+          "w": 1,
           "d": 1,
           "l": 1,
-          "gf": 1,
-          "ga": 2,
-          "pts": 1,
-          "gd": -1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4,
+          "gd": 1,
           "pos": 3,
-          "status": "third-watch"
+          "status": "third-pending"
         },
         {
           "code": "UZB",
@@ -5447,16 +5450,16 @@
             "#1EB53A"
           ],
           "iso": "uz",
-          "p": 2,
+          "p": 3,
           "w": 0,
           "d": 0,
-          "l": 2,
-          "gf": 1,
-          "ga": 8,
+          "l": 3,
+          "gf": 2,
+          "ga": 11,
           "pts": 0,
-          "gd": -7,
+          "gd": -9,
           "pos": 4,
-          "status": "trailing"
+          "status": "eliminated"
         }
       ]
     },
