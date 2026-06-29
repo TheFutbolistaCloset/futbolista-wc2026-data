@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T11:35:09.700Z",
+  "updated": "2026-06-29T12:40:21.319Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4001,21 +4001,21 @@
       "time_il": "20:00",
       "stage": "r16",
       "group": null,
-      "t1": "W73",
+      "t1": "CAN",
       "t2": "W75",
-      "t1_he": "מנצחת משחק 73",
+      "t1_he": "קנדה",
       "t2_he": "מנצחת משחק 75",
-      "t1_short": "מנצחת משחק 73",
+      "t1_short": "קנדה",
       "t2_short": "מנצחת משחק 75",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#D80621",
+        "#a00318"
       ],
       "t2_flag": [
         "#8a93a6",
         "#c2c9d6"
       ],
-      "t1_iso": null,
+      "t1_iso": "ca",
       "t2_iso": null,
       "venue": "Houston",
       "venue_he": "יוסטון",
