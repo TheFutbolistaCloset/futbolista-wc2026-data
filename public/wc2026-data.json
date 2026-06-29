@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T12:40:21.319Z",
+  "updated": "2026-06-29T19:10:18.685Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3509,8 +3509,11 @@
       "t2_iso": "jp",
       "venue": "Houston",
       "venue_he": "יוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
