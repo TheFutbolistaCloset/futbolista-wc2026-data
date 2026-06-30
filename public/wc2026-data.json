@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T00:50:17.672Z",
+  "updated": "2026-06-30T04:00:30.608Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3583,8 +3583,11 @@
       "t2_iso": "ma",
       "venue": "Monterrey (Guadalupe)",
       "venue_he": "מונטריי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
