@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T21:00:28.494Z",
+  "updated": "2026-06-30T22:59:04.114Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -22,7 +22,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-mexico",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A7%D7%A1%D7%99%D7%A7%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "מקסיקו"
       }
     },
@@ -3657,8 +3657,11 @@
       "t2_iso": "se",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
