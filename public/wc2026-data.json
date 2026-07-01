@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T09:15:19.071Z",
+  "updated": "2026-07-01T11:45:38.167Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4121,21 +4121,21 @@
       "time_il": "03:00",
       "stage": "r16",
       "group": null,
-      "t1": "W79",
+      "t1": "MEX",
       "t2": "W80",
-      "t1_he": "מנצחת משחק 79",
+      "t1_he": "מקסיקו",
       "t2_he": "מנצחת משחק 80",
-      "t1_short": "מנצחת משחק 79",
+      "t1_short": "מקסיקו",
       "t2_short": "מנצחת משחק 80",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#006847",
+        "#CE1126"
       ],
       "t2_flag": [
         "#8a93a6",
         "#c2c9d6"
       ],
-      "t1_iso": null,
+      "t1_iso": "mx",
       "t2_iso": null,
       "venue": "Mexico City",
       "venue_he": "מקסיקו סיטי",
