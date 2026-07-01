@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T11:45:38.167Z",
+  "updated": "2026-07-01T18:05:22.551Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3731,8 +3731,11 @@
       "t2_iso": "cd",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
