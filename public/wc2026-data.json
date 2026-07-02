@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T02:10:20.580Z",
+  "updated": "2026-07-02T02:15:18.507Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3805,8 +3805,11 @@
       "t2_iso": "ba",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "venue_he": "סן פרנסיסקו",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
