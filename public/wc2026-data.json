@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T03:25:16.171Z",
+  "updated": "2026-07-02T07:25:16.753Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4131,21 +4131,21 @@
       "stage": "r16",
       "group": null,
       "t1": "MEX",
-      "t2": "W80",
+      "t2": "ENG",
       "t1_he": "מקסיקו",
-      "t2_he": "מנצחת משחק 80",
+      "t2_he": "אנגליה",
       "t1_short": "מקסיקו",
-      "t2_short": "מנצחת משחק 80",
+      "t2_short": "אנגליה",
       "t1_flag": [
         "#006847",
         "#CE1126"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#C8102E",
+        "#8d0b20"
       ],
       "t1_iso": "mx",
-      "t2_iso": null,
+      "t2_iso": "gb-eng",
       "venue": "Mexico City",
       "venue_he": "מקסיקו סיטי",
       "status": "scheduled",
@@ -4198,22 +4198,22 @@
       "time_il": "03:00",
       "stage": "r16",
       "group": null,
-      "t1": "W81",
-      "t2": "W82",
-      "t1_he": "מנצחת משחק 81",
-      "t2_he": "מנצחת משחק 82",
-      "t1_short": "מנצחת משחק 81",
-      "t2_short": "מנצחת משחק 82",
+      "t1": "USA",
+      "t2": "BEL",
+      "t1_he": "ארצות הברית",
+      "t2_he": "בלגיה",
+      "t1_short": "ארה״ב",
+      "t2_short": "בלגיה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#B22234",
+        "#3C3B6E"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#FDDA24",
+        "#EF3340"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "us",
+      "t2_iso": "be",
       "venue": "Seattle",
       "venue_he": "סיאטל",
       "status": "scheduled",
