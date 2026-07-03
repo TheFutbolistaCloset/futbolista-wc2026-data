@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T03:00:32.508Z",
+  "updated": "2026-07-03T05:05:14.974Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -3916,8 +3916,11 @@
       "t2_iso": "dz",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
