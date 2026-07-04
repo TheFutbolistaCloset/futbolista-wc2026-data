@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T08:30:27.387Z",
+  "updated": "2026-07-04T11:35:14.835Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4250,22 +4250,22 @@
       "time_il": "19:00",
       "stage": "r16",
       "group": null,
-      "t1": "W86",
-      "t2": "W88",
-      "t1_he": "מנצחת משחק 86",
-      "t2_he": "מנצחת משחק 88",
-      "t1_short": "מנצחת משחק 86",
-      "t2_short": "מנצחת משחק 88",
+      "t1": "ARG",
+      "t2": "EGY",
+      "t1_he": "ארגנטינה",
+      "t2_he": "מצרים",
+      "t1_short": "ארגנטינה",
+      "t2_short": "מצרים",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#74ACDF",
+        "#F6B40E"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#CE1126",
+        "#1a1a1a"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "ar",
+      "t2_iso": "eg",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
       "status": "scheduled",
@@ -4285,21 +4285,21 @@
       "stage": "r16",
       "group": null,
       "t1": "SUI",
-      "t2": "W87",
+      "t2": "COL",
       "t1_he": "שווייץ",
-      "t2_he": "מנצחת משחק 87",
+      "t2_he": "קולומביה",
       "t1_short": "שווייץ",
-      "t2_short": "מנצחת משחק 87",
+      "t2_short": "קולומביה",
       "t1_flag": [
         "#D52B1E",
         "#b71c12"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#FCD116",
+        "#003893"
       ],
       "t1_iso": "ch",
-      "t2_iso": null,
+      "t2_iso": "co",
       "venue": "Vancouver",
       "venue_he": "ונקובר",
       "status": "scheduled",
