@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:10:21.602Z",
+  "updated": "2026-07-05T22:15:17.110Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4138,8 +4138,11 @@
       "t2_iso": "no",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        2
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
