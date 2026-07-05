@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T18:05:16.389Z",
+  "updated": "2026-07-05T18:50:25.712Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4324,22 +4324,22 @@
       "time_il": "23:00",
       "stage": "qf",
       "group": null,
-      "t1": "W89",
-      "t2": "W90",
-      "t1_he": "מנצחת משחק 89",
-      "t2_he": "מנצחת משחק 90",
-      "t1_short": "מנצחת משחק 89",
-      "t2_short": "מנצחת משחק 90",
+      "t1": "FRA",
+      "t2": "MAR",
+      "t1_he": "צרפת",
+      "t2_he": "מרוקו",
+      "t1_short": "צרפת",
+      "t2_short": "מרוקו",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#0055A4",
+        "#EF4135"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#C1272D",
+        "#006233"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "fr",
+      "t2_iso": "ma",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
       "status": "scheduled",
