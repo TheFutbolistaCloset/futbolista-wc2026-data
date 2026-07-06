@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T21:00:29.454Z",
+  "updated": "2026-07-06T21:10:27.363Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4212,8 +4212,11 @@
       "t2_iso": "es",
       "venue": "Dallas (Arlington)",
       "venue_he": "דאלאס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
