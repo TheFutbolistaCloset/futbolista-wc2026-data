@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T22:15:17.110Z",
+  "updated": "2026-07-06T03:15:16.693Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4175,8 +4175,11 @@
       "t2_iso": "gb-eng",
       "venue": "Mexico City",
       "venue_he": "מקסיקו סיטי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        3
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
