@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T10:55:15.128Z",
+  "updated": "2026-07-07T11:00:33.114Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -278,7 +278,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%92%D7%A8%D7%9E%D7%A0%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-germany",
         "he": "גרמניה"
       }
     },
@@ -326,7 +326,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%A7%D7%95%D7%95%D7%93%D7%95%D7%A8%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-ecuador",
         "he": "אקוודור"
       }
     },
@@ -342,7 +342,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%94%D7%95%D7%9C%D7%A0%D7%93%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-netherlands",
         "he": "הולנד"
       }
     },
@@ -358,7 +358,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%99%D7%A4%D7%9F%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-japan",
         "he": "יפן"
       }
     },
@@ -390,7 +390,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%AA%D7%95%D7%A0%D7%99%D7%A1%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-tunisia",
         "he": "תוניסיה"
       }
     },
@@ -470,7 +470,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A1%D7%A4%D7%A8%D7%93%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-spain",
         "he": "ספרד"
       }
     },
@@ -4370,22 +4370,22 @@
       "time_il": "22:00",
       "stage": "qf",
       "group": null,
-      "t1": "W93",
-      "t2": "W94",
-      "t1_he": "מנצחת משחק 93",
-      "t2_he": "מנצחת משחק 94",
-      "t1_short": "מנצחת משחק 93",
-      "t2_short": "מנצחת משחק 94",
+      "t1": "ESP",
+      "t2": "BEL",
+      "t1_he": "ספרד",
+      "t2_he": "בלגיה",
+      "t1_short": "ספרד",
+      "t2_short": "בלגיה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#AA151B",
+        "#F1BF00"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#FDDA24",
+        "#EF3340"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "es",
+      "t2_iso": "be",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
       "status": "scheduled",
