@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T21:10:27.363Z",
+  "updated": "2026-07-07T02:05:15.612Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4249,8 +4249,11 @@
       "t2_iso": "be",
       "venue": "Seattle",
       "venue_he": "סיאטל",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        4
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
