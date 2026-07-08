@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T10:55:19.640Z",
+  "updated": "2026-07-08T21:00:36.965Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4363,8 +4363,8 @@
       "status": "scheduled",
       "score": null,
       "minute": null,
-      "is_today": false,
-      "is_tomorrow": true
+      "is_today": true,
+      "is_tomorrow": false
     },
     {
       "id": "m098",
@@ -4398,7 +4398,7 @@
       "score": null,
       "minute": null,
       "is_today": false,
-      "is_tomorrow": false
+      "is_tomorrow": true
     },
     {
       "id": "m099",
