@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T21:00:32.664Z",
+  "updated": "2026-07-09T22:10:24.025Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4360,8 +4360,11 @@
       "t2_iso": "ma",
       "venue": "Boston (Foxborough)",
       "venue_he": "בוסטון",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
