@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T21:00:35.960Z",
+  "updated": "2026-07-10T21:10:26.509Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4397,8 +4397,11 @@
       "t2_iso": "be",
       "venue": "Los Angeles (Inglewood)",
       "venue_he": "לוס אנג׳לס",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
