@@ -419,6 +419,176 @@
   function posClass(status) { if (status === 'qualified' || status === 'advancing') return 'is-up'; if (status === 'third-pending' || status === 'third-watch') return 'is-third'; if (status === 'eliminated') return 'is-out'; return ''; }
   function anyPlayed(gd) { return gd.standings.some(function (r) { return r.p > 0; }); }
 
+  // ── KNOCKOUT BRACKET ──
+  // FIFA WC2026 knockout wiring: match id -> its two feeder matches, where
+  // t1 = winner of feeders[0] and t2 = winner of feeders[1] (m103 takes the
+  // LOSERS of its feeders). The feed drops the W##/L## source codes once a
+  // slot resolves, so this tree is static — extracted from the pre-resolution
+  // feed and cross-checked against every resolved knockout result.
+  var KO_FEEDERS = {
+    m089: ['m074', 'm077'], m090: ['m073', 'm075'], m091: ['m076', 'm078'], m092: ['m079', 'm080'],
+    m093: ['m083', 'm084'], m094: ['m081', 'm082'], m095: ['m086', 'm088'], m096: ['m085', 'm087'],
+    m097: ['m089', 'm090'], m098: ['m093', 'm094'], m099: ['m091', 'm092'], m100: ['m095', 'm096'],
+    m101: ['m097', 'm098'], m102: ['m099', 'm100'],
+    m104: ['m101', 'm102'], m103: ['m101', 'm102']
+  };
+  // Two-sided converging layout: side r renders from the right edge inward,
+  // side l mirrors from the left edge; the final + third-place sit center.
+  var KO_SIDES = {
+    r: { r32: ['m074', 'm077', 'm073', 'm075', 'm083', 'm084', 'm081', 'm082'], r16: ['m089', 'm090', 'm093', 'm094'], qf: ['m097', 'm098'], sf: ['m101'] },
+    l: { r32: ['m076', 'm078', 'm079', 'm080', 'm086', 'm088', 'm085', 'm087'], r16: ['m091', 'm092', 'm095', 'm096'], qf: ['m099', 'm100'], sf: ['m102'] }
+  };
+  var KO_ORDER = ['r32', 'r16', 'qf', 'sf', 'final'];
+
+  // Winner of a finished knockout match. A score draw means penalties — the
+  // score alone can't tell the winner, but the NEXT match's resolved slot can
+  // (the feed writes the advancing team there). Child-first, score fallback.
+  function koWinner(byId, feed, id) {
+    var m = byId[id];
+    if (!m || m.status !== 'finished') return null;
+    for (var cid in KO_FEEDERS) {
+      if (cid === 'm103') continue; // third-place child holds the LOSERS
+      var slot = KO_FEEDERS[cid].indexOf(id);
+      if (slot < 0) continue;
+      var c = byId[cid];
+      if (c) {
+        var code = slot === 0 ? c.t1 : c.t2;
+        if (feed.teams && feed.teams[code]) return code;
+      }
+    }
+    if (m.score && m.score[0] !== m.score[1]) return m.score[0] > m.score[1] ? m.t1 : m.t2;
+    return null; // pens result not yet resolved downstream (brief window)
+  }
+
+  // Resolve what a slot of a knockout match should DISPLAY: the feed's resolved
+  // team; else a winner/loser derived from the feeder match (covers the window
+  // between a whistle and the feed writing the next round); else the feed's
+  // Hebrew placeholder ("מנצחת משחק 97") on a gray disc.
+  function koSlot(byId, feed, m, slot) {
+    var code = slot === 0 ? m.t1 : m.t2;
+    var t = feed.teams && feed.teams[code];
+    if (t) return { code: code, he: t.he, short: t.heShort || t.he, iso: t.iso, flag: t.flag };
+    var f = KO_FEEDERS[m.id];
+    if (f) {
+      var w = koWinner(byId, feed, f[slot]);
+      if (w) {
+        if (m.id === 'm103') { // loser slot: the feeder team that is NOT the winner
+          var fm = byId[f[slot]];
+          w = fm ? (fm.t1 === w ? fm.t2 : fm.t1) : null;
+        }
+        var wt = w && feed.teams && feed.teams[w];
+        if (wt) return { code: w, he: wt.he, short: wt.heShort || wt.he, iso: wt.iso, flag: wt.flag };
+      }
+    }
+    var ph = (slot === 0 ? m.t1_he : m.t2_he) || '';
+    // compact for the tight desktop cells: "מנצחת משחק 97" -> "מנצחת 97"
+    return { code: null, he: ph, short: ph.replace(' משחק ', ' '), iso: slot === 0 ? m.t1_iso : m.t2_iso, flag: slot === 0 ? m.t1_flag : m.t2_flag };
+  }
+
+  function bktTeamRow(byId, feed, m, slot, winCode) {
+    var t = koSlot(byId, feed, m, slot);
+    var isWin = !!(winCode && t.code === winCode);
+    var j = t.code ? teamJersey(feed, t.code) : null;
+    var row = el(j ? 'a' : 'div', 'wc-bkt__team' + (isWin ? ' is-win' : '') + (t.code ? '' : ' is-tbd'));
+    if (j) { row.href = j.url; row.title = 'חולצות ' + t.he; }
+    row.appendChild(flagEl(t.iso, t.flag, t.he));
+    var name = el('span', 'wc-bkt__name', t.short || t.he); name.title = t.he;
+    row.appendChild(name);
+    if (m.status !== 'scheduled' && m.score) {
+      var g = el('span', 'wc-bkt__goals', String(m.score[slot]));
+      if (isWin || (m.status === 'live')) g.classList.add('is-strong');
+      row.appendChild(g);
+    }
+    return row;
+  }
+
+  function bktMatch(byId, feed, id, mods) {
+    var m = byId[id];
+    if (!m) return el('div', 'wc-bkt__match');
+    var win = koWinner(byId, feed, id);
+    var c = el('div', 'wc-bkt__match' + (m.status === 'live' ? ' is-live' : '') + (m.status === 'finished' ? ' is-finished' : '') + (mods ? ' ' + mods : ''));
+    c.appendChild(bktTeamRow(byId, feed, m, 0, win));
+    c.appendChild(bktTeamRow(byId, feed, m, 1, win));
+    var meta = el('div', 'wc-bkt__meta');
+    if (m.status === 'live') { meta.appendChild(el('span', 'wc-dot')); meta.appendChild(el('span', 'wc-bkt__live', 'חי' + (m.minute != null ? " · " + m.minute + "'" : ''))); }
+    else if (m.status === 'scheduled') meta.appendChild(el('span', null, (m.date_il || '') + (m.time_il ? ' · ' + m.time_il : '')));
+    else meta.appendChild(el('span', null, 'הסתיים'));
+    c.appendChild(meta);
+    return c;
+  }
+
+  function bktColumn(byId, feed, stage, ids, sideMod) {
+    var col = el('div', 'wc-bkt__col wc-bkt__col--' + stage + (sideMod ? ' ' + sideMod : ''));
+    col.appendChild(el('div', 'wc-bkt__coltitle', STAGE_HE[stage] || stage));
+    var stack = el('div', 'wc-bkt__stack');
+    ids.forEach(function (id) { stack.appendChild(bktMatch(byId, feed, id, sideMod ? 'wc-bkt__match--' + (sideMod === 'is-side-r' ? 'r' : 'l') : '')); });
+    col.appendChild(stack);
+    return col;
+  }
+
+  function mountBracket(feed) {
+    var sec = document.getElementById('wc-bracket');
+    if (!sec) return; // section toggled off in the Theme Editor → silent no-op
+    var mount = sec.querySelector('[data-bracket]');
+    if (!mount) return;
+    var byId = {};
+    feed.matches.forEach(function (m) { if (m.stage !== 'group') byId[m.id] = m; });
+    if (!byId.m104) return; // knockout data missing → keep the SSR skeleton
+    clear(mount);
+
+    // ── desktop: 9-column converging tree (RTL grid: col 1 = right edge) ──
+    var tree = el('div', 'wc-bkt');
+    tree.appendChild(bktColumn(byId, feed, 'r32', KO_SIDES.r.r32, 'is-side-r'));
+    tree.appendChild(bktColumn(byId, feed, 'r16', KO_SIDES.r.r16, 'is-side-r'));
+    tree.appendChild(bktColumn(byId, feed, 'qf', KO_SIDES.r.qf, 'is-side-r'));
+    tree.appendChild(bktColumn(byId, feed, 'sf', KO_SIDES.r.sf, 'is-side-r'));
+    var center = el('div', 'wc-bkt__col wc-bkt__col--final');
+    center.appendChild(el('div', 'wc-bkt__coltitle', STAGE_HE.final));
+    var cstack = el('div', 'wc-bkt__stack wc-bkt__stack--final');
+    var cup = el('div', 'wc-bkt__cup'); cup.appendChild(svg('trophy')); cstack.appendChild(cup);
+    cstack.appendChild(bktMatch(byId, feed, 'm104', 'wc-bkt__match--final'));
+    cstack.appendChild(el('div', 'wc-bkt__thirdtitle', STAGE_HE.third));
+    cstack.appendChild(bktMatch(byId, feed, 'm103', 'wc-bkt__match--third'));
+    center.appendChild(cstack);
+    tree.appendChild(center);
+    tree.appendChild(bktColumn(byId, feed, 'sf', KO_SIDES.l.sf, 'is-side-l'));
+    tree.appendChild(bktColumn(byId, feed, 'qf', KO_SIDES.l.qf, 'is-side-l'));
+    tree.appendChild(bktColumn(byId, feed, 'r16', KO_SIDES.l.r16, 'is-side-l'));
+    tree.appendChild(bktColumn(byId, feed, 'r32', KO_SIDES.l.r32, 'is-side-l'));
+    mount.appendChild(tree);
+
+    // ── mobile: round tabs + full match cards, chronological ──
+    var mob = el('div', 'wc-bkt-m');
+    var tabs = el('div', 'wc-chips wc-bkt-m__tabs'); tabs.setAttribute('role', 'group'); tabs.setAttribute('aria-label', 'בחירת שלב');
+    var list = el('div', 'wc-cards');
+    function roundMatches(stage) {
+      var ids = stage === 'final' ? ['m104', 'm103'] : KO_SIDES.r[stage].concat(KO_SIDES.l[stage]);
+      return ids.map(function (id) { return byId[id]; }).filter(Boolean).sort(function (a, b) { return (a.ts || 0) - (b.ts || 0); });
+    }
+    var current = 'final';
+    for (var i = 0; i < KO_ORDER.length; i++) {
+      var st = KO_ORDER[i];
+      if (roundMatches(st).some(function (m) { return m.status !== 'finished'; })) { current = st; break; }
+    }
+    function renderRound(stage) {
+      clear(list);
+      roundMatches(stage).forEach(function (m) {
+        list.appendChild(matchCard(feed, m, { showDate: true, noFav: true }));
+      });
+      tabs.querySelectorAll('[data-stage]').forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.stage === stage ? 'true' : 'false'); });
+    }
+    KO_ORDER.forEach(function (st) {
+      var c = el('button', 'wc-chip'); c.type = 'button'; c.dataset.stage = st;
+      c.setAttribute('aria-pressed', st === current ? 'true' : 'false');
+      c.appendChild(el('span', null, STAGE_HE[st]));
+      c.addEventListener('click', function () { renderRound(st); });
+      tabs.appendChild(c);
+    });
+    mob.appendChild(tabs); mob.appendChild(list);
+    mount.appendChild(mob);
+    renderRound(current);
+  }
+
   // ── shared helpers ──
   function uniqueStages(feed) { var seen = {}, out = []; feed.matches.forEach(function (m) { if (!seen[m.stage]) { seen[m.stage] = 1; out.push(m.stage); } }); var order = ['group', 'r32', 'r16', 'qf', 'sf', 'third', 'final', 'ko']; return out.sort(function (a, b) { return order.indexOf(a) - order.indexOf(b); }); }
   function teamsInPlay(feed) {
@@ -520,6 +690,7 @@
     mountMyTeams(feed);
     mountToday(feed);
     mountSchedule(feed);
+    mountBracket(feed);
     mountGroups(feed);
     mountUpdated(feed);
     buildJsonLd(feed);
@@ -528,6 +699,7 @@
   function init() {
     fetch(FEED_URL, { cache: 'no-store' }).then(function (r) { return r.json(); }).then(boot).catch(function (e) {
       document.querySelectorAll('[data-cards],[data-groups]').forEach(function (m) { clear(m); m.appendChild(el('div', 'wc-empty', 'לא ניתן לטעון את נתוני המשחקים כרגע.')); });
+      var bk = document.querySelector('[data-bracket] .wc-empty'); if (bk) bk.textContent = 'לא ניתן לטעון את נתוני המשחקים כרגע.'; // text-only: the mount itself is never cleared
       console.error('WC2026 feed load failed:', e);
     });
   }
