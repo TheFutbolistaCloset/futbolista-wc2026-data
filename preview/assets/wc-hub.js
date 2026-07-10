@@ -535,8 +535,9 @@
     feed.matches.forEach(function (m) { if (m.stage !== 'group') byId[m.id] = m; });
     if (!byId.m104) return; // knockout data missing → keep the SSR skeleton
     clear(mount);
+    mount.appendChild(el('div', 'wc-bkt-hint', 'גללו הצידה כדי לראות את כל המפה')); // shown <990px only
 
-    // ── desktop: 9-column converging tree (RTL grid: col 1 = right edge) ──
+    // ── 9-column converging tree (RTL grid: col 1 = right edge; h-scrolls on mobile) ──
     var tree = el('div', 'wc-bkt');
     tree.appendChild(bktColumn(byId, feed, 'r32', KO_SIDES.r.r32, 'is-side-r'));
     tree.appendChild(bktColumn(byId, feed, 'r16', KO_SIDES.r.r16, 'is-side-r'));

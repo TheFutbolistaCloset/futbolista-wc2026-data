@@ -260,8 +260,11 @@
    bottom/side padding keeps card shadows from being clipped by overflow */
 .wc-hub .wc-bracket { overflow-x: auto; overflow-y: hidden; padding: 4px 2px 18px; -webkit-overflow-scrolling: touch; }
 
-/* ── desktop converging tree (RTL grid: column 1 = right edge) ── */
-.wc-hub .wc-bkt { display: none; }
+/* ── converging tree (RTL grid: column 1 = right edge) ──
+   Rendered on ALL sizes; under 990px it lives inside the horizontal-scroll
+   wrapper (FIFA-app style) with the per-round card list below it. */
+.wc-hub .wc-bkt { display: grid; grid-template-columns: repeat(9, minmax(108px, 1fr)); gap: 10px; min-width: 1052px; }
+.wc-hub .wc-bkt-hint { display: none; font-size: 12px; font-weight: 700; color: var(--wc-ink-3); margin: 0 2px 8px; }
 .wc-hub .wc-bkt__col { display: flex; flex-direction: column; min-width: 0; }
 .wc-hub .wc-bkt__coltitle { text-align: center; font-size: 11px; font-weight: 800; letter-spacing: .02em; color: var(--wc-ink-3); padding-bottom: 8px; white-space: nowrap; }
 .wc-hub .wc-bkt__stack { flex: 1; display: flex; flex-direction: column; justify-content: space-around; gap: 8px; }
@@ -299,15 +302,18 @@
 .wc-hub .wc-bkt__match--final .wc-bkt__name { font-size: 13px; }
 .wc-hub .wc-bkt__thirdtitle { text-align: center; font-size: 10px; font-weight: 800; color: var(--wc-ink-3); margin-top: 4px; }
 
-/* ── mobile: round tabs + full match cards ── */
+/* ── per-round tabs + full match cards (mobile detail below the tree) ── */
 .wc-hub .wc-bkt-m__tabs { margin-bottom: 14px; }
 .wc-hub .wc-bkt-m .wc-cards { grid-template-columns: 1fr; }
 
 @media (min-width: 600px) and (max-width: 989px) {
   .wc-hub .wc-bkt-m .wc-cards { grid-template-columns: repeat(2, 1fr); }
 }
+@media (max-width: 989px) {
+  .wc-hub .wc-bkt-hint { display: block; }
+  .wc-hub .wc-bkt-m { margin-top: 20px; }
+}
 @media (min-width: 990px) {
-  .wc-hub .wc-bkt { display: grid; grid-template-columns: repeat(9, minmax(108px, 1fr)); gap: 10px; min-width: 1052px; }
   .wc-hub .wc-bkt-m { display: none; }
 }
 
