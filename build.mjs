@@ -18,6 +18,7 @@ import { fileURLToPath } from 'url';
 import { getOpenfootball, getLive } from './lib/sources.mjs';
 import { transform } from './lib/transform.mjs';
 import { jerseyUrl, HAS_JERSEY } from './lib/jersey.mjs';
+import { applyResultOverrides } from './lib/result-overrides.mjs';
 import { renderSSR } from './lib/ssr.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
@@ -64,6 +65,10 @@ async function main() {
       if (live.length) feed = transform(raw, { now: NOW, live });
     }
   }
+
+  // Manual result overrides (extra-time knockout scores openfootball logs as the
+  // 90' draw). Applied after the final transform so it wins over the feed value.
+  applyResultOverrides(feed);
 
   // Wire per-team jersey deep-links for the teams that have shirts. checkLive
   // (online builds) HEADs /collections/wc2026-<slug>: 200 ⇒ the branded
