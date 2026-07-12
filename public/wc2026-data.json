@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T03:50:27.722Z",
+  "updated": "2026-07-12T03:55:16.902Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4471,8 +4471,11 @@
       "t2_iso": "ch",
       "venue": "Kansas City",
       "venue_he": "קנזס סיטי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
