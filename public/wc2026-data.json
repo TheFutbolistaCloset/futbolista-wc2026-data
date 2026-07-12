@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T14:10:25.486Z",
+  "updated": "2026-07-12T15:05:19.467Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4524,22 +4524,22 @@
       "time_il": "22:00",
       "stage": "sf",
       "group": null,
-      "t1": "W99",
-      "t2": "W100",
-      "t1_he": "מנצחת משחק 99",
-      "t2_he": "מנצחת משחק 100",
-      "t1_short": "מנצחת משחק 99",
-      "t2_short": "מנצחת משחק 100",
+      "t1": "ENG",
+      "t2": "ARG",
+      "t1_he": "אנגליה",
+      "t2_he": "ארגנטינה",
+      "t1_short": "אנגליה",
+      "t2_short": "ארגנטינה",
       "t1_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#C8102E",
+        "#8d0b20"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#74ACDF",
+        "#F6B40E"
       ],
-      "t1_iso": null,
-      "t2_iso": null,
+      "t1_iso": "gb-eng",
+      "t2_iso": "ar",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
       "status": "scheduled",
