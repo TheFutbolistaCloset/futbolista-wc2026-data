@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T23:45:22.582Z",
+  "updated": "2026-07-12T00:00:39.886Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4434,8 +4434,11 @@
       "t2_iso": "gb-eng",
       "venue": "Miami (Miami Gardens)",
       "venue_he": "מיאמי",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
       "minute": null,
       "is_today": true,
       "is_tomorrow": false
