@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T21:00:39.166Z",
+  "updated": "2026-07-15T21:10:31.879Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -4545,8 +4545,11 @@
       "t2_iso": "ar",
       "venue": "Atlanta",
       "venue_he": "אטלנטה",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        2
+      ],
       "minute": null,
       "is_today": false,
       "is_tomorrow": false
@@ -4562,21 +4565,21 @@
       "stage": "third",
       "group": null,
       "t1": "FRA",
-      "t2": "L102",
+      "t2": "ENG",
       "t1_he": "צרפת",
-      "t2_he": "מפסידת משחק 102",
+      "t2_he": "אנגליה",
       "t1_short": "צרפת",
-      "t2_short": "מפסידת משחק 102",
+      "t2_short": "אנגליה",
       "t1_flag": [
         "#0055A4",
         "#EF4135"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#C8102E",
+        "#8d0b20"
       ],
       "t1_iso": "fr",
-      "t2_iso": null,
+      "t2_iso": "gb-eng",
       "venue": "Miami (Miami Gardens)",
       "venue_he": "מיאמי",
       "status": "scheduled",
@@ -4596,21 +4599,21 @@
       "stage": "final",
       "group": null,
       "t1": "ESP",
-      "t2": "W102",
+      "t2": "ARG",
       "t1_he": "ספרד",
-      "t2_he": "מנצחת משחק 102",
+      "t2_he": "ארגנטינה",
       "t1_short": "ספרד",
-      "t2_short": "מנצחת משחק 102",
+      "t2_short": "ארגנטינה",
       "t1_flag": [
         "#AA151B",
         "#F1BF00"
       ],
       "t2_flag": [
-        "#8a93a6",
-        "#c2c9d6"
+        "#74ACDF",
+        "#F6B40E"
       ],
       "t1_iso": "es",
-      "t2_iso": null,
+      "t2_iso": "ar",
       "venue": "New York/New Jersey (East Rutherford)",
       "venue_he": "ניו יורק / ניו ג׳רזי",
       "status": "scheduled",
