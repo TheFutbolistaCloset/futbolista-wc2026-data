@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T15:55:15.932Z",
+  "updated": "2026-07-18T16:05:17.827Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -614,7 +614,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-algeria",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%9C%D7%92%D7%B3%D7%99%D7%A8%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "אלג׳יריה"
       }
     },
@@ -694,7 +694,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-uzbekistan",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%95%D7%96%D7%91%D7%A7%D7%99%D7%A1%D7%98%D7%9F%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "אוזבקיסטן"
       }
     },
@@ -742,7 +742,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/collections/wc2026-croatia",
+        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%95%D7%90%D7%98%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
         "he": "קרואטיה"
       }
     },
