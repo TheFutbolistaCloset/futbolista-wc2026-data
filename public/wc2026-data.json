@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T20:00:26.568Z",
+  "updated": "2026-07-18T20:05:17.464Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -22,7 +22,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%9E%D7%A7%D7%A1%D7%99%D7%A7%D7%95%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-mexico",
         "he": "מקסיקו"
       }
     },
@@ -54,7 +54,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%93%D7%A8%D7%95%D7%9D%20%D7%A7%D7%95%D7%A8%D7%99%D7%90%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-south-korea",
         "he": "דרום קוריאה"
       }
     },
@@ -70,7 +70,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A6%D7%B3%D7%9B%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-czechia",
         "he": "צ׳כיה"
       }
     },
@@ -502,7 +502,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A2%D7%A8%D7%91%20%D7%94%D7%A1%D7%A2%D7%95%D7%93%D7%99%D7%AA%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-saudi-arabia",
         "he": "ערב הסעודית"
       }
     },
@@ -774,7 +774,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A4%D7%A0%D7%9E%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-panama",
         "he": "פנמה"
       }
     }
