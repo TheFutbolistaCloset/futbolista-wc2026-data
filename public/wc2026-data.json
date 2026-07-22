@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T09:10:21.636Z",
+  "updated": "2026-07-22T09:15:19.460Z",
   "tz": "Asia/Jerusalem",
   "source": "openfootball + api-football",
   "tournament": {
@@ -70,7 +70,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A6%D7%B3%D7%9B%D7%99%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-czechia",
         "he": "צ׳כיה"
       }
     },
@@ -566,7 +566,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%A2%D7%99%D7%A8%D7%90%D7%A7%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-iraq",
         "he": "עיראק"
       }
     },
@@ -598,7 +598,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%90%D7%A8%D7%92%D7%A0%D7%98%D7%99%D7%A0%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-argentina",
         "he": "ארגנטינה"
       }
     },
@@ -758,7 +758,7 @@
       "group": null,
       "jersey": {
         "has": true,
-        "url": "https://thefutbolistacloset.com/search?q=%D7%A0%D7%91%D7%97%D7%A8%D7%AA%20%D7%92%D7%90%D7%A0%D7%94%20%D7%9E%D7%95%D7%A0%D7%93%D7%99%D7%90%D7%9C%202026&type=product",
+        "url": "https://thefutbolistacloset.com/collections/wc2026-ghana",
         "he": "גאנה"
       }
     },
