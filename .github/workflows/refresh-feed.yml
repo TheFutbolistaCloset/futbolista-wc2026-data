@@ -10,9 +10,14 @@ name: Refresh WC2026 feed
 # correct; TZ is set below as belt-and-suspenders.
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes (GitHub's finest granularity)
-  workflow_dispatch: {}      # allow manual runs from the Actions tab
+  # Scheduled auto-refresh DISABLED 2026-07-22: the 2026 World Cup is over and the
+  # feed is frozen at its final state (Spain champion, final 1-0). There are no more
+  # results to fetch, so the 5-min cron only burned cycles. Re-enable by uncommenting
+  # the `schedule:` block below; or run a one-off rebuild from the Actions tab /
+  # `gh workflow run refresh-feed.yml` (workflow_dispatch stays on).
+  # schedule:
+  #   - cron: "*/5 * * * *"   # every 5 minutes (GitHub's finest granularity)
+  workflow_dispatch: {}      # manual runs from the Actions tab / gh workflow run
 
 # Only let GITHUB_TOKEN write contents; never let two runs race the same push.
 permissions:
